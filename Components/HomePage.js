@@ -7,6 +7,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
 import { userinfo, ctaTexts, headings } from '../Constants/userinfo'
 import Education from './Education'
+import Image from 'next/image';
+import blog from '../styles/PoleKisses_LogoTransparent.png'
+
 
 const HomePage = ({ currentTheme }) => {
     return (
@@ -14,6 +17,7 @@ const HomePage = ({ currentTheme }) => {
             <div className={styles.homeheading} style={{ backgroundColor: currentTheme.secondary }}>
                 {/* <h1 className={styles.heading}>{userinfo.greeting.title}</h1> */}
                 {/* <img src={"/styles/PoleKisses_LogoTransparent.png"} /> */}
+                <Image src={blog} alt='thumbnail image' height='600' width='600'/>
                 <h2 className={styles.subheading} style={{ color: currentTheme.subtext }}>{userinfo.greeting.subtitle}</h2>
                 {/* <Link href="#work"><a className={styles.cta1} style={{ backgroundColor: currentTheme.accent, color: currentTheme.contrastText, boxShadow: currentTheme.boxShadow }}>{ctaTexts.landingCTA}</a></Link> */}
             </div>

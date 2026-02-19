@@ -15,11 +15,11 @@ export const lightTheme = {
     name: 'dark',
     body: '#000000',
     text: '#FAFAFA',
-    subtext: '#D0D0D0',
+    subtext: '#000000',
     secondary: '#000000',
     tertiary: '#000000',
     accent: '#FF66E3',
     boxShadow: '0px 2px 10px -2px rgba(51, 51, 51, 0.5)',
-    contrastText: '#101010',
+    contrastText: '##FAFAFA',
     footerColor: '#000000'
   }
