@@ -27,14 +27,14 @@ const Navbar = ({ toggleTheme, currentTheme }) => {
     return (
         <div className={styles.navbar} style={{ backgroundColor: currentTheme.secondary, boxShadow: currentTheme.boxShadow, position: sticky ? 'fixed' : 'static' }}>
             <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'baseline', marginBottom: !drawerVisible ? '0' : '10px' }}>
-                <Link href='/'><a><h2 className={styles.logo}>{userinfo.logoText}</h2></a></Link>
+                {/* <Link href='/'><a><h2 className={styles.logo}>{userinfo.logoText}</h2></a></Link> */}
                 {!drawerVisible
                     ? <div style={{ display: 'flex' }}>
                         <Navlinks />
                     </div>
                     : null
                 }
-                <Switch id="dark-mode" colorScheme="purple" size={!drawerVisible ? 'lg' : 'md'} isChecked={currentTheme.name === 'dark' ? true : false} onChange={() => toggleTheme()} />
+                {/* <Switch id="dark-mode" colorScheme="purple" size={!drawerVisible ? 'lg' : 'md'} isChecked={currentTheme.name === 'dark' ? true : false} onChange={() => toggleTheme()} /> */}
             </div>
             {drawerVisible
                 ? <>

@@ -3,9 +3,9 @@
 import { faGithubAlt, faLinkedinIn, faMediumM, faFacebook, faTwitter, faInstagram, faYoutube, faBehance } from "@fortawesome/free-brands-svg-icons"
 
 export const userinfo = {
-    logoText: "Michael Scott", //This text is visible on your navbar and footer like your logo.
+    logoText: "Pole Kisses | Short Film", //This text is visible on your navbar and footer like your logo.
     contact: {
-        email: 'michaelscott@email.com', //It is always a good idea to mention your email on your website. Good platform to communicate.
+        email: 'polekissessshortfilm@email.com', //It is always a good idea to mention your email on your website. Good platform to communicate.
         phone: '1234567890', //Phone number is optional, if you dont want it, consider leaving it blank .
         countrycode: '+91' //It is advisable to add the country code incase you mention your contact number.
     },
@@ -18,8 +18,8 @@ export const userinfo = {
     ],
     greeting: {
         //this text goes on your landing page
-        title: "Hey there, I am Michael.",
-        subtitle: "Michael Gary Scott is a fictional character in NBC's The Office, portrayed by Steve Carell. Michael is the protagonist of the series, serving as the Regional Manager of the Scranton branch of a paper distribution company, Dunder Mifflin Inc. Also, that's what she said!"
+        title: "POLE KISSES",
+        subtitle: "A timid pole dancing student must overcome her insecurities when she develops feelings for her more experienced classmate."
     },
     capabilities: [
         //this text goes on your home page in table format.
@@ -111,7 +111,7 @@ export const headings = {
     education: 'Education',
     experience: 'Experiences',
     blogs: 'I write!',
-    contact: 'Contact Me',
+    contact: 'Contact Us',
 }
 
 export const ctaTexts = {

@@ -12,9 +12,10 @@ const HomePage = ({ currentTheme }) => {
     return (
         <div>
             <div className={styles.homeheading} style={{ backgroundColor: currentTheme.secondary }}>
-                <h1 className={styles.heading}>{userinfo.greeting.title}</h1>
+                {/* <h1 className={styles.heading}>{userinfo.greeting.title}</h1> */}
+                {/* <img src={"/styles/PoleKisses_LogoTransparent.png"} /> */}
                 <h2 className={styles.subheading} style={{ color: currentTheme.subtext }}>{userinfo.greeting.subtitle}</h2>
-                <Link href="#work"><a className={styles.cta1} style={{ backgroundColor: currentTheme.accent, color: currentTheme.contrastText, boxShadow: currentTheme.boxShadow }}>{ctaTexts.landingCTA}</a></Link>
+                {/* <Link href="#work"><a className={styles.cta1} style={{ backgroundColor: currentTheme.accent, color: currentTheme.contrastText, boxShadow: currentTheme.boxShadow }}>{ctaTexts.landingCTA}</a></Link> */}
             </div>
             <div className={styles.homeWorkSection} id="work">
                 <h1 className={styles.workheading} data-aos="fade-up">{headings.workHomePage}</h1>

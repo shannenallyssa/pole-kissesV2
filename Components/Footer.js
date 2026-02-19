@@ -5,9 +5,9 @@ import Link from 'next/link'
 const Footer = ({ currentTheme }) => {
     return (
         <div className={styles.footermain} style={{ backgroundColor: currentTheme.footerColor, color: currentTheme.subtext }}>
-            <div className={styles.footertable}>
-                <Link href='/'><a><h2 className={styles.footerlogo}>{userinfo.logoText}</h2></a></Link>
-                <ul>
+           
+                {/* <Link href='/'><a><h2 className={styles.footerlogo}>{userinfo.logoText}</h2></a></Link> */}
+                {/* <ul>
                     <li className={styles.listHeading}>Socials</li>
                     {userinfo.socials ?
                         userinfo.socials.map((social, key) => {
@@ -17,15 +17,18 @@ const Footer = ({ currentTheme }) => {
                         }) : null
                     }
                     <Link href={`mailto:${userinfo.contact.email ? userinfo.contact.email : ''}`}><a><li>Mail</li></a></Link>
-                </ul>
-                <ul>
-                    <li className={styles.listHeading}>Pages</li>
-                    <Link href='/'><a><li>Home</li></a></Link>
-                    <Link href='/#about'><a><li>About</li></a></Link>
-                    <Link href='/work'><a><li>Work</li></a></Link>
-                    <Link href='/contact'><a><li>Contact</li></a></Link>
-                </ul>
-            </div>
+                </ul> */}
+               
+                    <Link href='/'><a><h1>↑ Back to Top ↑ </h1></a></Link>
+                    
+                    
+                    <Link href='/#about'><a> About </a></Link>
+                    <b>|</b>
+                    <Link href='/work'><a> Work </a></Link>
+                    <b>|</b>
+                    <Link href='/contact'><a> Contact </a></Link>
+               
+            
             <hr style={{ height: '1px', backgroundColor: currentTheme.subtext, border: 'none', opacity: '0.5' }}></hr>
             <h2 className={styles.footercontent}>Template by Asavari Ambavane</h2>
         </div>
