@@ -15,11 +15,25 @@ export const lightTheme = {
     name: 'dark',
     body: '#000000',
     text: '#FAFAFA',
-    subtext: '#000000',
+    subtext: '#FAFAFA',
     secondary: '#000000',
-    tertiary: '#000000',
+    tertiary: '#FAFAFA',
+    lightText: '#BA9BB4',
     accent: '#FF66E3',
-    boxShadow: '0px 2px 10px -2px rgba(51, 51, 51, 0.5)',
-    contrastText: '##FAFAFA',
-    footerColor: '#000000'
+    boxShadow: '0px 2px 10px -2px rgba(134, 134, 134, 0.5)',
+    contrastText: '#FAFAFA',
+    footerColor: '#000000',
   }
+
+  // export const darkTheme = {
+  //   name: 'dark',
+  //   body: '#000000',
+  //   text: '#FAFAFA',
+  //   subtext: '#000000',
+  //   secondary: '#000000',
+  //   tertiary: '#000000',
+  //   accent: '#FF66E3',
+  //   boxShadow: '0px 2px 10px -2px rgba(51, 51, 51, 0.5)',
+  //   contrastText: '##FAFAFA',
+  //   footerColor: '#000000'
+  // }

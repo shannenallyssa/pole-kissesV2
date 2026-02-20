@@ -19,7 +19,7 @@ export const userinfo = {
     greeting: {
         //this text goes on your landing page
         title: "POLE KISSES",
-        subtitle: "A timid pole dancing student must overcome her insecurities when she develops feelings for her more experienced classmate."
+        subtitle: "A Short Film"
     },
     capabilities: [
         //this text goes on your home page in table format.
@@ -44,7 +44,8 @@ export const userinfo = {
     ],
     about: {
         //this text goes at the bottom of your home page.
-        content: "'Do I need to be liked? Absolutely not. I like to be liked. I enjoy being liked. I have to be liked. But it’s not like this compulsive need like my need to be praised.' Whatever the situation or conflict might be, it can almost always be traced back to this need. His conference room characters, fun runs, and copious amounts of office parties are all aimed at his need to be praised.",
+        logline: "'A timid pole dancing student must overcome her insecurities when she develops feelings for her more experienced classmate.'",
+        content:"POLE KISSES is an upcoming short film. ",
         resume: "/" //link your resume here. it can be drive link or any other link
     },
     education: {
@@ -107,7 +108,7 @@ export const headings = {
     workHomePage: 'Work',
     workMainPage: 'Projects',
     capabilities: 'Capabilities',
-    about: 'About Me',
+    about: 'About',
     education: 'Education',
     experience: 'Experiences',
     blogs: 'I write!',

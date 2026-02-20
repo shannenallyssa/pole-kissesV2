@@ -14,11 +14,11 @@ const Contact = ({ currentTheme }) => {
   const [message, setMessage] = useState('')
   const [submitted, setSubmitted] = useState(false)
 
-  const iconStyles = {
-    backgroundColor: currentTheme.tertiary,
-    color: '#101010',
-    boxShadow: currentTheme.boxShadow,
-  }
+  // const iconStyles = {
+  //   backgroundColor: currentTheme.tertiary,
+  //   color: '#101010',
+  //   boxShadow: currentTheme.boxShadow,
+  // }
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -88,8 +88,8 @@ const Contact = ({ currentTheme }) => {
           </div>
         </Stack>
       </form>
-
-      <div style={{ textAlign: 'center', paddingTop: '0.5rem' }}>
+      <div style={{ textAlign: 'center'}}>
+      <p>Or send us a message at </p>
         <Link href={`mailto:${userinfo.contact.email ? userinfo.contact.email : ''}`}><a>{userinfo.contact.email}</a></Link>
       </div>
       {/* {
