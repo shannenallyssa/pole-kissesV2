@@ -75,24 +75,59 @@ export const userinfo = {
         visible: true, //set this to false if you want to omit this section
         experienceList: [
             {
-                company: 'Dunder Mifflin', //company name eg.Microsoft
+                company: 'Kristina McHale', //company name eg.Microsoft
                 companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*', //companylogo
-                position: 'Regional Manager', //post you held eg.Senior SDE
-                time: 'March 2020 - May 2020', //timespan
+                position: 'Director', //post you held eg.Senior SDE
+                time: '', //timespan
                 description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum' //eg. spearheaded the graphics team in designing SASS product UIs
             },
             {
-                company: 'Dunder Mifflin',
+                company: 'Shannen Velasco',
                 companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*',
-                position: 'Regional Manager',
-                time: 'March 2020 - May 2020',
+                position: 'Executive Producer, Writer',
+                time: '',
                 description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum'
             },
             {
-                company: 'Dunder Mifflin',
+                company: 'Angel Warren',
                 companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*',
-                position: 'Regional Manager',
-                time: 'March 2020 - May 2020',
+                position: 'Producer',
+                time: '',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum'
+            },
+            {
+                company: 'Isabel Peinado',
+                companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*',
+                position: 'Producer',
+                time: '',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum'
+            },
+            {
+                company: 'Patricia Reyes',
+                companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*',
+                position: 'Producer',
+                time: '',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum'
+            },
+            {
+                company: 'Chai Simone',
+                companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*',
+                position: 'Producer',
+                time: '',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum'
+            },
+            {
+                company: 'Carissa Fenzo',
+                companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*',
+                position: 'Producer',
+                time: '',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum'
+            },
+            {
+                company: 'Helen Oliviero',
+                companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*',
+                position: 'Producer',
+                time: '',
                 description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum'
             },
         ],
@@ -105,12 +140,12 @@ export const userinfo = {
 
 export const headings = {
     //you can customise all the headings here.
-    workHomePage: 'Work',
+    workHomePage: 'GIVE US MONEY (placeholder text)',
     workMainPage: 'Projects',
     capabilities: 'Capabilities',
     about: 'About',
     education: 'Education',
-    experience: 'Experiences',
+    experience: 'Meet the Crew',
     blogs: 'I write!',
     contact: 'Contact Us',
 }

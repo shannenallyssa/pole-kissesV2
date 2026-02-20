@@ -10,6 +10,11 @@ import Education from './Education'
 import Image from 'next/image';
 import blog from '../styles/PoleKisses_LogoTransparent.png'
 import Contact from './Contact'
+import React from 'react'
+import { Box, Avatar } from "@chakra-ui/react"
+import workStyles from '../styles/Work.module.css'
+
+import placeHolder from '../styles/PoleKisses_LogoTransparent.png'
 
 
 const HomePage = ({ currentTheme }) => {
@@ -41,7 +46,38 @@ const HomePage = ({ currentTheme }) => {
                         )
                     })
                 }
-                <div style={{ textAlign: 'center', paddingBottom: '2rem' }}><Link href="/work"><a className={styles.cta3} style={{ backgroundColor: currentTheme.accent, color: currentTheme.contrastText }}>{ctaTexts.workCTA} <span>&gt;</span></a></Link></div>
+                <div className={workStyles.experienceWrapper}>
+            <h1 className={workStyles.workHeading} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">{headings.experience}</h1>
+            <div className={workStyles.experienceCardWrapper} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                {
+                    userinfo.experience.experienceList ?
+                    userinfo.experience.experienceList.map((exp, key) => {
+                            return (
+                                <div className={workStyles.experienceCard} key={key} data-aos="fade-up">
+                                    <Box borderWidth="1px" borderRadius="md" overflow="hidden">
+                                        <div style={{ background: currentTheme.secondary, height: '150px' }}></div>
+                                        <div className={workStyles.experienceCardContent}>
+                                            <h1>{exp.company}</h1>
+                                            <div className={workStyles.avatar}>
+                                               {/* <Avatar size="xl" name={exp.company} src={exp.companylogo} /> */}
+                                               <Image size="xl" name={exp.company} src={placeHolder} width={400} height={400}/>
+                                            </div>
+                                            <div style={{ position: 'relative', top: '20px' }}>
+                                                <h2>{exp.position}</h2>
+                                                <h3>{exp.description}</h3>
+                                            </div>
+                                            <h4 style={{ color: currentTheme.subtext }}>{exp.time}</h4>
+                                        </div>
+                                    </Box>
+                                </div>
+                            )
+                        }) : null
+                }
+            </div>
+        </div>
+                <div style={{ textAlign: 'center', paddingBottom: '2rem' }}>
+                    {/* <Link href="/work"><a className={styles.cta3} style={{ backgroundColor: currentTheme.accent, color: currentTheme.contrastText }}>{ctaTexts.workCTA} <span>&gt;</span></a></Link> */}
+                    </div>
             </div>
             {/* <div id="skills" className={styles.homeSkillSection} style={{ backgroundColor: currentTheme.secondary }}>
                 <Skills currentTheme={currentTheme} />
