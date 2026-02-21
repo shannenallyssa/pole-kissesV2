@@ -48,7 +48,7 @@ const Work = ({ currentTheme }) => {
                 }
             </div>
             {
-                userinfo.experience.visible ? <Experiences currentTheme={currentTheme} /> : null
+                userinfo.crew.visible ? <Experiences currentTheme={currentTheme} /> : null
             }
             {
                 userinfo.blogs.visible ?

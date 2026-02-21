@@ -7,27 +7,25 @@ import placeHolder from '../styles/PoleKisses_LogoTransparent.png'
 
 const Experiences = ({ currentTheme }) => {
     return (
-        <div className={styles.experienceWrapper}>
-            <h1 className={styles.workHeading} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">{headings.experience}</h1>
-            <div className={styles.experienceCardWrapper} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+        <div className={styles.experienceCardWrapper} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 {
-                    userinfo.experience.experienceList ?
-                    userinfo.experience.experienceList.map((exp, key) => {
+                    userinfo.crew.crewList ?
+                    userinfo.crew.crewList.map((crewMember, key) => {
                             return (
                                 <div className={styles.experienceCard} key={key} data-aos="fade-up">
                                     <Box borderWidth="1px" borderRadius="md" overflow="hidden">
                                         <div style={{ background: currentTheme.secondary, height: '150px' }}></div>
                                         <div className={styles.experienceCardContent}>
-                                            <h1>{exp.company}</h1>
+                                            <h1>{crewMember.crewName}</h1>
                                             <div className={styles.avatar}>
                                                {/* <Avatar size="xl" name={exp.company} src={exp.companylogo} /> */}
-                                               <Image size="xl" name={exp.company} src={placeHolder} width={400} height={400}/>
+                                               <Image size="xl" name={crewMember.crewName} src={placeHolder} width={400} height={400}/>
                                             </div>
                                             <div style={{ position: 'relative', top: '20px' }}>
-                                                <h2>{exp.position}</h2>
-                                                <h3>{exp.description}</h3>
+                                                <h2>{crewMember.position}</h2>
+                                                <h3>{crewMember.description}</h3>
                                             </div>
-                                            <h4 style={{ color: currentTheme.subtext }}>{exp.time}</h4>
+                                            <h4 style={{ color: currentTheme.subtext }}>{crewMember.time}</h4>
                                         </div>
                                     </Box>
                                 </div>
@@ -35,7 +33,7 @@ const Experiences = ({ currentTheme }) => {
                         }) : null
                 }
             </div>
-        </div>
+        
     )
 }
 

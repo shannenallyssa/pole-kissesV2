@@ -13,11 +13,70 @@ import Contact from './Contact'
 import React from 'react'
 import { Box, Avatar } from "@chakra-ui/react"
 import workStyles from '../styles/Work.module.css'
+import { Stack, Input, Textarea, useToast } from "@chakra-ui/react"
+import { useState } from 'react'
+import contactStyles from '../styles/Contact.module.css'
+
 
 import placeHolder from '../styles/PoleKisses_LogoTransparent.png'
 
 
 const HomePage = ({ currentTheme }) => {
+
+    const toast = useToast()
+
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [phone, setPhone] = useState('')
+  const [message, setMessage] = useState('')
+  const [submitted, setSubmitted] = useState(false)
+
+  // const iconStyles = {
+  //   backgroundColor: currentTheme.tertiary,
+  //   color: '#101010',
+  //   boxShadow: currentTheme.boxShadow,
+  // }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    console.log('Sending')
+    let data = {
+      name: name,
+      email: email,
+      phone: phone,
+      message: message
+    }
+    setName('')
+    setEmail('')
+    setPhone('')
+    setMessage('')
+
+    toast({
+      description: "You reached us!",
+      status: "success",
+      duration: 5000,
+      isClosable: true,
+    })
+
+    fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json, text/plain, */*',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    }).then((res) => {
+      console.log('Response received')
+      if (res.status === 200) {
+        console.log('Response succeeded!')
+        setSubmitted(true)
+        setName('')
+        setEmail('')
+        setPhone('')
+        setMessage('')
+      }
+    })
+  }
     return (
         <div>
             <div className={styles.homeheading} style={{ backgroundColor: currentTheme.secondary }}>
@@ -50,23 +109,23 @@ const HomePage = ({ currentTheme }) => {
             <h1 className={workStyles.workHeading} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">{headings.experience}</h1>
             <div className={workStyles.experienceCardWrapper} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 {
-                    userinfo.experience.experienceList ?
-                    userinfo.experience.experienceList.map((exp, key) => {
+                    userinfo.crew.crewList ?
+                    userinfo.crew.crewList.map((crewMember, key) => {
                             return (
                                 <div className={workStyles.experienceCard} key={key} data-aos="fade-up">
                                     <Box borderWidth="1px" borderRadius="md" overflow="hidden">
                                         <div style={{ background: currentTheme.secondary, height: '150px' }}></div>
                                         <div className={workStyles.experienceCardContent}>
-                                            <h1>{exp.company}</h1>
+                                            <h1>{crewMember.crewName}</h1>
                                             <div className={workStyles.avatar}>
                                                {/* <Avatar size="xl" name={exp.company} src={exp.companylogo} /> */}
-                                               <Image size="xl" name={exp.company} src={placeHolder} width={400} height={400}/>
+                                               <Image size="xl" name={crewMember.crewName} src={placeHolder} width={400} height={400}/>
                                             </div>
                                             <div style={{ position: 'relative', top: '20px' }}>
-                                                <h2>{exp.position}</h2>
-                                                <h3>{exp.description}</h3>
+                                                <h2>{crewMember.position}</h2>
+                                                {/* <h3>{crewMember.description}</h3> */}
                                             </div>
-                                            <h4 style={{ color: currentTheme.subtext }}>{exp.time}</h4>
+                                            <h4 style={{ color: currentTheme.subtext }}>{crewMember.time}</h4>
                                         </div>
                                     </Box>
                                 </div>
@@ -79,6 +138,37 @@ const HomePage = ({ currentTheme }) => {
                     {/* <Link href="/work"><a className={styles.cta3} style={{ backgroundColor: currentTheme.accent, color: currentTheme.contrastText }}>{ctaTexts.workCTA} <span>&gt;</span></a></Link> */}
                     </div>
             </div>
+            <div className={contactStyles.contactWrapper}>
+      <div className={contactStyles.contactHeading}>
+        <h2 className={contactStyles.contact}>{headings.contact}</h2>
+      </div>
+      <form onSubmit={(e) => { handleSubmit(e) }} className={contactStyles.form} style={{ borderColor: currentTheme.text, backgroundColor: currentTheme.name === 'light' ? '#fafafa' : 'transparent' }}>
+        <Stack spacing={4}>
+          <Input type="text" name="name" value={name} placeholder="Your Name" focusBorderColor={currentTheme.tertiary} isRequired autoComplete="off" onChange={(e) => { setName(e.target.value) }} />
+          <Input type="email" name="email" value={email} placeholder="yourname@email.com" focusBorderColor={currentTheme.tertiary} autoComplete="off" isRequired onChange={(e) => { setEmail(e.target.value) }} />
+          {/* <Input type="tel" name="phone" value={phone} placeholder="Phone Number" focusBorderColor={currentTheme.tertiary} autoComplete="off" isRequired onChange={(e) => { setPhone(e.target.value) }} /> */}
+          <Textarea
+            placeholder="Message for me!"
+            resize="vertical"
+            focusBorderColor={currentTheme.tertiary}
+            isRequired
+            name="email"
+            value={message}
+            autoComplete="off"
+            onChange={(e) => { setMessage(e.target.value) }}
+          />
+          <div>
+            <div className={contactStyles.submit} style={{ backgroundColor: currentTheme.tertiary }}>
+              <button type="submit">{ctaTexts.submitBTN}</button>
+            </div>
+          </div>
+        </Stack>
+      </form>
+      <div style={{ textAlign: 'center'}}>
+      <p>Or send us a message at </p>
+        <Link href={`mailto:${userinfo.contact.email ? userinfo.contact.email : ''}`}><a><u>{userinfo.contact.email}</u></a></Link>
+      </div>
+    </div>
             {/* <div id="skills" className={styles.homeSkillSection} style={{ backgroundColor: currentTheme.secondary }}>
                 <Skills currentTheme={currentTheme} />
             </div>
