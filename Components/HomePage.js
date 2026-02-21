@@ -89,10 +89,11 @@ const HomePage = ({ currentTheme }) => {
             <div id="about" className={styles.homeAboutSection} style={{ backgroundColor: currentTheme.secondary }}>
                 <h1 className={styles.workheading} data-aos="fade-up">{headings.about}</h1>
                 <i><p className={styles.aboutText} style={{ color: currentTheme.subtext }} data-aos="fade-up">{userinfo.about.logline}</p></i>
+                <br/>
                 <p className={styles.aboutText} style={{ color: currentTheme.subtext }} data-aos="fade-up">{userinfo.about.content}</p>
-                <div data-aos="fade-up" style={{ textAlign: 'center', padding: '1rem 0', margin: '1rem 0', position: 'relative', display: 'flex', color: currentTheme.subtext }}>
+                {/* <div data-aos="fade-up" style={{ textAlign: 'center', padding: '1rem 0', margin: '1rem 0', position: 'relative', display: 'flex', color: currentTheme.subtext }}>
                     <Link href={userinfo.about.resume} target="_blank"><a className={styles.cta4} style={{ background: 'transparent', border: `2px solid ${currentTheme.subtext}`, display: 'flex', alignItems: 'center' }}>{ctaTexts.resumeCTA}&nbsp;&nbsp;&nbsp;&nbsp;<FontAwesomeIcon width="15px" height="15px" icon={faExternalLinkAlt} /></a></Link>
-                </div>
+                </div> */}
             </div>
             <div className={styles.homeWorkSection} id="work">
                 <h1 className={styles.workheading} data-aos="fade-up">{headings.workHomePage}</h1>
@@ -138,6 +139,7 @@ const HomePage = ({ currentTheme }) => {
                     {/* <Link href="/work"><a className={styles.cta3} style={{ backgroundColor: currentTheme.accent, color: currentTheme.contrastText }}>{ctaTexts.workCTA} <span>&gt;</span></a></Link> */}
                     </div>
             </div>
+            <div className={contactStyles.contactFullDiv} data-aos="fade-up">
             <div className={contactStyles.contactWrapper}>
       <div className={contactStyles.contactHeading}>
         <h2 className={contactStyles.contact}>{headings.contact}</h2>
@@ -158,7 +160,7 @@ const HomePage = ({ currentTheme }) => {
             onChange={(e) => { setMessage(e.target.value) }}
           />
           <div>
-            <div className={contactStyles.submit} style={{ backgroundColor: currentTheme.tertiary }}>
+            <div className={contactStyles.submit} style={{ backgroundColor: currentTheme.accent }}>
               <button type="submit">{ctaTexts.submitBTN}</button>
             </div>
           </div>
@@ -168,6 +170,7 @@ const HomePage = ({ currentTheme }) => {
       <p>Or send us a message at </p>
         <Link href={`mailto:${userinfo.contact.email ? userinfo.contact.email : ''}`}><a><u>{userinfo.contact.email}</u></a></Link>
       </div>
+    </div>
     </div>
             {/* <div id="skills" className={styles.homeSkillSection} style={{ backgroundColor: currentTheme.secondary }}>
                 <Skills currentTheme={currentTheme} />

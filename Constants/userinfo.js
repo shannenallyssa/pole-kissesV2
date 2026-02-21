@@ -143,11 +143,11 @@ export const headings = {
     workHomePage: 'GIVE US MONEY (placeholder text)',
     workMainPage: 'Projects',
     capabilities: 'Capabilities',
-    about: 'About',
+    about: 'ABOUT',
     education: 'Education',
-    experience: 'Meet the Crew',
+    experience: 'MEET THE CREW',
     blogs: 'I write!',
-    contact: 'Contact Us',
+    contact: 'CONTACT US',
 }
 
 export const ctaTexts = {

@@ -34,11 +34,11 @@ function MyApp({ Component, pageProps }) {
     theme == 'light' ? setTheme('dark') : setTheme('light')
   }
 
-  const currentTheme = theme === 'light' ? lightTheme : darkTheme
+  const currentTheme = darkTheme
 
   return (
     <ChakraProvider>
-      <ThemeProvider theme={theme == 'light' ? lightTheme : darkTheme}>
+      <ThemeProvider theme={darkTheme}>
         <GlobalStyles />
         <Layout toggleTheme={toggleTheme} currentTheme={currentTheme}>
           <Component {...pageProps} currentTheme={currentTheme} />
