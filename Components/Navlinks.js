@@ -14,16 +14,19 @@ const Navlinks = () => {
     return (
         <>
             <div className={styles.navlinks}>
-                <Link href='/'><a style={{ opacity: activeLink === '/' || activeLink === '/#work' ? '100%' : '80%' }}>Home</a></Link>
+                <Link href='/'><a style={{ opacity: activeLink === '/' ? '100%' : '80%' }}>Home</a></Link>
             </div>
-            {/* <div className={styles.navlinks}>
+            <div className={styles.navlinks}>
                 <Link href='/#about'><a style={{ opacity: activeLink === '/#about' ? '100%' : '80%' }}>About</a></Link>
-            </div> */}
-            <div className={styles.navlinks}>
-                <Link href='/work'><a style={{ opacity: activeLink === '/work' ? '100%' : '80%' }}>Crew</a></Link>
             </div>
             <div className={styles.navlinks}>
-                <Link href='/contact'><a style={{ opacity: activeLink === '/contact' ? '100%' : '80%' }}>Contact</a></Link>
+                <Link href='/#funding'><a style={{ opacity: activeLink === '/#funding' ? '100%' : '80%' }}>Funding</a></Link>
+            </div>
+            <div className={styles.navlinks}>
+                <Link href='/#crew'><a style={{ opacity: activeLink === '/#crew' ? '100%' : '80%' }}>Crew</a></Link>
+            </div>
+            <div className={styles.navlinks}>
+                <Link href='/#contact'><a style={{ opacity: activeLink === '/#contact' ? '100%' : '80%' }}>Contact</a></Link>
             </div>
         </>
 

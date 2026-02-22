@@ -95,7 +95,7 @@ const HomePage = ({ currentTheme }) => {
                     <Link href={userinfo.about.resume} target="_blank"><a className={styles.cta4} style={{ background: 'transparent', border: `2px solid ${currentTheme.subtext}`, display: 'flex', alignItems: 'center' }}>{ctaTexts.resumeCTA}&nbsp;&nbsp;&nbsp;&nbsp;<FontAwesomeIcon width="15px" height="15px" icon={faExternalLinkAlt} /></a></Link>
                 </div> */}
             </div>
-            <div className={styles.homeWorkSection} id="work">
+            <div className={styles.homeWorkSection} id="funding">
                 <h1 className={styles.workheading} data-aos="fade-up">{headings.workHomePage}</h1>
                 {
                     projects.slice(0, 3).map((project, key) => {
@@ -106,7 +106,7 @@ const HomePage = ({ currentTheme }) => {
                         )
                     })
                 }
-                <div className={workStyles.experienceWrapper}>
+                <div id="crew" className={workStyles.experienceWrapper}>
             <h1 className={workStyles.workHeading} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">{headings.experience}</h1>
             <div className={workStyles.experienceCardWrapper} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 {
@@ -139,7 +139,7 @@ const HomePage = ({ currentTheme }) => {
                     {/* <Link href="/work"><a className={styles.cta3} style={{ backgroundColor: currentTheme.accent, color: currentTheme.contrastText }}>{ctaTexts.workCTA} <span>&gt;</span></a></Link> */}
                     </div>
             </div>
-            <div className={contactStyles.contactFullDiv} data-aos="fade-up">
+            <div id="contact" className={contactStyles.contactFullDiv} data-aos="fade-up">
             <div className={contactStyles.contactWrapper}>
       <div className={contactStyles.contactHeading}>
         <h2 className={contactStyles.contact}>{headings.contact}</h2>
