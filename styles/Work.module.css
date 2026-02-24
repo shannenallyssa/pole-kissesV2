@@ -131,6 +131,9 @@
     grid-gap: 1rem;
     place-items: center;
     align-items: start;
+    justify-content: center;
+
+
   } 
   
   .experienceCard{

@@ -79,7 +79,7 @@ const HomePage = ({ currentTheme }) => {
   }
     return (
         <div>
-            <div className={styles.homeheading} style={{ backgroundColor: currentTheme.secondary }}>
+            <div id='home' className={styles.homeheading} style={{ backgroundColor: currentTheme.secondary }}>
                 {/* <h1 className={styles.heading}>{userinfo.greeting.title}</h1> */}
                 {/* <img src={"/styles/PoleKisses_LogoTransparent.png"} /> */}
                 <Image src={blog} alt='thumbnail image' height='600' width='600'/>

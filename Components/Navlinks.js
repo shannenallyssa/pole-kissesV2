@@ -14,7 +14,7 @@ const Navlinks = () => {
     return (
         <>
             <div className={styles.navlinks}>
-                <Link href='/'><a style={{ opacity: activeLink === '/' ? '100%' : '80%' }}>Home</a></Link>
+                <Link href='/#home'><a style={{ opacity: activeLink === '/#home' ? '100%' : '80%' }}>Home</a></Link>
             </div>
             <div className={styles.navlinks}>
                 <Link href='/#about'><a style={{ opacity: activeLink === '/#about' ? '100%' : '80%' }}>About</a></Link>

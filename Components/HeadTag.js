@@ -5,7 +5,7 @@ import { userinfo } from '../Constants/userinfo'
 const HeadTag = ({page}) => {
     return (
         <Head>
-            <title>{`${userinfo.logoText} | ${page}`}</title>
+            <title>{`${userinfo.logoText}`}</title>
             <link rel="icon" href="/favicon.jpg" />
             <meta name="title" content={userinfo.logoText} />
             <meta name="description" content={userinfo.greeting.subtitle} />

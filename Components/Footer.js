@@ -20,7 +20,7 @@ const Footer = ({ currentTheme }) => {
                     <Link href={`mailto:${userinfo.contact.email ? userinfo.contact.email : ''}`}><a><li>Mail</li></a></Link>
                 </ul> */}
                
-                    <Link href='/'><a><h1>↑ Back to Top ↑ </h1></a></Link>
+                    <Link href='/#home'><a><h1>↑ Back to Top ↑ </h1></a></Link>
                     
                     
                     {/* <Link href='/#about'><a> About </a></Link>
@@ -36,6 +36,7 @@ const Footer = ({ currentTheme }) => {
             
             {/* <hr style={{ height: '1px', backgroundColor: currentTheme.subtext, border: 'none', opacity: '0.5' }}></hr> */}
             {/* <h2 className={styles.footercontent} style={{color: currentTheme.lightText}}>Template by Asavari Ambavane</h2> */}
+            <h2 className={styles.footercontent} style={{color: currentTheme.lightText}}>Pole Kisses © {new Date().getFullYear()} Shannen Velasco </h2>
         </div>
     )
 }
