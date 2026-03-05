@@ -80,63 +80,86 @@ export const userinfo = {
                 crewHeadshot: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*', //companylogo
                 position: 'Director', //post you held eg.Senior SDE
                 time: '', //timespan
-                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum' //eg. spearheaded the graphics team in designing SASS product UIs
+                instagram:'https://www.instagram.com/realshannenigans/',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum', //eg. spearheaded the graphics team in designing SASS product UIs
+                socials: [
+                    { type: 'linkedin', link: '', icon: faInstagram },
+                ]
             },
             {
                 crewName: 'Shannen Velasco',
                 companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*',
                 position: 'Executive Producer, Writer',
                 time: '',
-                socials: [
-                    {
-                        type:'instagram',
-                        link:'https://www.instagram.com/realshannenigans/',
-                        icon: faInstagram,
-                    }
-                ],
-                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum'
+                instagram:'https://www.instagram.com/realshannenigans/',
+                website:'https://shannenvelascovo.vercel.app',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum',
             },
             {
                 crewName: 'Angel Warren',
                 companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*',
                 position: 'Producer',
                 time: '',
-                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum'
+                instagram:'',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum',
+                socials: [
+                    { type: 'linkedin', link: '', icon: faInstagram },
+                ]
             },
             {
                 crewName: 'Isabel Peinado',
                 companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*',
                 position: 'Assistant Director',
                 time: '',
-                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum'
+                instagram:'',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum',
+                socials: [
+                    { type: 'linkedin', link: '', icon: faInstagram },
+                ]
             },
             {
                 crewName: 'Patricia Reyes',
                 companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*',
                 position: 'Cinematographer',
                 time: '',
-                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum'
+                instagram:'',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum',
+                socials: [
+                    { type: 'linkedin', link: '', icon: faInstagram },
+                ]
             },
             {
                 crewName: 'Chai Simone',
                 companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*',
                 position: 'Art Director',
                 time: '',
-                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum'
+                instagram:'',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum',
+                socials: [
+                    { type: 'linkedin', link: '', icon: faInstagram },
+                ]
             },
             {
                 crewName: 'Carissa Fennell',
                 companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*',
                 position: 'Costume Designer',
                 time: '',
-                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum'
+                instagram:'https://www.instagram.com/crisfenzo?igsh=MWx5d3ZsY2V5Mmh1cw%3D%3D&utm_source=qr',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum',
+                socials: [
+                    { type: 'linkedin', link: '', icon: faInstagram },
+                ]
             },
             {
                 crewName: 'Helen Oliviero',
                 companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*',
                 position: 'Makeup Artist',
                 time: '',
-                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum'
+                instagram:'',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum',
+                socials: [
+                    { type: 'linkedin', link: '', icon: faInstagram },
+                ]
             },
         ],
     },

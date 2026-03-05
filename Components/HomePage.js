@@ -4,7 +4,7 @@ import HomeProject from './HomeProject'
 import Skills from './Skills'
 import { projects } from '../Constants/projects'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
+import { faExternalLinkAlt, faLink } from "@fortawesome/free-solid-svg-icons"
 import { userinfo, ctaTexts, headings } from '../Constants/userinfo'
 import Education from './Education'
 import Image from 'next/image';
@@ -20,6 +20,7 @@ import contactStyles from '../styles/Contact.module.css'
 
 
 import placeHolder from '../styles/PoleKisses_LogoTransparent.png'
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 
 const HomePage = ({ currentTheme }) => {
@@ -78,6 +79,8 @@ const HomePage = ({ currentTheme }) => {
       }
     })
   }
+
+  console.log('[crewlist]', userinfo.crew.crewList.socials)
     return (
         <div>
             <div id='home' className={styles.homeheading} style={{ backgroundColor: currentTheme.secondary }}>
@@ -126,17 +129,29 @@ const HomePage = ({ currentTheme }) => {
                                             <div style={{ position: 'relative', top: '20px' }}>
                                                 <h2>{crewMember.position}</h2>
                                                 {/* <h3>{crewMember.description}</h3> */}
-                                                <div className={contactStyles.socialIconDiv}>
-        {userinfo.socials ?
-          userinfo.socials.map((social, key) => {
+                                                <div className={contactStyles.socialIconDiv} >
+                                                  {crewMember.instagram &&
+                                                <div className={contactStyles.socialIcon} style={iconStyles} key={key}>
+                                                   <Link href={crewMember.instagram}><a><FontAwesomeIcon icon={faInstagram} /></a></Link>            
+                                               </div>
+                                               }
+                                                  {crewMember.website &&
+                                                <div className={contactStyles.socialIcon} style={iconStyles} key={key}>
+                                                   <Link href={crewMember.website}><a><FontAwesomeIcon icon={faLink} /></a></Link>            
+                                               </div>
+                                               }
+                                              
+        {/* {userinfo.crew.crewList.socials ?
+          userinfo.crew.crewList.socials.map((social, key) => {
             return (
               <div className={contactStyles.socialIcon} style={iconStyles} key={key}>
                 <Link href={social.link}><a><FontAwesomeIcon icon={social.icon} /></a></Link>
               </div>
             )
           }) : null
-        }
+        } */}
       </div>
+      
                                             </div>
                                             <h4 style={{ color: currentTheme.subtext }}>{crewMember.time}</h4>
                                         </div>
