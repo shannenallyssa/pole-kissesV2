@@ -18,6 +18,7 @@ import { useState } from 'react'
 import contactStyles from '../styles/Contact.module.css'
 
 
+
 import placeHolder from '../styles/PoleKisses_LogoTransparent.png'
 
 
@@ -31,11 +32,11 @@ const HomePage = ({ currentTheme }) => {
   const [message, setMessage] = useState('')
   const [submitted, setSubmitted] = useState(false)
 
-  // const iconStyles = {
-  //   backgroundColor: currentTheme.tertiary,
-  //   color: '#101010',
-  //   boxShadow: currentTheme.boxShadow,
-  // }
+  const iconStyles = {
+    backgroundColor: currentTheme.accent,
+    color: '#101010',
+    boxShadow: currentTheme.boxShadow,
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -125,6 +126,17 @@ const HomePage = ({ currentTheme }) => {
                                             <div style={{ position: 'relative', top: '20px' }}>
                                                 <h2>{crewMember.position}</h2>
                                                 {/* <h3>{crewMember.description}</h3> */}
+                                                <div className={contactStyles.socialIconDiv}>
+        {userinfo.socials ?
+          userinfo.socials.map((social, key) => {
+            return (
+              <div className={contactStyles.socialIcon} style={iconStyles} key={key}>
+                <Link href={social.link}><a><FontAwesomeIcon icon={social.icon} /></a></Link>
+              </div>
+            )
+          }) : null
+        }
+      </div>
                                             </div>
                                             <h4 style={{ color: currentTheme.subtext }}>{crewMember.time}</h4>
                                         </div>

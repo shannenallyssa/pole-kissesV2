@@ -13,7 +13,7 @@ export const userinfo = {
         //For aesthetics, it is advisable for you to mention upto 4 social media links only. Fill in the links.
         //more icons are imported above, use as you like them.
         { type: 'github', link: '', icon: faGithubAlt },
-        { type: 'linkedin', link: '', icon: faLinkedinIn },
+        { type: 'linkedin', link: '', icon: faInstagram },
         { type: 'medium', link: '', icon: faMediumM },
     ],
     greeting: {
@@ -45,7 +45,8 @@ export const userinfo = {
     about: {
         //this text goes at the bottom of your home page.
         logline: "'A timid pole dancing student must overcome her insecurities when she develops feelings for her more experienced classmate.'",
-        content:"POLE KISSES is an upcoming short film. ",
+        content:"POLE KISSES is an upcoming short film based in Las Vegas, Nevada. ",
+        endLine:"And we would like YOUR help to make this concept a reality... ",
         resume: "/" //link your resume here. it can be drive link or any other link
     },
     education: {
@@ -86,6 +87,13 @@ export const userinfo = {
                 companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*',
                 position: 'Executive Producer, Writer',
                 time: '',
+                socials: [
+                    {
+                        type:'instagram',
+                        link:'https://www.instagram.com/realshannenigans/',
+                        icon: faInstagram,
+                    }
+                ],
                 description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum'
             },
             {

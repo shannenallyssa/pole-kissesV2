@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const Footer = ({ currentTheme }) => {
     return (
-        <div className={styles.footermain} style={{ backgroundColor: currentTheme.footerColor, color: currentTheme.subtext }}>
+        <div className={styles.footercontent} style={{ backgroundColor: currentTheme.footerColor, color: currentTheme.subtext }}>
             <hr style={{ height: '1px', backgroundColor: currentTheme.subtext, border: 'none', opacity: '0.5' }}></hr>
             <br/>
                 {/* <Link href='/'><a><h2 className={styles.footerlogo}>{userinfo.logoText}</h2></a></Link> */}
@@ -36,7 +36,7 @@ const Footer = ({ currentTheme }) => {
             
             {/* <hr style={{ height: '1px', backgroundColor: currentTheme.subtext, border: 'none', opacity: '0.5' }}></hr> */}
             {/* <h2 className={styles.footercontent} style={{color: currentTheme.lightText}}>Template by Asavari Ambavane</h2> */}
-            <h2 className={styles.footercontent} style={{color: currentTheme.lightText}}>Pole Kisses © {new Date().getFullYear()} Shannen Velasco </h2>
+            <h2  style={{color: currentTheme.lightText}}>Pole Kisses © {new Date().getFullYear()} Shannen Velasco </h2>
         </div>
     )
 }
