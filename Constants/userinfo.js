@@ -81,10 +81,9 @@ export const userinfo = {
                 position: 'Director', //post you held eg.Senior SDE
                 time: '', //timespan
                 instagram:'https://www.instagram.com/realshannenigans/',
+                website:'https://xtinamchale.com/',
+                imdb:'',
                 description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum', //eg. spearheaded the graphics team in designing SASS product UIs
-                socials: [
-                    { type: 'linkedin', link: '', icon: faInstagram },
-                ]
             },
             {
                 crewName: 'Shannen Velasco',
@@ -93,6 +92,7 @@ export const userinfo = {
                 time: '',
                 instagram:'https://www.instagram.com/realshannenigans/',
                 website:'https://shannenvelascovo.vercel.app',
+                imdb:'https://www.imdb.com/name/nm13639366/',
                 description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum',
             },
             {
@@ -101,6 +101,8 @@ export const userinfo = {
                 position: 'Producer',
                 time: '',
                 instagram:'',
+                website:'',
+                imdb:'',
                 description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum',
                 socials: [
                     { type: 'linkedin', link: '', icon: faInstagram },
@@ -112,6 +114,8 @@ export const userinfo = {
                 position: 'Assistant Director',
                 time: '',
                 instagram:'',
+                website:'',
+                imdb:'',
                 description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum',
                 socials: [
                     { type: 'linkedin', link: '', icon: faInstagram },
@@ -123,6 +127,8 @@ export const userinfo = {
                 position: 'Cinematographer',
                 time: '',
                 instagram:'',
+                website:'',
+                imdb:'',
                 description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum',
                 socials: [
                     { type: 'linkedin', link: '', icon: faInstagram },
@@ -134,6 +140,8 @@ export const userinfo = {
                 position: 'Art Director',
                 time: '',
                 instagram:'',
+                website:'',
+                imdb:'',
                 description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum',
                 socials: [
                     { type: 'linkedin', link: '', icon: faInstagram },
@@ -145,6 +153,8 @@ export const userinfo = {
                 position: 'Costume Designer',
                 time: '',
                 instagram:'https://www.instagram.com/crisfenzo?igsh=MWx5d3ZsY2V5Mmh1cw%3D%3D&utm_source=qr',
+                website:'',
+                imdb:'',
                 description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum',
                 socials: [
                     { type: 'linkedin', link: '', icon: faInstagram },

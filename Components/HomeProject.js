@@ -6,6 +6,7 @@ import Image from 'next/image';
 // import goFundMe from '../styles/GoFundMe_logo.png';
 import indieGogo from '../styles/indiegogo-logo.png';
 import { faMoneyBill, faMoneyCheck } from '@fortawesome/free-solid-svg-icons';
+import contactStyles from '../styles/Contact.module.css';
 
 const HomeProject = ({ currentTheme, project, id }) => {
     return (
@@ -18,10 +19,13 @@ const HomeProject = ({ currentTheme, project, id }) => {
                     </div>
                 {/* <h1 className={styles.projectTitle}>{project.name}</h1> */}
                 {/* <a href='https://www.gofundme.com/' target='_blank'><Image src={indieGogo} width={300} height={100}/> </a> */}
-               <div align='center'>
+               <div align='center' >
                 <a href='https://www.indiegogo.com/en' target='_blank'><Image src={indieGogo} width={400} height={75}/> </a>
                 </div>
-                <h2 className={styles.projectSubTitle} style={{color: currentTheme.subtext}}>{project.description}</h2>
+                <h2 className={styles.projectSubTitle} style={{color: currentTheme.subtext, paddingTop: 10}}>{project.description}</h2>
+                <div className={contactStyles.submit} style={{ backgroundColor: currentTheme.accent }}>
+              <button type="submit">DONATE HERE</button>
+            </div>
                 {/* <Link href='/work'><a className={styles.cta2} style={{ color: currentTheme.tertiary }}>View More</a></Link> */}
             </div>
         </div>

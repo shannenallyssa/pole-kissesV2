@@ -40,10 +40,10 @@
 }
 
 .socialIconDiv{
-  width: 60%;
   display: flex;
   justify-content: space-evenly;
   margin: 1.5rem auto;
+  width: 60%;
 }
 
 .socialIcon{

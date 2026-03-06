@@ -20,7 +20,7 @@ import contactStyles from '../styles/Contact.module.css'
 
 
 import placeHolder from '../styles/PoleKisses_LogoTransparent.png'
-import { faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faImdb, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 
 const HomePage = ({ currentTheme }) => {
@@ -119,7 +119,7 @@ const HomePage = ({ currentTheme }) => {
                             return (
                                 <div className={workStyles.experienceCard} key={key} data-aos="fade-up">
                                     <Box borderWidth="1px" borderRadius="md" overflow="hidden">
-                                        <div style={{ background: currentTheme.secondary, height: '150px' }}></div>
+                                        <div style={{ background: currentTheme.secondary, height: '110px'}}></div>
                                         <div className={workStyles.experienceCardContent}>
                                             <h1>{crewMember.crewName}</h1>
                                             <div className={workStyles.avatar}>
@@ -140,17 +140,13 @@ const HomePage = ({ currentTheme }) => {
                                                    <Link href={crewMember.website}><a><FontAwesomeIcon icon={faLink} /></a></Link>            
                                                </div>
                                                }
-                                              
-        {/* {userinfo.crew.crewList.socials ?
-          userinfo.crew.crewList.socials.map((social, key) => {
-            return (
-              <div className={contactStyles.socialIcon} style={iconStyles} key={key}>
-                <Link href={social.link}><a><FontAwesomeIcon icon={social.icon} /></a></Link>
-              </div>
-            )
-          }) : null
-        } */}
-      </div>
+                                                  {crewMember.imdb &&
+                                                <div className={contactStyles.socialIcon} style={iconStyles} key={key}>
+                                                   <Link href={crewMember.imdb}><a><FontAwesomeIcon icon={faImdb} /></a></Link>            
+                                               </div>
+                                               }
+      
+                                        </div>
       
                                             </div>
                                             <h4 style={{ color: currentTheme.subtext }}>{crewMember.time}</h4>

@@ -122,23 +122,20 @@
   .experienceWrapper{
     max-width: 75vw;
     margin: auto;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
   }
 
   .experienceCardWrapper{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
     grid-gap: 1rem;
-    place-items: center;
     align-items: start;
-    justify-content: center;
-
-
   } 
   
   .experienceCard{
-    margin: 0 1rem;
+    margin: 0 .5rem;
     max-width: 400px;
+    top: -100px;
     transition: 0.2s ease-in;
   }
 
@@ -149,13 +146,13 @@
   .experienceCardContent{
     padding: 0 1rem;
     position: relative;
-    top: -100px;
+    top: -60px;
     text-align: center;
   }
 
   .experienceCardContent h1{
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 30px;
   }
 
   .experienceCardContent h2{
@@ -178,7 +175,7 @@
   .avatar {
     display: flex;
     justify-content: center;
-    margin: 1rem 0;
+    /* margin: 1rem 0; */
   }
 
 @media only screen and (max-width: 850px){
