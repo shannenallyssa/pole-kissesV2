@@ -137,6 +137,7 @@
     max-width: 400px;
     top: -100px;
     transition: 0.2s ease-in;
+
   }
 
   .experienceCard:hover{
@@ -148,6 +149,7 @@
     position: relative;
     top: -60px;
     text-align: center;
+    
   }
 
   .experienceCardContent h1{
@@ -160,7 +162,7 @@
   }
 
   .experienceCardContent h3{
-    font-size: 14px;
+    font-size: 18px;
     padding: 0 2rem;
     position: relative;
     top: 10px;

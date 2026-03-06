@@ -34,6 +34,15 @@
   color: #101010;
 } 
 
+.aboutButton{
+  padding: 0.5rem 2rem;
+  width: fit-content;
+  border-radius: 50px;
+  margin: auto;
+  transition: 0.2s ease-in-out;
+  color: #ffffff;
+} 
+
 .submit:hover{
   transform: scale(0.9);
   cursor: pointer;
@@ -42,7 +51,7 @@
 .socialIconDiv{
   display: flex;
   justify-content: space-evenly;
-  margin: 1.5rem auto;
+  margin: 1rem auto;
   width: 60%;
 }
 
