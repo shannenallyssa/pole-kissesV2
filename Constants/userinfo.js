@@ -83,6 +83,7 @@ export const userinfo = {
                 instagram:'https://www.instagram.com/realshannenigans/',
                 website:'https://xtinamchale.com/',
                 imdb:'',
+                aboutLink:'/#about', 
                 description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum', //eg. spearheaded the graphics team in designing SASS product UIs
             },
             {
@@ -93,6 +94,7 @@ export const userinfo = {
                 instagram:'https://www.instagram.com/realshannenigans/',
                 website:'https://shannenvelascovo.vercel.app',
                 imdb:'https://www.imdb.com/name/nm13639366/',
+                aboutLink:'/#about', 
                 description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum',
             },
             {
@@ -103,6 +105,7 @@ export const userinfo = {
                 instagram:'',
                 website:'',
                 imdb:'',
+                aboutLink:'/#about', 
                 description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum',
                 socials: [
                     { type: 'linkedin', link: '', icon: faInstagram },
@@ -116,6 +119,7 @@ export const userinfo = {
                 instagram:'',
                 website:'',
                 imdb:'',
+                aboutLink:'/#about', 
                 description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum',
                 socials: [
                     { type: 'linkedin', link: '', icon: faInstagram },
@@ -129,6 +133,7 @@ export const userinfo = {
                 instagram:'',
                 website:'',
                 imdb:'',
+                aboutLink:'/#about', 
                 description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum',
                 socials: [
                     { type: 'linkedin', link: '', icon: faInstagram },
@@ -142,6 +147,7 @@ export const userinfo = {
                 instagram:'',
                 website:'',
                 imdb:'',
+                aboutLink:'/#about', 
                 description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum',
                 socials: [
                     { type: 'linkedin', link: '', icon: faInstagram },
@@ -155,6 +161,7 @@ export const userinfo = {
                 instagram:'https://www.instagram.com/crisfenzo?igsh=MWx5d3ZsY2V5Mmh1cw%3D%3D&utm_source=qr',
                 website:'',
                 imdb:'',
+                aboutLink:'/#about', 
                 description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum',
                 socials: [
                     { type: 'linkedin', link: '', icon: faInstagram },
@@ -165,7 +172,9 @@ export const userinfo = {
                 companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*',
                 position: 'Makeup Artist',
                 time: '',
-                instagram:'',
+                website:'https://olivierohelen.myportfolio.com/',  
+                instagram:'https://www.instagram.com/helens.huemua/',
+                aboutLink:'/helenOliviero', 
                 description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum',
                 socials: [
                     { type: 'linkedin', link: '', icon: faInstagram },

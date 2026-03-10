@@ -55,6 +55,13 @@
   width: 60%;
 }
 
+.socialIconAbout{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem auto;
+  width: 10%;
+}
+
 .socialIcon{
   height: 45px;
   width: 45px;

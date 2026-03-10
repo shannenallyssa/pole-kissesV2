@@ -8,7 +8,7 @@ import { faExternalLinkAlt, faLink } from "@fortawesome/free-solid-svg-icons"
 import { userinfo, ctaTexts, headings } from '../Constants/userinfo'
 import Education from './Education'
 import Image from 'next/image';
-import blog from '../styles/PoleKisses_LogoTransparent.png'
+import logo from '../styles/PoleKisses_LogoTransparent.png'
 import Contact from './Contact'
 import React from 'react'
 import { Box, Avatar } from "@chakra-ui/react"
@@ -86,7 +86,7 @@ const HomePage = ({ currentTheme }) => {
             <div id='home' className={styles.homeheading} style={{ backgroundColor: currentTheme.secondary }}>
                 {/* <h1 className={styles.heading}>{userinfo.greeting.title}</h1> */}
                 {/* <img src={"/styles/PoleKisses_LogoTransparent.png"} /> */}
-                <Image src={blog} alt='thumbnail image' height='600' width='600'/>
+                <Image src={logo} alt='thumbnail image' height='600' width='600'/>
                 {/* <h2 className={styles.subheading} style={{ color: currentTheme.subtext }}>{userinfo.greeting.subtitle}</h2> */}
                 {/* <Link href="#work"><a className={styles.cta1} style={{ backgroundColor: currentTheme.accent, color: currentTheme.contrastText, boxShadow: currentTheme.boxShadow }}>{ctaTexts.landingCTA}</a></Link> */}
             </div>
@@ -124,13 +124,13 @@ const HomePage = ({ currentTheme }) => {
                                             <h1>{crewMember.crewName}</h1>
                                             <div className={workStyles.avatar}>
                                                {/* <Avatar size="xl" name={exp.company} src={exp.companylogo} /> */}
-                                               <Image size="xl" name={crewMember.crewName} src={placeHolder} width={400} height={400}/>
+                                               {/* <Image size="xl" name={crewMember.crewName} src={placeHolder} width={400} height={400}/> */}
                                             </div>
                                             <div style={{ position: 'relative', top: '20px' }}>
                                                 <h2>{crewMember.position}</h2>
                                                 {/* <h3><u><a>ABOUT</a></u></h3> */}
                                                 <div  style={{ textAlign: 'center', padding: 20, paddingTop: 20, position: 'center', color: currentTheme.subtext }}>
-                    <button href={userinfo.about.resume} target="_blank"><a className={contactStyles.aboutButton} style={{ background: 'transparent', border: `2px solid ${currentTheme.subtext}`,  alignItems: 'center' }}>ABOUT</a></button>
+                    <Link href={crewMember.aboutLink}><a className={contactStyles.aboutButton} style={{ background: 'transparent', border: `2px solid ${currentTheme.subtext}`,  alignItems: 'center' }}>ABOUT</a></Link>
                 </div>
                                                
                                                 {/* <div>
@@ -154,11 +154,12 @@ const HomePage = ({ currentTheme }) => {
                                                    <Link href={crewMember.imdb}><a><FontAwesomeIcon icon={faImdb} /></a></Link>            
                                                </div>
                                                }
+                                             
       
                                         </div>
       
                                             </div>
-                                            <h4 style={{ color: currentTheme.subtext }}>{crewMember.time}</h4>
+                                            {/* <h4 style={{ color: currentTheme.subtext }}>{crewMember.time}</h4> */}
                                         </div>
                                     </Box>
                                 </div>
