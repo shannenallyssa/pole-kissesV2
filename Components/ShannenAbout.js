@@ -50,7 +50,7 @@ const shannenAbout = ({ currentTheme }) => {
 
     return (
         <div>
-          <div>
+          <div data-aos="fade-up">
             {/* <div align="center" >
          <Image size="xl" name="helen" src={logo} width={400} height={400}/>
          </div> */}
