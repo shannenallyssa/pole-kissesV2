@@ -15,10 +15,10 @@
     font-family: 'Playfair Display', serif;
     text-align: center;
     font-size:30px;
-    padding-bottom: 1rem;
+
 }
 .aboutPersonText{
-  height: 70vh;
+  /* height: 70vh; */
   width: 100%;
   text-align: left;
   position: relative;

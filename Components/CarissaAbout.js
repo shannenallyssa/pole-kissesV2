@@ -17,7 +17,7 @@ import Image from 'next/image';
 
 
 
-const helenAbout = ({ currentTheme }) => {
+const carissaAbout = ({ currentTheme }) => {
   const iconStyles = {
     backgroundColor: currentTheme.accent,
     color: '#101010',
@@ -53,25 +53,16 @@ const helenAbout = ({ currentTheme }) => {
             {/* <div align="center" >
          <Image size="xl" name="helen" src={logo} width={400} height={400}/>
          </div> */}
-            <div className={styles.aboutPersonHeading}>Helen Oliviero</div>
-            <div className={styles.aboutPersonSubHeading}> Makeup Artist</div>
+            <div className={styles.aboutPersonHeading}>Carissa Fennell</div>
+            <div className={styles.aboutPersonSubHeading}> Costume Designer</div>
             <div className={contactStyles.socialIconAbout} >
             <div className={contactStyles.socialIcon} style={iconStyles} >
-                 <Link href='https://www.instagram.com/helens.huemua/'><a target="_blank"><FontAwesomeIcon icon={faInstagram} /></a></Link>            
-               </div>
-            <div className={contactStyles.socialIcon} style={iconStyles} >
-                    <Link href='https://olivierohelen.myportfolio.com/'><a target="_blank"><FontAwesomeIcon icon={faLink} /></a></Link>            
-            </div>
-         
+                 <Link href='https://www.instagram.com/crisfenzo' ><a target="_blank"><FontAwesomeIcon icon={faInstagram} /></a></Link>            
+               </div> 
             </div>
             <div className={styles.aboutPersonText} >
-              <p>Helen Oliviero is a Las Vegas-based Makeup Artist and a graduate of the L Makeup Institute, where she completed specialized programs in Beauty, Hair Styling, Airbrush, and Advanced SFX Prosthetics. Her technical excellence was recognized early in her career when she was awarded "Best in Class" for Hair at the institute.</p>
+              <p>Lorem</p>
               <br/>
-                <p>Helen’s professional film credits highlight her range in both specialized character work and traditional beauty for the screen. Her portfolio includes SFX prosthetic work for Sav Rodgers’ <i>Pancake Skank</i> and SFX artistry for John DiMarco’s <i>Missing</i>. </p>
-                <br/>
-              <p>In addition to her work with practical effects, she provides comprehensive beauty makeup and hair styling for film productions, ensuring a cohesive look across various genres.
-              Beyond her work on set, she utilizes her production background to create and edit digital content for the beauty industry.
-              </p>
               <div  style={{ textAlign: 'center', padding: 20, paddingTop: 30, position: 'center', color: currentTheme.subtext }}>
                     <Link href="/#crew"><a className={contactStyles.aboutButton} style={{ background: 'transparent', border: `2px solid ${currentTheme.subtext}`,  alignItems: 'center' }}>{buttonTexts.returnToCrew}</a></Link>
                 </div>
@@ -82,4 +73,4 @@ const helenAbout = ({ currentTheme }) => {
     )
 }
 
-export default helenAbout
+export default carissaAbout

@@ -45,8 +45,6 @@ export const userinfo = {
     about: {
         //this text goes at the bottom of your home page.
         logline: "'A timid pole dancing student must overcome her insecurities when she develops feelings for her more experienced classmate.'",
-        content:"POLE KISSES is an upcoming short film based in Las Vegas, Nevada. ",
-        endLine:"And we would like YOUR help to make this concept a reality... ",
         resume: "/" //link your resume here. it can be drive link or any other link
     },
     education: {
@@ -80,10 +78,11 @@ export const userinfo = {
                 crewHeadshot: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*', //companylogo
                 position: 'Director', //post you held eg.Senior SDE
                 time: '', //timespan
-                instagram:'https://www.instagram.com/realshannenigans/',
+                instagram:'https://www.instagram.com/xt.na/',
                 website:'https://xtinamchale.com/',
                 imdb:'',
-                aboutLink:'/#about', 
+                linkedIn:'',
+                aboutLink:'/kristinaMcHale', 
                 description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum', //eg. spearheaded the graphics team in designing SASS product UIs
             },
             {
@@ -94,18 +93,19 @@ export const userinfo = {
                 instagram:'https://www.instagram.com/realshannenigans/',
                 website:'https://shannenvelascovo.vercel.app',
                 imdb:'https://www.imdb.com/name/nm13639366/',
-                aboutLink:'/#about', 
+                linkedIn:'',
+                aboutLink:'/shannenVelasco', 
                 description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum',
             },
             {
-                crewName: 'Angel Warren',
+                crewName: 'Angel E. Warren',
                 companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*',
                 position: 'Producer',
                 time: '',
-                instagram:'',
-                website:'',
+                instagram:'https://www.instagram.com/artis_angel/',
+                linkedIn:'https://www.linkedin.com/in/angel-warren-53695b143',
                 imdb:'',
-                aboutLink:'/#about', 
+                aboutLink:'/angelEWarren', 
                 description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum',
                 socials: [
                     { type: 'linkedin', link: '', icon: faInstagram },
@@ -116,10 +116,11 @@ export const userinfo = {
                 companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*',
                 position: 'Assistant Director',
                 time: '',
-                instagram:'',
+                instagram:'https://www.instagram.com/isabelthegirl',
                 website:'',
                 imdb:'',
-                aboutLink:'/#about', 
+                linkedIn:'',
+                aboutLink:'/isabelPeinado', 
                 description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum',
                 socials: [
                     { type: 'linkedin', link: '', icon: faInstagram },
@@ -130,10 +131,11 @@ export const userinfo = {
                 companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*',
                 position: 'Cinematographer',
                 time: '',
-                instagram:'',
+                instagram:'https://www.instagram.com/patriciakmreyes/',
                 website:'',
                 imdb:'',
-                aboutLink:'/#about', 
+                linkedIn:'',
+                aboutLink:'/patriciaReyes', 
                 description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum',
                 socials: [
                     { type: 'linkedin', link: '', icon: faInstagram },
@@ -142,12 +144,13 @@ export const userinfo = {
             {
                 crewName: 'Chai Simone',
                 companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*',
-                position: 'Art Director',
+                position: 'Art Director, Production Designer',
                 time: '',
                 instagram:'',
                 website:'',
                 imdb:'',
-                aboutLink:'/#about', 
+                linkedIn:'',
+                aboutLink:'/chaiSimone', 
                 description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum',
                 socials: [
                     { type: 'linkedin', link: '', icon: faInstagram },
@@ -158,10 +161,11 @@ export const userinfo = {
                 companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*',
                 position: 'Costume Designer',
                 time: '',
-                instagram:'https://www.instagram.com/crisfenzo?igsh=MWx5d3ZsY2V5Mmh1cw%3D%3D&utm_source=qr',
+                instagram:'https://www.instagram.com/crisfenzo',
                 website:'',
                 imdb:'',
-                aboutLink:'/#about', 
+                linkedIn:'',
+                aboutLink:'/carissaFennell', 
                 description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum',
                 socials: [
                     { type: 'linkedin', link: '', icon: faInstagram },
@@ -174,6 +178,7 @@ export const userinfo = {
                 time: '',
                 website:'https://olivierohelen.myportfolio.com/',  
                 instagram:'https://www.instagram.com/helens.huemua/',
+                linkedIn:'',
                 aboutLink:'/helenOliviero', 
                 description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum',
                 socials: [
@@ -190,7 +195,7 @@ export const userinfo = {
 
 export const headings = {
     //you can customise all the headings here.
-    workHomePage: 'GIVE US MONEY (placeholder text)',
+    workHomePage: 'FUNDING',
     workMainPage: 'Projects',
     capabilities: 'Capabilities',
     about: 'ABOUT',
@@ -208,4 +213,8 @@ export const ctaTexts = {
     educationCTA: 'About Me',
     resumeCTA: 'Resume',
     submitBTN: 'Submit'
+}
+
+export const buttonTexts = {
+    returnToCrew: 'BACK TO "MEET THE CREW"'
 }

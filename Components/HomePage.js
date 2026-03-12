@@ -20,7 +20,7 @@ import contactStyles from '../styles/Contact.module.css'
 
 
 import placeHolder from '../styles/PoleKisses_LogoTransparent.png'
-import { faImdb, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faImdb, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 
 const HomePage = ({ currentTheme }) => {
@@ -94,7 +94,9 @@ const HomePage = ({ currentTheme }) => {
                 <h1 className={styles.workheading} data-aos="fade-up">{headings.about}</h1>
                 <i><p className={styles.aboutText} style={{ color: currentTheme.subtext }} data-aos="fade-up">{userinfo.about.logline}</p></i>
                 <br/>
-                <p className={styles.aboutText} style={{ color: currentTheme.subtext }} data-aos="fade-up">{userinfo.about.content}</p>
+                <p className={styles.aboutText} style={{ color: currentTheme.subtext }} data-aos="fade-up"><i>Pole Kisses</i> is an upcoming short film based in Las Vegas, Nevada. </p>
+                <br/>
+                <p className={styles.aboutText} style={{ color: currentTheme.subtext }}> Principal photography is set to begin in September 2026.</p>
                 {/* <div data-aos="fade-up" style={{ textAlign: 'center', padding: '1rem 0', margin: '1rem 0', position: 'relative', display: 'flex', color: currentTheme.subtext }}>
                     <Link href={userinfo.about.resume} target="_blank"><a className={styles.cta4} style={{ background: 'transparent', border: `2px solid ${currentTheme.subtext}`, display: 'flex', alignItems: 'center' }}>{ctaTexts.resumeCTA}&nbsp;&nbsp;&nbsp;&nbsp;<FontAwesomeIcon width="15px" height="15px" icon={faExternalLinkAlt} /></a></Link>
                 </div> */}
@@ -117,18 +119,17 @@ const HomePage = ({ currentTheme }) => {
                     userinfo.crew.crewList ?
                     userinfo.crew.crewList.map((crewMember, key) => {
                             return (
-                                <div className={workStyles.experienceCard} key={key} data-aos="fade-up">
+                                <div className={workStyles.experienceCard} key={key} data-aos="fade-up" id={crewMember.crewName}>
                                     <Box borderWidth="1px" borderRadius="md" overflow="hidden">
                                         <div style={{ background: currentTheme.secondary, height: '110px'}}></div>
                                         <div className={workStyles.experienceCardContent}>
                                             <h1>{crewMember.crewName}</h1>
                                             <div className={workStyles.avatar}>
-                                               {/* <Avatar size="xl" name={exp.company} src={exp.companylogo} /> */}
+                                               {/* <Avatar size="xl" src={logo} /> */}
                                                {/* <Image size="xl" name={crewMember.crewName} src={placeHolder} width={400} height={400}/> */}
                                             </div>
                                             <div style={{ position: 'relative', top: '20px' }}>
                                                 <h2>{crewMember.position}</h2>
-                                                {/* <h3><u><a>ABOUT</a></u></h3> */}
                                                 <div  style={{ textAlign: 'center', padding: 20, paddingTop: 20, position: 'center', color: currentTheme.subtext }}>
                     <Link href={crewMember.aboutLink}><a className={contactStyles.aboutButton} style={{ background: 'transparent', border: `2px solid ${currentTheme.subtext}`,  alignItems: 'center' }}>ABOUT</a></Link>
                 </div>
@@ -152,6 +153,11 @@ const HomePage = ({ currentTheme }) => {
                                                   {crewMember.imdb &&
                                                 <div className={contactStyles.socialIcon} style={iconStyles} key={key}>
                                                    <Link href={crewMember.imdb}><a><FontAwesomeIcon icon={faImdb} /></a></Link>            
+                                               </div>
+                                               }
+                                                  {crewMember.linkedIn &&
+                                                <div className={contactStyles.socialIcon} style={iconStyles} key={key}>
+                                                   <Link href={crewMember.linkedIn}><a><FontAwesomeIcon icon={faLinkedin} /></a></Link>            
                                                </div>
                                                }
                                              

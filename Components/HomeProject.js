@@ -13,7 +13,7 @@ const HomeProject = ({ currentTheme, project, id }) => {
         
         <div className={styles.projectmain} style={{borderColor: currentTheme.accent, borderRadius: id % 2 === 0 ? '50px 0 0 0' : '0 0 50px 0'}}>
             <div className={styles.projectContent}>
-                <div className={styles.projectIcon} style={{color: currentTheme.accent, backgroundColor: currentTheme.footerColor, borderColor: currentTheme.accent}}>
+                <div className={styles.projectIcon} style={{color: currentTheme.accent, backgroundColor: currentTheme.footerColor, borderColor: currentTheme.accent, cursor: 'default'}}>
                     <FontAwesomeIcon icon={faMoneyCheck} />
                     <i class="fa fa-money-check-dollar" title="edit"></i>
                     </div>
@@ -24,7 +24,7 @@ const HomeProject = ({ currentTheme, project, id }) => {
                 </div>
                 <h2 className={styles.projectSubTitle} style={{color: currentTheme.subtext, paddingTop: 10}}>{project.description}</h2>
                 <div className={contactStyles.submit} style={{ backgroundColor: currentTheme.accent }}>
-              <button type="submit">DONATE HERE</button>
+              <Link href='https://www.indiegogo.com/en'>DONATE HERE</Link>
             </div>
                 {/* <Link href='/work'><a className={styles.cta2} style={{ color: currentTheme.tertiary }}>View More</a></Link> */}
             </div>
