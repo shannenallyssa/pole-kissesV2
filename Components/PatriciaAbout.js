@@ -57,15 +57,19 @@ const patriciaAbout = ({ currentTheme }) => {
             <div className={styles.aboutPersonSubHeading}> Cinematographer</div>
             <div className={contactStyles.socialIconAbout} >
             <div className={contactStyles.socialIcon} style={iconStyles} >
-                 <Link href='' ><a target="_blank"><FontAwesomeIcon icon={faInstagram} /></a></Link>            
+                 <Link href='https://www.instagram.com/patriciakmreyes/' ><a target="_blank"><FontAwesomeIcon icon={faInstagram} /></a></Link>            
                </div>
-            <div className={contactStyles.socialIcon} style={iconStyles} >
-                    <Link href=''><a target="_blank"><FontAwesomeIcon icon={faLink} /></a></Link>            
-            </div>
-         
             </div>
             <div className={styles.aboutPersonText} >
-              <p>Lorem.</p>
+              <p>Patricia Kristine Reyes is a cinematographer and graduate of the University of Nevada, Las Vegas, where she studied Film and Marketing. Her work as a director of photography spans narrative shorts and commercial projects, including dramas, romance, and slasher films, with one receiving recognition at the Brussels World Film Festival. </p>
+              <br/>
+
+              <p> Reyes is particularly drawn to stories that explore dream sequences and psychological spaces, using visual language to reflect the emotional and internal worlds of the characters. With a strong focus on mood, lighting, and composition, she approaches each project with the intention of making every frame visually compelling while staying grounded in the story.
+              </p>
+              <br/>
+              <p>
+              Her work often blends atmospheric imagery with character-driven storytelling, and she enjoys collaborating closely with directors and creative teams to shape a film’s visual identity.
+              </p>
               <div  style={{ textAlign: 'center', padding: 20, paddingTop: 30, position: 'center', color: currentTheme.subtext }}>
                     <Link href="/#crew"><a className={contactStyles.aboutButton} style={{ background: 'transparent', border: `2px solid ${currentTheme.subtext}`,  alignItems: 'center' }}>{buttonTexts.returnToCrew}</a></Link>
                 </div>

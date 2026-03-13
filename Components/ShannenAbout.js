@@ -65,9 +65,11 @@ const shannenAbout = ({ currentTheme }) => {
             </div>
             </div>
             <div className={styles.aboutPersonText} >
-              <p>Shannen Velasco is an actor and writer based in Las Vegas, Nevada. Since graduating from the University of Nevada, Las Vegas in 2021, they have been steadily gaining  experience through acting in various independent short films, podcasts, audio books, and video games. </p>
+              <p>Shannen Velasco is an actor and writer based in Las Vegas, Nevada. Since graduating from the University of Nevada, Las Vegas film program in 2021, they have been steadily learning more about the industry through acting in various independent short films, narrative podcasts, audio books, and video games. <i>Pole Kisses</i> is set to be their first venture on the other side of production as an executive producer.</p>
               <br/>
-                <p> Inspired by their experiences as a pole dancing student, they originally wrote <i>Pole Kisses </i> as a submission for the 2021 UNLV “Write Stuff Screenwriting Competition” and was pleased to receive honorable mention for the original draft. After years of workshopping the screenplay, they are ecstatic to bring this story to life with a strong team of dedicated and highly skilled filmmakers. </p>
+                <p> Inspired by their experiences as a queer pole dancing student, they originally wrote <i>Pole Kisses </i> as a submission for the 2021 UNLV “Write Stuff Screenwriting Competition” and was pleased to receive honorable mention for the original draft. After years of workshopping the screenplay, they are ecstatic to bring this story to life with a strong team of dedicated and highly skilled filmmakers. </p>
+              <br/>
+                <p> Outside of their acting and screenwriting pursuits, they enjoy creating comedic content online as well as supporting the local band scene in Las Vegas. </p>
               <div  style={{ textAlign: 'center', padding: 20, paddingTop: 30, position: 'center', color: currentTheme.subtext }}>
                     <Link href="/#crew"><a className={contactStyles.aboutButton} style={{ background: 'transparent', border: `2px solid ${currentTheme.subtext}`,  alignItems: 'center' }}>{buttonTexts.returnToCrew}</a></Link>
                 </div>

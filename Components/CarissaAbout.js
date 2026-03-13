@@ -61,7 +61,11 @@ const carissaAbout = ({ currentTheme }) => {
                </div> 
             </div>
             <div className={styles.aboutPersonText} >
-              <p>Lorem</p>
+              <p>Carissa is a self taught jack of all trades— Photography, multiple art mediums, and for the past 3 years, costume and production design. </p>
+              <br/>
+              <p>She attended a film mixer several years ago with friends who suggested she express an interest in a random film department and so it goes! Her first time on a set was for her first 49 Hour Film Challenge where she won "Best Costume and Makeup Overall" and has won a laurel for her costume design work at UNLV Spring Flicks Festival.</p>
+              <br/>
+              <p> She is so grateful to have opportunities such as <i>Pole Kisses</i> to have a creative outlet and to assist other creatives in bringing their stories to life. </p>
               <br/>
               <div  style={{ textAlign: 'center', padding: 20, paddingTop: 30, position: 'center', color: currentTheme.subtext }}>
                     <Link href="/#crew"><a className={contactStyles.aboutButton} style={{ background: 'transparent', border: `2px solid ${currentTheme.subtext}`,  alignItems: 'center' }}>{buttonTexts.returnToCrew}</a></Link>

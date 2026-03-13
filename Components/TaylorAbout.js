@@ -4,20 +4,20 @@ import BlogCard from './BlogCard';
 import { projects } from '../Constants/projects'
 import { custom_blogs, medium_blogs, dev_to } from '../Constants/blogs'
 import { useState, useEffect } from 'react';
-import { headings, userinfo, buttonTexts } from '../Constants/userinfo'
+import { headings, userinfo, buttonTexts} from '../Constants/userinfo'
 import Carousel, { CarouselItem } from "./Carousel";
 import Experiences from './Experiences';
 import contactStyles from '../styles/Contact.module.css'
 import Link from 'next/link'
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
-import logo from '../styles/PoleKisses_LogoTransparent.png'
+import { faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import taylorJayneAbout from '../styles/taylorJayneAbout.jpeg'
 import Image from 'next/image';
 
 
-const isabelAbout = ({ currentTheme }) => {
 
+const taylorAbout = ({ currentTheme }) => {
   const iconStyles = {
     backgroundColor: currentTheme.accent,
     color: '#101010',
@@ -49,27 +49,38 @@ const isabelAbout = ({ currentTheme }) => {
 
     return (
         <div>
-          <div data-aos="fade-up">
+          <div >
+            <div data-aos="fade-up">
+          <div align="center" className={styles.aboutHeadshot}>
+          <Image src={taylorJayneAbout} alt='thumbnail image' height='400' width='325'/>
+          </div>
             {/* <div align="center" >
          <Image size="xl" name="helen" src={logo} width={400} height={400}/>
          </div> */}
-            <div className={styles.aboutPersonHeading}>Isabel Peinado</div>
-            <div className={styles.aboutPersonSubHeading}> Assistant Director</div>
+            <div className={styles.aboutPersonHeading}>Taylor Jayne</div>
+            <div className={styles.aboutPersonSubHeading}> Choreographer</div>
             <div className={contactStyles.socialIconAbout} >
             <div className={contactStyles.socialIcon} style={iconStyles} >
-                 <Link href='https://www.instagram.com/isabelthegirl'><a target="_blank"><FontAwesomeIcon icon={faInstagram} /></a></Link>            
-               </div>         
+                 <Link href='https://www.instagram.com/taylorjaynedance/'><a target="_blank"><FontAwesomeIcon icon={faInstagram} /></a></Link>            
+               </div>
             </div>
-            <div className={styles.aboutPersonText} >
-              <p>Isabel Peinado is predominantly a Production Coordinator for Reality TV. She has worked on multiple movie sets for notable Studios such as: Netflix, Lionsgate, and A/Vantage Pictures. She is stepping up for this upcoming film as assistant director with her multitude of skills that she's learned through her journey in production. </p>
+            </div>
+            <div className={styles.aboutPersonText} data-aos="fade-up">
+              <p>Taylor Jayne is flying through life atop a 20-foot pole spinning fire, booty popping, and pampering her purse pooch… cause girl's a multi-tasker. </p>
+              <br/>
+                <p> Taylor danced her way out of the womb in the early 90s already wearing her Hammer pants and now in her third decade of lighting up the stage she’s chassé’d her way across 12 countries, reaching a personal highpoint when she met the Queen Bee, Beyonce, and got to join her hive helping dancers train on Sway Poles for The Renaissance Tour.</p>
+              <br/>
+                <p> A BFA dance grad, NBA dancer alum, Taylor is a certified fire performer/eater, sway
+pole/pole aerialist, flow artist and roller-skater extraordinaire, with more than 10 years’ experience working professionally in LA and Las Vegas. She is thrilled to be choreographing "Pole Kisses" and especially to be working with an all female production cast!</p>
+              <br/>
+                <p> Taylor is a sharknado of enthusiasm and lives for audience connection. This beautiful rare dancing queen wouldn’t be where she is without her circle of support and love, her fellow deviant dancers – and you amazing audience members who will never let art die.</p>
               <div  style={{ textAlign: 'center', padding: 20, paddingTop: 30, position: 'center', color: currentTheme.subtext }}>
                     <Link href="/#crew"><a className={contactStyles.aboutButton} style={{ background: 'transparent', border: `2px solid ${currentTheme.subtext}`,  alignItems: 'center' }}>{buttonTexts.returnToCrew}</a></Link>
                 </div>
-
             </div> 
             </div>
         </div>
     )
 }
 
-export default isabelAbout
+export default taylorAbout

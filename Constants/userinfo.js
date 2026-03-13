@@ -83,7 +83,7 @@ export const userinfo = {
                 imdb:'',
                 linkedIn:'',
                 aboutLink:'/kristinaMcHale', 
-                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum', //eg. spearheaded the graphics team in designing SASS product UIs
+                avatar:'',
             },
             {
                 crewName: 'Shannen Velasco',
@@ -95,7 +95,7 @@ export const userinfo = {
                 imdb:'https://www.imdb.com/name/nm13639366/',
                 linkedIn:'',
                 aboutLink:'/shannenVelasco', 
-                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum',
+                avatar:'',
             },
             {
                 crewName: 'Angel E. Warren',
@@ -105,11 +105,8 @@ export const userinfo = {
                 instagram:'https://www.instagram.com/artis_angel/',
                 linkedIn:'https://www.linkedin.com/in/angel-warren-53695b143',
                 imdb:'',
-                aboutLink:'/angelEWarren', 
-                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum',
-                socials: [
-                    { type: 'linkedin', link: '', icon: faInstagram },
-                ]
+                aboutLink:'/angelEWarren',
+                avatar:'', 
             },
             {
                 crewName: 'Isabel Peinado',
@@ -121,10 +118,7 @@ export const userinfo = {
                 imdb:'',
                 linkedIn:'',
                 aboutLink:'/isabelPeinado', 
-                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum',
-                socials: [
-                    { type: 'linkedin', link: '', icon: faInstagram },
-                ]
+                avatar:'',
             },
             {
                 crewName: 'Patricia Reyes',
@@ -136,25 +130,19 @@ export const userinfo = {
                 imdb:'',
                 linkedIn:'',
                 aboutLink:'/patriciaReyes', 
-                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum',
-                socials: [
-                    { type: 'linkedin', link: '', icon: faInstagram },
-                ]
+                avatar:'',
             },
             {
                 crewName: 'Chai Simone',
                 companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*',
                 position: 'Art Director, Production Designer',
                 time: '',
-                instagram:'',
+                instagram:'https://www.instagram.com/limina_1999/',
                 website:'',
-                imdb:'',
+                imdb:'https://www.imdb.com/name/nm12009235/',
                 linkedIn:'',
                 aboutLink:'/chaiSimone', 
-                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum',
-                socials: [
-                    { type: 'linkedin', link: '', icon: faInstagram },
-                ]
+                avatar:'',
             },
             {
                 crewName: 'Carissa Fennell',
@@ -165,11 +153,8 @@ export const userinfo = {
                 website:'',
                 imdb:'',
                 linkedIn:'',
-                aboutLink:'/carissaFennell', 
-                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum',
-                socials: [
-                    { type: 'linkedin', link: '', icon: faInstagram },
-                ]
+                aboutLink:'/carissaFennell',
+                avatar:'', 
             },
             {
                 crewName: 'Helen Oliviero',
@@ -180,10 +165,18 @@ export const userinfo = {
                 instagram:'https://www.instagram.com/helens.huemua/',
                 linkedIn:'',
                 aboutLink:'/helenOliviero', 
-                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum',
-                socials: [
-                    { type: 'linkedin', link: '', icon: faInstagram },
-                ]
+                avatar:'',
+            },
+            {
+                crewName: 'Taylor Jayne',
+                companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*',
+                position: 'Choreographer',
+                time: '',
+                website:'',  
+                instagram:'https://www.instagram.com/taylorjaynedance/',
+                linkedIn:'',
+                aboutLink:'/taylorJayne', 
+                avatar:'',
             },
         ],
     },

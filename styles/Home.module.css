@@ -17,7 +17,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-image: url('PlaceHolder.jpg');
+    background-image: url('stagelights.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 100%;
@@ -152,9 +152,10 @@
 
 .homeAboutSection{
   height: 70vh;
+  /* height: 70vh; */
   width: 100%;
-  text-align: center;
-  position: relative;
+  /* text-align: center;
+  position: relative; */
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -94,14 +94,16 @@ const HomePage = ({ currentTheme }) => {
                 <h1 className={styles.workheading} data-aos="fade-up">{headings.about}</h1>
                 <i><p className={styles.aboutText} style={{ color: currentTheme.subtext }} data-aos="fade-up">{userinfo.about.logline}</p></i>
                 <br/>
-                <p className={styles.aboutText} style={{ color: currentTheme.subtext }} data-aos="fade-up"><i>Pole Kisses</i> is an upcoming short film based in Las Vegas, Nevada. </p>
+                <p className={styles.aboutText} style={{ color: currentTheme.subtext }} data-aos="fade-up"><i>Pole Kisses</i> is an upcoming short film based in Las Vegas, Nevada. Led by award-winning short film director KRISTINA MCHALE, this is a female-driven narrative that celebrates femininity, queerness, and— <i>of course </i>— the art and athleticism behind pole dancing. </p>
                 <br/>
                 <p className={styles.aboutText} style={{ color: currentTheme.subtext }}> Principal photography is set to begin in September 2026.</p>
                 {/* <div data-aos="fade-up" style={{ textAlign: 'center', padding: '1rem 0', margin: '1rem 0', position: 'relative', display: 'flex', color: currentTheme.subtext }}>
                     <Link href={userinfo.about.resume} target="_blank"><a className={styles.cta4} style={{ background: 'transparent', border: `2px solid ${currentTheme.subtext}`, display: 'flex', alignItems: 'center' }}>{ctaTexts.resumeCTA}&nbsp;&nbsp;&nbsp;&nbsp;<FontAwesomeIcon width="15px" height="15px" icon={faExternalLinkAlt} /></a></Link>
                 </div> */}
             </div>
-            <div className={styles.homeWorkSection} id="funding">
+
+            {/* FUNDING SECTION - UNCOMMENT WHEN FUNDING CAMPAIGN IS AVAILABLE */}
+            {/* <div className={styles.homeWorkSection} id="funding">
                 <h1 className={styles.workheading} data-aos="fade-up">{headings.workHomePage}</h1>
                 {
                     projects.slice(0, 3).map((project, key) => {
@@ -112,7 +114,8 @@ const HomePage = ({ currentTheme }) => {
                         )
                     })
                 }
-                <div id="crew" className={workStyles.experienceWrapper}>
+                   </div> */}
+              <div id="crew" className={workStyles.experienceWrapper}>
             <h1 className={workStyles.workHeading} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">{headings.experience}</h1>
             <div className={workStyles.experienceCardWrapper} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 {
@@ -125,7 +128,9 @@ const HomePage = ({ currentTheme }) => {
                                         <div className={workStyles.experienceCardContent}>
                                             <h1>{crewMember.crewName}</h1>
                                             <div className={workStyles.avatar}>
-                                               {/* <Avatar size="xl" src={logo} /> */}
+                                              { crewMember.avatar &&
+                                               <Avatar size="xl" src={crewMember.avatar} />
+                                              }
                                                {/* <Image size="xl" name={crewMember.crewName} src={placeHolder} width={400} height={400}/> */}
                                             </div>
                                             <div style={{ position: 'relative', top: '20px' }}>
@@ -173,7 +178,6 @@ const HomePage = ({ currentTheme }) => {
                         }) : null
                 }
             </div>
-        </div>
                 <div style={{ textAlign: 'center', paddingBottom: '2rem' }}>
                     {/* <Link href="/work"><a className={styles.cta3} style={{ backgroundColor: currentTheme.accent, color: currentTheme.contrastText }}>{ctaTexts.workCTA} <span>&gt;</span></a></Link> */}
                     </div>

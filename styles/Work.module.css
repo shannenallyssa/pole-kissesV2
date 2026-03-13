@@ -5,11 +5,15 @@
     padding: 2rem;
 }
 
+.aboutHeadshot{
+    padding-top: 2rem;
+}
+
 .aboutPersonHeading{
     font-family: 'Playfair Display', serif;
     text-align: center;
     font-size:50px;
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 .aboutPersonSubHeading{
     font-family: 'Playfair Display', serif;

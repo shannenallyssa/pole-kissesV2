@@ -11,7 +11,7 @@ import contactStyles from '../styles/Contact.module.css'
 import Link from 'next/link'
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faImdb, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import logo from '../styles/PoleKisses_LogoTransparent.png'
 import Image from 'next/image';
 
@@ -60,12 +60,17 @@ const chaiAbout = ({ currentTheme }) => {
                  <Link href='' ><a target="_blank"><FontAwesomeIcon icon={faInstagram} /></a></Link>            
                </div>
             <div className={contactStyles.socialIcon} style={iconStyles} >
-                    <Link href='/'><a target="_blank"><FontAwesomeIcon icon={faLink} /></a></Link>            
+                    <Link href='https://www.imdb.com/name/nm12009235/'><a target="_blank"><FontAwesomeIcon icon={faImdb} /></a></Link>            
             </div>
          
             </div>
             <div className={styles.aboutPersonText} >
-              <p> Lorem ipsum.</p>
+              <p>Chai Simone is a queer, multifaceted artist born and raised in Las Vegas. Following her education at Las Vegas Academy and UNLV majoring in visual art and film, Simone's interests and output intersects between different artforms. </p>
+                <br/>
+                <p>Her first graphic novel, Just Another Meat-Eating Dirtbag, written by Michael Anthony, was published in 2022 by Street Noise. Shortly after, Simone would go on applying her love for the arts to film as a director, writer, art director, puppet maker, production designer, stylist, creature designer, storyboard artist, and whatever else she could get her hands on in the art department. She also enjoys creative photography and has been writing as a film critic for <a href='http://filmsnobreviews.com/' target='_blank'><u>Filmsnobreviews.com</u></a> since 2019, having attended festivals such as Sundance and Fantastic fest. </p>
+                 <br/>
+                 
+               <p> A lover of nu metal music, horror movies, and any video essay over an hour long, Simone currently resides in her hometown with her partner and cat, currently working as a painter, freelance illustrator, and in the art department for film. </p>
               <div  style={{ textAlign: 'center', padding: 20, paddingTop: 30, position: 'center', color: currentTheme.subtext }}>
                     <Link href="/#crew"><a className={contactStyles.aboutButton} style={{ background: 'transparent', border: `2px solid ${currentTheme.subtext}`,  alignItems: 'center' }}>{buttonTexts.returnToCrew}</a></Link>
                 </div>
