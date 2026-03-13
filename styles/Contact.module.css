@@ -84,6 +84,14 @@
 }
 
 @media only screen and (max-width: 850px){
+  .aboutButton{
+    padding: 0.5rem 2rem;
+    width: fit-content;
+    border-radius: 50px;
+    margin: auto;
+    transition: 0.2s ease-in-out;
+    color: #ffffff;
+  } 
   .contactWrapper{
     width: 80%;
     padding: 1rem;

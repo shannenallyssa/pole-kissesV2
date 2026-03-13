@@ -14,6 +14,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import logo from '../styles/PoleKisses_LogoTransparent.png'
 import Image from 'next/image';
+import React from "react";
+import ReactPlayer from "react-player";
 
 
 
@@ -66,10 +68,25 @@ const kristinaAbout = ({ currentTheme }) => {
             </div>
             <div className={styles.aboutPersonText} >
               <p>Lorem.</p>
+              <div align="center" style={{padding:20}}>
+                <div className={styles.video}>
+            <ReactPlayer
+              url="https://youtu.be/lWDgz7Za3EA"
+              controls={true}
+              volume={.5}
+              width='50%'
+              height='50%'
+              config={{
+                youtube: {
+                  playerVars: { color: "white" },
+                },
+              }}
+            />
+            </div>
+          </div>
               <div  style={{ textAlign: 'center', padding: 20, paddingTop: 30, position: 'center', color: currentTheme.subtext }}>
                     <Link href="/#crew"><a className={contactStyles.aboutButton} style={{ background: 'transparent', border: `2px solid ${currentTheme.subtext}`,  alignItems: 'center' }}>{buttonTexts.returnToCrew}</a></Link>
                 </div>
-
             </div> 
             </div>
         </div>

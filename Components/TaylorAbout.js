@@ -51,12 +51,9 @@ const taylorAbout = ({ currentTheme }) => {
     <div>
       <div>
         <div data-aos="fade-up">
-          {/* <div align="center" className={styles.aboutHeadshot}>
+          <div align="center" className={styles.aboutHeadshot}>
           <Image src={taylorJayneAbout} alt='thumbnail image' height='400' width='325'/>
-          </div> */}
-          {/* <div align="center" >
-         <Image size="xl" name="helen" src={logo} width={400} height={400}/>
-         </div> */}
+          </div>
           <div className={styles.aboutPersonHeading}>Taylor Jayne</div>
           <div className={styles.aboutPersonSubHeading}> Choreographer</div>
           <div className={contactStyles.socialIconAbout}>
@@ -104,6 +101,20 @@ const taylorAbout = ({ currentTheme }) => {
             dancers – and you amazing audience members who will never let art
             die.
           </p>
+          <div className={styles.video}>
+          <div align="center" style={{padding:20}}>
+            <ReactPlayer
+              url="https://vimeo.com/704984031"
+              controls={true}
+              volume={.5}
+              config={{
+                vimeo: {
+                  playerVars: { color: "white" },
+                },
+              }}
+            />
+            </div>
+          </div>
           <div
             style={{
               textAlign: "center",
@@ -128,17 +139,6 @@ const taylorAbout = ({ currentTheme }) => {
           </div>
         </div>
         <div>
-          <div align="center">
-            <ReactPlayer
-              url="https://www.youtube.com/watch?v=LXb3EKWsInQ"
-              controls={true}
-              config={{
-                youtube: {
-                  playerVars: { color: "white" },
-                },
-              }}
-            />
-          </div>
         </div>
       </div>
     </div>

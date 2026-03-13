@@ -1,9 +1,14 @@
+.video{
+  position: relative;
+}
+
 .workHeading{
     font-family: 'Playfair Display', serif;
     text-align: center;
     font-size:50px;
     padding: 2rem;
 }
+
 
 .aboutHeadshot{
     padding-top: 2rem;

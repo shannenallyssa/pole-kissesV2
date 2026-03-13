@@ -209,5 +209,5 @@ export const ctaTexts = {
 }
 
 export const buttonTexts = {
-    returnToCrew: 'BACK TO "MEET THE CREW"'
+    returnToCrew: 'BACK'
 }
