@@ -14,6 +14,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import taylorJayneAbout from '../styles/taylorJayneAbout.jpeg'
 import Image from 'next/image';
+import React from 'react'
+import ReactPlayer from 'react-player'
+
 
 
 
@@ -51,9 +54,9 @@ const taylorAbout = ({ currentTheme }) => {
         <div>
           <div >
             <div data-aos="fade-up">
-          <div align="center" className={styles.aboutHeadshot}>
+          {/* <div align="center" className={styles.aboutHeadshot}>
           <Image src={taylorJayneAbout} alt='thumbnail image' height='400' width='325'/>
-          </div>
+          </div> */}
             {/* <div align="center" >
          <Image size="xl" name="helen" src={logo} width={400} height={400}/>
          </div> */}
