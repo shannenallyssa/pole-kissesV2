@@ -1,6 +1,3 @@
-.video{
-  position: relative;
-}
 
 .workHeading{
     font-family: 'Playfair Display', serif;
@@ -8,6 +5,7 @@
     font-size:50px;
     padding: 2rem;
 }
+
 
 
 .aboutHeadshot{
@@ -212,6 +210,7 @@
   }
 
 @media only screen and (max-width: 850px){
+  
   .parentofparentcard{
     display: block;
   }
@@ -227,6 +226,8 @@
   .workmain{
     padding: 0;
   }
+
+ 
 
   .indicators {
     font-size: 20px;
@@ -289,4 +290,5 @@
   .experienceCardWrapper{
     grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
   } 
+
 }

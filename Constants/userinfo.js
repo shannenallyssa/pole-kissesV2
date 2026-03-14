@@ -135,7 +135,7 @@ export const userinfo = {
             {
                 crewName: 'Chai Simone',
                 companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*',
-                position: 'Art Director, Production Designer',
+                position: 'Art Director',
                 time: '',
                 instagram:'https://www.instagram.com/limina_1999/',
                 website:'',

@@ -52,7 +52,7 @@ const taylorAbout = ({ currentTheme }) => {
       <div>
         <div data-aos="fade-up">
           <div align="center" className={styles.aboutHeadshot}>
-          <Image src={taylorJayneAbout} alt='thumbnail image' height='400' width='325'/>
+          <Image src={taylorJayneAbout} alt='glamour shot of Taylor Jayne' height='400' width='325'/>
           </div>
           <div className={styles.aboutPersonHeading}>Taylor Jayne</div>
           <div className={styles.aboutPersonSubHeading}> Choreographer</div>
@@ -101,12 +101,14 @@ const taylorAbout = ({ currentTheme }) => {
             dancers – and you amazing audience members who will never let art
             die.
           </p>
-          <div className={styles.video}>
-          <div align="center" style={{padding:20}}>
+          <div>
+          <div style={{paddingTop:'1rem'}}>
             <ReactPlayer
               url="https://vimeo.com/704984031"
               controls={true}
               volume={.5}
+              className={styles.video}
+              width='relative'
               config={{
                 vimeo: {
                   playerVars: { color: "white" },
