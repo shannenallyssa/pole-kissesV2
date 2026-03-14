@@ -6,7 +6,19 @@
     padding: 2rem;
 }
 
+.video {
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
 
+.react-player {
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.react-player > div {
+  position: absolute; 
+}
 
 .aboutHeadshot{
     padding-top: 2rem;
@@ -226,7 +238,11 @@
   .workmain{
     padding: 0;
   }
-
+  .video {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
  
 
   .indicators {
@@ -290,5 +306,9 @@
   .experienceCardWrapper{
     grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
   } 
+  .video {
+    margin-left: 0;
+    margin-right: 0;
+  }
 
 }

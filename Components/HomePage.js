@@ -92,9 +92,9 @@ const HomePage = ({ currentTheme }) => {
             </div>
             <div id="about" className={styles.homeAboutSection} style={{ backgroundColor: currentTheme.secondary }}>
                 <h1 className={styles.workheading} data-aos="fade-up">{headings.about}</h1>
-                <i><p className={styles.aboutText} style={{ color: currentTheme.subtext }} data-aos="fade-up">{userinfo.about.logline}</p></i>
+                <i><p className={styles.aboutText} style={{ color: currentTheme.subtext }} data-aos="fade-up"> 'A timid pole dancing student must overcome her insecurities when she develops feelings for her more experienced classmate.' </p> </i>
                 <br/>
-                <p className={styles.aboutText} style={{ color: currentTheme.subtext }} data-aos="fade-up"><i>Pole Kisses</i> is an upcoming short film based in Las Vegas, Nevada. Led by award-winning short film director KRISTINA MCHALE, this is a female-driven narrative that celebrates femininity, queerness, and— <i>of course </i>— the art and athleticism behind pole dancing. </p>
+                <p className={styles.aboutText} style={{ color: currentTheme.subtext }} data-aos="fade-up"><i>Pole Kisses</i> is an upcoming short film based in Las Vegas, Nevada. With a blend of humor, drama, and specialized dance sequences, screenwriter SHANNEN VELASCO has created a female-driven narrative that celebrates femininity, queerness, and— <i>of course </i>— the art and athleticism behind pole dancing. Led by award-winning short film director KRISTINA MCHALE, this production has compiled a diverse and passionate team of filmmakers to bring this story of self-discovery to life.</p>
                 <br/>
                 <p className={styles.aboutText} style={{ color: currentTheme.subtext }}> Principal photography is set to begin in September 2026.</p>
                 {/* <div data-aos="fade-up" style={{ textAlign: 'center', padding: '1rem 0', margin: '1rem 0', position: 'relative', display: 'flex', color: currentTheme.subtext }}>
@@ -189,15 +189,16 @@ const HomePage = ({ currentTheme }) => {
       </div>
       <form onSubmit={(e) => { handleSubmit(e) }} className={contactStyles.form} style={{ borderColor: currentTheme.text, backgroundColor: currentTheme.name === 'light' ? '#fafafa' : 'transparent' }}>
         <Stack spacing={4}>
-          <Input type="text" name="name" value={name} placeholder="Your Name" focusBorderColor={currentTheme.tertiary} isRequired autoComplete="off" onChange={(e) => { setName(e.target.value) }} />
-          <Input type="email" name="email" value={email} placeholder="yourname@email.com" focusBorderColor={currentTheme.tertiary} autoComplete="off" isRequired onChange={(e) => { setEmail(e.target.value) }} />
+          <Input type="text" name="name" value={name} id="name" placeholder="Your Name" focusBorderColor={currentTheme.tertiary} isRequired autoComplete="off" onChange={(e) => { setName(e.target.value) }} />
+          <Input type="email" name="email" id="email" value={email} placeholder="yourname@email.com" focusBorderColor={currentTheme.tertiary} autoComplete="off" isRequired onChange={(e) => { setEmail(e.target.value) }} />
           {/* <Input type="tel" name="phone" value={phone} placeholder="Phone Number" focusBorderColor={currentTheme.tertiary} autoComplete="off" isRequired onChange={(e) => { setPhone(e.target.value) }} /> */}
           <Textarea
             placeholder="Message for me!"
             resize="vertical"
             focusBorderColor={currentTheme.tertiary}
             isRequired
-            name="email"
+            name="message"
+            id="message"
             value={message}
             autoComplete="off"
             onChange={(e) => { setMessage(e.target.value) }}

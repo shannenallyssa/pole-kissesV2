@@ -36,7 +36,7 @@ const Footer = ({ currentTheme }) => {
                     <div style={{paddingTop:10}}>
                     <div className={contactStyles.socialIconAbout} >
             <div className={contactStyles.socialIcon} style={iconStyles} >
-                 <Link href=''><a target="_blank"><FontAwesomeIcon icon={faInstagram} /></a></Link>            
+                 <Link href='https://www.instagram.com/polekisses.shortfilm/'><a target="_blank"><FontAwesomeIcon icon={faInstagram} /></a></Link>            
                </div>
             </div>
                         {/* <div align='center'>

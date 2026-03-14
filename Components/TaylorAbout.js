@@ -89,7 +89,7 @@ const taylorAbout = ({ currentTheme }) => {
             performer/eater, sway pole/pole aerialist, flow artist and
             roller-skater extraordinaire, with more than 10 years’ experience
             working professionally in LA and Las Vegas. She is thrilled to be
-            choreographing "Pole Kisses" and especially to be working with an
+            choreographing <i>Pole Kisses </i> and especially to be working with an
             all female production cast!
           </p>
           <br />
