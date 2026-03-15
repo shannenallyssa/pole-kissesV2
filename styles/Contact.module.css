@@ -32,7 +32,22 @@
   margin: auto;
   transition: 0.2s ease-in-out;
   color: #101010;
+  background-color: #ffffff;
 } 
+
+.submit:hover{
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+.submit:disabled{
+  cursor: not-allowed;
+  background-color: #cccccc;
+  color: #666666;
+}
+.submit:disabled:hover{
+  transform: scale(1);
+}
 
 .aboutButton{
   padding: 0.5rem 2rem;
@@ -43,7 +58,7 @@
   color: #ffffff;
 } 
 
-.submit:hover{
+.aboutButton:hover{
   transform: scale(0.9);
   cursor: pointer;
 }

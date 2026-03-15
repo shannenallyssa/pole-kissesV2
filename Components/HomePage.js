@@ -34,6 +34,7 @@ const HomePage = ({ currentTheme }) => {
   const [phone, setPhone] = useState('')
   const [message, setMessage] = useState('')
   const form = useRef();
+  const [loading, setLoading] = useState(false);
 
   const iconStyles = {
     backgroundColor: currentTheme.accent,
@@ -44,6 +45,7 @@ const HomePage = ({ currentTheme }) => {
   const sendEmail = (e) => {
     console.log("[E]", form.current);
     e.preventDefault();
+    setLoading(true);
 
     emailjs
 
@@ -73,10 +75,13 @@ const HomePage = ({ currentTheme }) => {
           setName('')
           setEmail('')
           setMessage('')
+          setLoading(false)
         },
 
         (error) => {
           console.log("ERROR", error.text);
+
+          setLoading(false)
 
           setStatus("FAILED");
           toast({
@@ -259,8 +264,8 @@ const HomePage = ({ currentTheme }) => {
             onChange={(e) => { setMessage(e.target.value) }}
           />
           <div>
-            <div className={contactStyles.submit} style={{ backgroundColor: currentTheme.tertiary }}>
-              <button type="submit">{ctaTexts.submitBTN}</button>
+            <div align="center" >
+              <button className={contactStyles.submit} id="submit" type="submit" disabled={loading}>{ctaTexts.submitBTN}</button>
             </div>
           </div>
         </Stack>
