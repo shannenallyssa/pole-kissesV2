@@ -148,7 +148,7 @@ const HomePage = ({ currentTheme }) => {
                 <br/>
                 <p className={styles.aboutText} style={{ color: currentTheme.subtext }} data-aos="fade-up"><i>Pole Kisses</i> is an upcoming short film based in Las Vegas, Nevada. With a blend of humor, drama, and specialized dance sequences, screenwriter SHANNEN VELASCO has created a female-driven narrative that celebrates femininity, queerness, and— <i>of course </i>— the art and athleticism behind pole dancing. Led by award-winning short film director KRISTINA MCHALE, this production has compiled a diverse and passionate team of filmmakers to bring this story of self-discovery to life.</p>
                 <br/>
-                <p className={styles.aboutText} style={{ color: currentTheme.subtext }}> Principal photography is set to begin in September 2026.</p>
+                <p className={styles.aboutText} style={{ color: currentTheme.subtext }} data-aos="fade-up"> Principal photography is set to begin in September 2026.</p>
                 {/* <div data-aos="fade-up" style={{ textAlign: 'center', padding: '1rem 0', margin: '1rem 0', position: 'relative', display: 'flex', color: currentTheme.subtext }}>
                     <Link href={userinfo.about.resume} target="_blank"><a className={styles.cta4} style={{ background: 'transparent', border: `2px solid ${currentTheme.subtext}`, display: 'flex', alignItems: 'center' }}>{ctaTexts.resumeCTA}&nbsp;&nbsp;&nbsp;&nbsp;<FontAwesomeIcon width="15px" height="15px" icon={faExternalLinkAlt} /></a></Link>
                 </div> */}
