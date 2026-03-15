@@ -14,8 +14,9 @@ import React from 'react'
 import { Box, Avatar } from "@chakra-ui/react"
 import workStyles from '../styles/Work.module.css'
 import { Stack, Input, Textarea, useToast } from "@chakra-ui/react"
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import contactStyles from '../styles/Contact.module.css'
+import emailjs from "@emailjs/browser";
 
 
 
@@ -25,13 +26,13 @@ import { faImdb, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-ic
 
 const HomePage = ({ currentTheme }) => {
 
-    const toast = useToast()
+  const toast = useToast()
 
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [phone, setPhone] = useState('')
   const [message, setMessage] = useState('')
-  const [submitted, setSubmitted] = useState(false)
+  const form = useRef();
 
   const iconStyles = {
     backgroundColor: currentTheme.accent,
@@ -39,46 +40,94 @@ const HomePage = ({ currentTheme }) => {
     boxShadow: currentTheme.boxShadow,
   }
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    console.log('Sending')
-    let data = {
-      name: name,
-      email: email,
-      phone: phone,
-      message: message
-    }
-    setName('')
-    setEmail('')
-    setPhone('')
-    setMessage('')
+  const sendEmail = (e) => {
+    console.log("[E]", form.current);
+    e.preventDefault();
 
-    toast({
-      description: "You reached us!",
-      status: "success",
-      duration: 5000,
-      isClosable: true,
-    })
+    emailjs
 
-    fetch('/api/contact', {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json, text/plain, */*',
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(data)
-    }).then((res) => {
-      console.log('Response received')
-      if (res.status === 200) {
-        console.log('Response succeeded!')
-        setSubmitted(true)
-        setName('')
-        setEmail('')
-        setPhone('')
-        setMessage('')
-      }
-    })
-  }
+      .sendForm(
+        "service_evahxl9", // e.g., service_gmail
+
+        "template_u9g481h", // e.g., template_contact
+
+        form.current,
+
+        "tqAoOA5P9WonkHdvB" // e.g., your user/public key from EmailJS
+      )
+
+      .then(
+        (result) => {
+          console.log(result.text);
+
+          // setStatus("SUCCESS");
+
+          toast({
+                 description: "You reached us!",
+                 status: "success",
+                 duration: 5000,
+                 isClosable: true,
+               });
+
+          setName('')
+          setEmail('')
+          setMessage('')
+        },
+
+        (error) => {
+          console.log("ERROR", error.text);
+
+          setStatus("FAILED");
+          toast({
+            description: "Failed to Send. Please Try Again.",
+            status: "failed",
+            duration: 5000,
+            isClosable: true,
+          });
+        }
+      );
+  };
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault()
+  //   console.log('Sending')
+  //   let data = {
+  //     name: name,
+  //     email: email,
+  //     phone: phone,
+  //     message: message
+  //   }
+  //   setName('')
+  //   setEmail('')
+  //   setPhone('')
+  //   setMessage('')
+
+  //   toast({
+  //     description: "You reached us!",
+  //     status: "success",
+  //     duration: 5000,
+  //     isClosable: true,
+  //   })
+
+  //   fetch('/api/contact', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Accept': 'application/json, text/plain, */*',
+  //       'Content-Type': 'application/json'
+  //     },
+  //     body: JSON.stringify(data)
+  //   }).then((res) => {
+  //     console.log('Response received')
+  //     if (res.status === 200) {
+  //       console.log('Response succeeded!')
+  //       setSubmitted(true)
+  //       setName('')
+  //       setEmail('')
+  //       setPhone('')
+  //       setMessage('')
+  //     }
+  //   })
+  // }
 
   console.log('[crewlist]', userinfo.crew.crewList.socials)
     return (
@@ -86,7 +135,8 @@ const HomePage = ({ currentTheme }) => {
             <div id='home' className={styles.homeheading} style={{ backgroundColor: currentTheme.secondary }}>
                 {/* <h1 className={styles.heading}>{userinfo.greeting.title}</h1> */}
                 {/* <img src={"/styles/PoleKisses_LogoTransparent.png"} /> */}
-                <Image data-aos="fade-up" src={logo} alt='thumbnail image' height='600' width='600'/>
+                <div>
+                <Image data-aos="fade-up" src={logo} alt='thumbnail image' styles={styles.headingImage}/> </div>
                 {/* <h2 className={styles.subheading} style={{ color: currentTheme.subtext }}>{userinfo.greeting.subtitle}</h2> */}
                 {/* <Link href="#work"><a className={styles.cta1} style={{ backgroundColor: currentTheme.accent, color: currentTheme.contrastText, boxShadow: currentTheme.boxShadow }}>{ctaTexts.landingCTA}</a></Link> */}
             </div>
@@ -187,24 +237,24 @@ const HomePage = ({ currentTheme }) => {
       <div className={contactStyles.contactHeading}>
         <h2 className={contactStyles.contact}>{headings.contact}</h2>
       </div>
-      <form onSubmit={(e) => { handleSubmit(e) }} className={contactStyles.form} style={{ borderColor: currentTheme.text, backgroundColor: currentTheme.name === 'light' ? '#fafafa' : 'transparent' }}>
+      <form ref={form} onSubmit={(e) => { sendEmail(e) }} className={contactStyles.form} style={{ borderColor: currentTheme.text, backgroundColor: currentTheme.name === 'light' ? '#fafafa' : 'transparent' }}>
         <Stack spacing={4}>
-          <Input type="text" name="name" value={name} id="name" placeholder="Your Name" focusBorderColor={currentTheme.tertiary} isRequired autoComplete="off" onChange={(e) => { setName(e.target.value) }} />
+          <Input type="text" name="name" id="name" value={name} placeholder="Your Name" focusBorderColor={currentTheme.tertiary} isRequired autoComplete="off" onChange={(e) => { setName(e.target.value) }} />
           <Input type="email" name="email" id="email" value={email} placeholder="yourname@email.com" focusBorderColor={currentTheme.tertiary} autoComplete="off" isRequired onChange={(e) => { setEmail(e.target.value) }} />
-          {/* <Input type="tel" name="phone" value={phone} placeholder="Phone Number" focusBorderColor={currentTheme.tertiary} autoComplete="off" isRequired onChange={(e) => { setPhone(e.target.value) }} /> */}
           <Textarea
-            placeholder="Message for me!"
+            placeholder="Your Message"
             resize="vertical"
             focusBorderColor={currentTheme.tertiary}
             isRequired
-            name="message"
+            type="message"
             id="message"
+            name="message"
             value={message}
             autoComplete="off"
             onChange={(e) => { setMessage(e.target.value) }}
           />
           <div>
-            <div className={contactStyles.submit} style={{ backgroundColor: currentTheme.accent }}>
+            <div className={contactStyles.submit} style={{ backgroundColor: currentTheme.tertiary }}>
               <button type="submit">{ctaTexts.submitBTN}</button>
             </div>
           </div>
@@ -212,9 +262,25 @@ const HomePage = ({ currentTheme }) => {
       </form>
       <div style={{ textAlign: 'center'}}>
       <p>Or send us a message at </p>
-        <Link href={`mailto:${userinfo.contact.email ? userinfo.contact.email : ''}`}><a><u>{userinfo.contact.email}</u></a></Link>
+        <Link href={`mailto:${userinfo.contact.email ? userinfo.contact.email : ''}`}><a>{userinfo.contact.email}</a></Link>
       </div>
-    </div>
+      {/* {
+        userinfo.contact.phone ?
+          <div style={{ textAlign: 'center', paddingTop: '0.2rem', color: currentTheme.tertiary }}>
+            <Link href={`tel:${userinfo.contact.countrycode}${userinfo.contact.phone}`}><a>{`${userinfo.contact.countrycode}${userinfo.contact.phone}`}</a></Link>
+          </div> : null
+      } */}
+      {/* <div className={styles.socialIconDiv}>
+        {userinfo.socials ?
+          userinfo.socials.map((social, key) => {
+            return (
+              <div className={styles.socialIcon} style={iconStyles} key={key}>
+                <Link href={social.link}><a><FontAwesomeIcon icon={social.icon} /></a></Link>
+              </div>
+            )
+          }) : null
+        }
+      </div> */}
     </div>
             {/* <div id="skills" className={styles.homeSkillSection} style={{ backgroundColor: currentTheme.secondary }}>
                 <Skills currentTheme={currentTheme} />
@@ -224,6 +290,7 @@ const HomePage = ({ currentTheme }) => {
                     userinfo.education.visible ? <Education currentTheme={currentTheme} /> : null
                 }
             </div> */}
+        </div>
         </div>
     )
 }

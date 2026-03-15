@@ -10,6 +10,11 @@
   padding: 0 25vw;
 }
 
+.headingImage {
+  height: 600px;
+  width:600px;
+}
+
 .homeheading::before{
   content: '';
     position: absolute;
@@ -290,6 +295,11 @@
   .timeline{
     width: 80vw;
   }
+
+  .headingImage {
+    height: 300px;
+    width:300px;
+  }
 }
 /* ********************************* */
 
@@ -298,6 +308,11 @@
     width: 70%;
   }
 
+  .headingImage {
+    height: 300px;
+    width:300px;
+  }
+  
   .homeheading{
     padding: 0 15vw;
   }
