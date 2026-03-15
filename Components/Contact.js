@@ -1,18 +1,22 @@
-import { Stack, Input, Textarea, useToast } from "@chakra-ui/react"
-import { useState } from 'react'
+import { Stack, Input, Textarea, useToast, Button } from "@chakra-ui/react"
+import { useRef, useState } from 'react'
 import styles from '../styles/Contact.module.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from 'next/link'
 import { userinfo, headings, ctaTexts } from '../Constants/userinfo'
+import emailjs from "@emailjs/browser";
 
 const Contact = ({ currentTheme }) => {
   const toast = useToast()
 
   const [name, setName] = useState('')
+  const [status, setStatus] = useState(null)
   const [email, setEmail] = useState('')
   const [phone, setPhone] = useState('')
   const [message, setMessage] = useState('')
-  const [submitted, setSubmitted] = useState(false)
+  // const [submitted, setSubmitted] = useState(false)
+  // const [visible, setVisible] = useState(true);
+  const form = useRef();
 
   // const iconStyles = {
   //   backgroundColor: currentTheme.tertiary,
@@ -20,62 +24,112 @@ const Contact = ({ currentTheme }) => {
   //   boxShadow: currentTheme.boxShadow,
   // }
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    console.log('Sending')
-    let data = {
-      name: name,
-      email: email,
-      phone: phone,
-      message: message
-    }
-    setName('')
-    setEmail('')
-    setPhone('')
-    setMessage('')
+  const sendEmail = (e) => {
+    console.log("[E]", form.current);
+    e.preventDefault();
 
-    toast({
-      description: "You reached us!",
-      status: "success",
-      duration: 5000,
-      isClosable: true,
-    })
+    emailjs
 
-    fetch('/api/contact', {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json, text/plain, */*',
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(data)
-    }).then((res) => {
-      console.log('Response received')
-      if (res.status === 200) {
-        console.log('Response succeeded!')
-        setSubmitted(true)
-        setName('')
-        setEmail('')
-        setPhone('')
-        setMessage('')
-      }
-    })
-  }
+      .sendForm(
+        "service_evahxl9", // e.g., service_gmail
+
+        "template_u9g481h", // e.g., template_contact
+
+        form.current,
+
+        "tqAoOA5P9WonkHdvB" // e.g., your user/public key from EmailJS
+      )
+
+      .then(
+        (result) => {
+          console.log(result.text);
+
+          // setStatus("SUCCESS");
+
+          toast({
+                 description: "You reached us!",
+                 status: "success",
+                 duration: 5000,
+                 isClosable: true,
+               });
+
+          setName('')
+          setEmail('')
+          setMessage('')
+        },
+
+        (error) => {
+          console.log("ERROR", error.text);
+
+          setStatus("FAILED");
+          toast({
+            description: "Failed to Send. Please Try Again.",
+            status: "failed",
+            duration: 5000,
+            isClosable: true,
+          });
+        }
+      );
+  };
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault()
+  //   console.log('Sending')
+  //   let data = {
+  //     name: name,
+  //     email: email,
+  //     phone: phone,
+  //     message: message
+  //   }
+  //   setName('')
+  //   setEmail('')
+  //   setPhone('')
+  //   setMessage('')
+
+  //   toast({
+  //     description: "You reached us!",
+  //     status: "success",
+  //     duration: 5000,
+  //     isClosable: true,
+  //   })
+
+  //   fetch('/api/contact', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Accept': 'application/json, text/plain, */*',
+  //       'Content-Type': 'application/json'
+  //     },
+  //     body: JSON.stringify(data)
+  //   }).then((res) => {
+  //     console.log('Response received')
+  //     if (res.status === 200) {
+  //       console.log('Response succeeded!')
+  //       setSubmitted(true)
+  //       setName('')
+  //       setEmail('')
+  //       setPhone('')
+  //       setMessage('')
+  //     }
+  //   })
+  // }
 
   return (
     <div className={styles.contactWrapper}>
       <div className={styles.contactHeading}>
         <h2 className={styles.contact}>{headings.contact}</h2>
       </div>
-      <form onSubmit={(e) => { handleSubmit(e) }} className={styles.form} style={{ borderColor: currentTheme.text, backgroundColor: currentTheme.name === 'light' ? '#fafafa' : 'transparent' }}>
+      <form ref={form} onSubmit={(e) => { sendEmail(e) }} className={styles.form} style={{ borderColor: currentTheme.text, backgroundColor: currentTheme.name === 'light' ? '#fafafa' : 'transparent' }}>
         <Stack spacing={4}>
           <Input type="text" name="name" id="name" value={name} placeholder="Your Name" focusBorderColor={currentTheme.tertiary} isRequired autoComplete="off" onChange={(e) => { setName(e.target.value) }} />
           <Input type="email" name="email" id="email" value={email} placeholder="yourname@email.com" focusBorderColor={currentTheme.tertiary} autoComplete="off" isRequired onChange={(e) => { setEmail(e.target.value) }} />
           <Textarea
-            placeholder="Message for me!"
+            placeholder="Your Message"
             resize="vertical"
             focusBorderColor={currentTheme.tertiary}
             isRequired
-            name="email"
+            type="message"
+            id="message"
+            name="message"
             value={message}
             autoComplete="off"
             onChange={(e) => { setMessage(e.target.value) }}
