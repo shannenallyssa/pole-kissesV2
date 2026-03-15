@@ -107,7 +107,7 @@ const taylorAbout = ({ currentTheme }) => {
               url="https://vimeo.com/704984031"
               controls={true}
               volume={.5}
-              className={styles.video}
+              // className={styles.video}
               width='relative'
               config={{
                 vimeo: {

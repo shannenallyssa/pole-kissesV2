@@ -20,6 +20,7 @@ import emailjs from "@emailjs/browser";
 
 
 
+
 import placeHolder from '../styles/PoleKisses_LogoTransparent.png'
 import { faImdb, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
@@ -135,8 +136,9 @@ const HomePage = ({ currentTheme }) => {
             <div id='home' className={styles.homeheading} style={{ backgroundColor: currentTheme.secondary }}>
                 {/* <h1 className={styles.heading}>{userinfo.greeting.title}</h1> */}
                 {/* <img src={"/styles/PoleKisses_LogoTransparent.png"} /> */}
-                <div>
-                <Image data-aos="fade-up" src={logo} alt='thumbnail image' styles={styles.headingImage}/> </div>
+                <div  styles={styles.headingImage}>
+                <Image data-aos="fade-up" src={logo} alt='thumbnail image' height="600vh" width="600vw"/> 
+                </div>
                 {/* <h2 className={styles.subheading} style={{ color: currentTheme.subtext }}>{userinfo.greeting.subtitle}</h2> */}
                 {/* <Link href="#work"><a className={styles.cta1} style={{ backgroundColor: currentTheme.accent, color: currentTheme.contrastText, boxShadow: currentTheme.boxShadow }}>{ctaTexts.landingCTA}</a></Link> */}
             </div>
@@ -165,6 +167,7 @@ const HomePage = ({ currentTheme }) => {
                     })
                 }
                    </div> */}
+                   <div className={workStyles.crewWrapper}>
               <div id="crew" className={workStyles.experienceWrapper}>
             <h1 className={workStyles.workHeading} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">{headings.experience}</h1>
             <div className={workStyles.experienceCardWrapper} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
@@ -228,6 +231,7 @@ const HomePage = ({ currentTheme }) => {
                         }) : null
                 }
             </div>
+            </div>
                 <div style={{ textAlign: 'center', paddingBottom: '2rem' }}>
                     {/* <Link href="/work"><a className={styles.cta3} style={{ backgroundColor: currentTheme.accent, color: currentTheme.contrastText }}>{ctaTexts.workCTA} <span>&gt;</span></a></Link> */}
                     </div>
@@ -249,6 +253,7 @@ const HomePage = ({ currentTheme }) => {
             type="message"
             id="message"
             name="message"
+            rows="5"
             value={message}
             autoComplete="off"
             onChange={(e) => { setMessage(e.target.value) }}
@@ -262,7 +267,7 @@ const HomePage = ({ currentTheme }) => {
       </form>
       <div style={{ textAlign: 'center'}}>
       <p>Or send us a message at </p>
-        <Link href={`mailto:${userinfo.contact.email ? userinfo.contact.email : ''}`}><a>{userinfo.contact.email}</a></Link>
+        <Link href={`mailto:${userinfo.contact.email ? userinfo.contact.email : ''}`}><a><u>{userinfo.contact.email}</u></a></Link>
       </div>
       {/* {
         userinfo.contact.phone ?

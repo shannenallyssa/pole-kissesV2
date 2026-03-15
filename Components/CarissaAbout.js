@@ -61,7 +61,7 @@ const carissaAbout = ({ currentTheme }) => {
                </div> 
             </div>
             <div className={styles.aboutPersonText} >
-              <p>Carissa is a self taught jack of all trades— Photography, multiple art mediums, and for the past 3 years, costume and production design. </p>
+              <p>Carissa is a self-taught jack of all trades— photography, multiple art mediums, and for the past 3 years, costume and production design. </p>
               <br/>
               <p>She attended a film mixer several years ago with friends who suggested she express an interest in a random film department and so it goes! Her first time on a set was for her first 49 Hour Film Challenge where she won "Best Costume and Makeup Overall" and has won a laurel for her costume design work at UNLV Spring Flicks Festival.</p>
               <br/>

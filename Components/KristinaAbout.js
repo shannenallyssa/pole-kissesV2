@@ -73,12 +73,11 @@ const kristinaAbout = ({ currentTheme }) => {
               <br/>
               <p>She was drawn to the story of Pole Kisses because of the unique perspective on femininity and the relationship between performance and vulnerability. She feels a connection to the main character as she navigates her own sensuality while trying to untangle feelings of admiration and identity. With Pole Kisses, she hopes to bring a stylized yet intimate perspective to a story about identity, desire, and self-discovery.</p>
               <div align="center" style={{padding:20}}>
-                <div className={styles.video}>
+                <div  className={styles.video} >
             <ReactPlayer
               url="https://youtu.be/lWDgz7Za3EA"
               controls={true}
               volume={.5}
-              className={styles.video}
               width='relative'
               config={{
                 youtube: {

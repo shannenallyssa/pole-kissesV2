@@ -46,8 +46,8 @@ const Footer = ({ currentTheme }) => {
                     <b>|</b>
                     <Link href='/#about'><a> About </a></Link>
                     <b>|</b>
-                    <Link href='/#funding'><a> Funding </a></Link>
-                    <b>|</b>
+                    {/* <Link href='/#funding'><a> Funding </a></Link>
+                    <b>|</b> */}
                     <Link href='/#crew'><a> Crew </a></Link>
                     <b>|</b>
                     <Link href='/#contact'><a> Contact </a></Link>
@@ -55,7 +55,7 @@ const Footer = ({ currentTheme }) => {
             
             {/* <hr style={{ height: '1px', backgroundColor: currentTheme.subtext, border: 'none', opacity: '0.5' }}></hr> */}
             {/* <h2 className={styles.footercontent} style={{color: currentTheme.lightText}}>Template by Asavari Ambavane</h2> */}
-            <h2  style={{color: currentTheme.lightText}}>Pole Kisses © {new Date().getFullYear()} Shannen Velasco </h2>
+            <h2  style={{color: currentTheme.lightText}}>© {new Date().getFullYear()} Shannen Velasco </h2>
         </div>
     )
 }
