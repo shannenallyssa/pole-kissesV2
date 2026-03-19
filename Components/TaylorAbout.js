@@ -52,7 +52,7 @@ const taylorAbout = ({ currentTheme }) => {
       <div>
         <div data-aos="fade-up">
           <div align="center" className={styles.aboutHeadshot}>
-          <Image src="/TaylorJayneAbout.jpeg" alt='glamour shot of Taylor Jayne' height='400' width='325'/>
+          <img src="/TaylorJayneAbout.jpeg" alt='glamour shot of Taylor Jayne' height='400' width='325'/>
           </div>
           <div className={styles.aboutPersonHeading}>Taylor Jayne</div>
           <div className={styles.aboutPersonSubHeading}> Choreographer</div>
