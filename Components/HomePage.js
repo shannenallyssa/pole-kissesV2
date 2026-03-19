@@ -11,18 +11,16 @@ import Image from 'next/image';
 import logo from '../styles/PoleKisses_LogoTransparent.png'
 import Contact from './Contact'
 import React from 'react'
-import { Box, Avatar } from "@chakra-ui/react"
+import { Box, Avatar, Center } from "@chakra-ui/react"
 import workStyles from '../styles/Work.module.css'
 import { Stack, Input, Textarea, useToast } from "@chakra-ui/react"
 import { useRef, useState } from 'react'
 import contactStyles from '../styles/Contact.module.css'
 import emailjs from "@emailjs/browser";
 
-
-
-
 import placeHolder from '../styles/PoleKisses_LogoTransparent.png'
 import { faImdb, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+
 
 
 const HomePage = ({ currentTheme }) => {
@@ -35,6 +33,33 @@ const HomePage = ({ currentTheme }) => {
   const [message, setMessage] = useState('')
   const form = useRef();
   const [loading, setLoading] = useState(false);
+
+  const data = {
+    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+    datasets: [
+      {
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3],
+        backgroundColor: [
+          'rgba(255, 99, 132, 0.2)',
+          'rgba(54, 162, 235, 0.2)',
+          'rgba(255, 206, 86, 0.2)',
+          'rgba(75, 192, 192, 0.2)',
+          'rgba(153, 102, 255, 0.2)',
+          'rgba(255, 159, 64, 0.2)',
+        ],
+        borderColor: [
+          'rgba(255, 99, 132, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)',
+          'rgba(153, 102, 255, 1)',
+          'rgba(255, 159, 64, 1)',
+        ],
+        borderWidth: 1,
+      },
+    ],
+  };
 
   const iconStyles = {
     backgroundColor: currentTheme.accent,
@@ -172,6 +197,8 @@ const HomePage = ({ currentTheme }) => {
                     })
                 }
                    </div> */}
+
+
                    <div className={workStyles.crewWrapper}>
               <div id="crew" className={workStyles.experienceWrapper}>
             <h1 className={workStyles.workHeading} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">{headings.experience}</h1>
@@ -210,7 +237,7 @@ const HomePage = ({ currentTheme }) => {
                                                }
                                                   {crewMember.website &&
                                                 <div className={contactStyles.socialIcon} style={iconStyles} key={key}>
-                                                   <Link href={crewMember.website}><a><FontAwesomeIcon icon={faLink} /></a></Link>            
+                                                   <Link href={crewMember.website}><a ><FontAwesomeIcon icon={faLink} /></a></Link>            
                                                </div>
                                                }
                                                   {crewMember.imdb &&
@@ -220,7 +247,7 @@ const HomePage = ({ currentTheme }) => {
                                                }
                                                   {crewMember.linkedIn &&
                                                 <div className={contactStyles.socialIcon} style={iconStyles} key={key}>
-                                                   <Link href={crewMember.linkedIn}><a><FontAwesomeIcon icon={faLinkedin} /></a></Link>            
+                                                   <Link href={crewMember.linkedIn}><a><FontAwesomeIcon icon={faLinkedin}/></a></Link>            
                                                </div>
                                                }
                                              

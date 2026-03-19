@@ -45,8 +45,10 @@
   background-color: #cccccc;
   color: #666666;
 }
+
 .submit:disabled:hover{
   transform: scale(1);
+  cursor: not-allowed;
 }
 
 .aboutButton{
