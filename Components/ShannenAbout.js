@@ -12,8 +12,6 @@ import Link from 'next/link'
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
-import logo from '../styles/PoleKisses_LogoTransparent.png'
-import Image from 'next/image';
 
 
 

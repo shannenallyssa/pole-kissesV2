@@ -1,14 +1,14 @@
-// import project demo images as follows.
-import PROJECT1_1 from '../styles/projects/Project1_1.jpg';
-import PROJECT1_2 from '../styles/projects/Project1_2.jpg';
-import PROJECT1_3 from '../styles/projects/Project1_3.jpg';
-import PROJECT2_1 from '../styles/projects/Project2_1.jpg';
-import PROJECT2_2 from '../styles/projects/Project2_2.jpg';
-import PROJECT2_3 from '../styles/projects/Project2_3.jpg';
-import PROJECT3_1 from '../styles/projects/Project3_1.jpg';
-import PROJECT3_2 from '../styles/projects/Project3_2.jpg';
-import PROJECT3_3 from '../styles/projects/Project3_3.jpg';
-import goFundMe from '../styles/GoFundMe_logo.png';
+// Using image paths instead of imports to avoid build issues
+const PROJECT1_1 = '/styles/projects/Project1_1.jpg';
+const PROJECT1_2 = '/styles/projects/Project1_2.jpg';
+const PROJECT1_3 = '/styles/projects/Project1_3.jpg';
+const PROJECT2_1 = '/styles/projects/Project2_1.jpg';
+const PROJECT2_2 = '/styles/projects/Project2_2.jpg';
+const PROJECT2_3 = '/styles/projects/Project2_3.jpg';
+const PROJECT3_1 = '/styles/projects/Project3_1.jpg';
+const PROJECT3_2 = '/styles/projects/Project3_2.jpg';
+const PROJECT3_3 = '/styles/projects/Project3_3.jpg';
+const goFundMe = '/styles/GoFundMe_logo.png';
 
 // first 3 projects are visible on the homepage while all are visible on the work page.
 

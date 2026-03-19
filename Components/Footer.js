@@ -1,8 +1,6 @@
 import styles from '../styles/NavbarFooter.module.css';
 import { userinfo } from '../Constants/userinfo'
 import Link from 'next/link'
-import Image from 'next/image';
-import logo from '../styles/PoleKisses_LogoTransparent.png'
 import contactStyles from '../styles/Contact.module.css'
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

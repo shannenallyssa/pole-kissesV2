@@ -12,8 +12,6 @@ import Link from "next/link";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-import taylorJayneAbout from "../public/TaylorJayneAbout.jpeg";
-import Image from "next/image";
 import React from "react";
 import ReactPlayer from "react-player";
 
@@ -52,7 +50,7 @@ const taylorAbout = ({ currentTheme }) => {
       <div>
         <div data-aos="fade-up">
           <div align="center" className={styles.aboutHeadshot}>
-          <Image src={taylorJayneAbout} alt='glamour shot of Taylor Jayne' height='400' width='325'/>
+          <img src="/TaylorJayneAbout.jpeg" alt='glamour shot of Taylor Jayne' height='400' width='325'/>
           </div>
           <div className={styles.aboutPersonHeading}>Taylor Jayne</div>
           <div className={styles.aboutPersonSubHeading}> Choreographer</div>

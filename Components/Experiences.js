@@ -2,7 +2,6 @@ import React from 'react'
 import { Box, Avatar } from "@chakra-ui/react"
 import styles from '../styles/Work.module.css'
 import { userinfo, headings } from '../Constants/userinfo'
-import Image from 'next/image';
 import placeHolder from '../styles/PoleKisses_LogoTransparent.png'
 
 const Experiences = ({ currentTheme }) => {
@@ -19,7 +18,7 @@ const Experiences = ({ currentTheme }) => {
                                             <h1>{crewMember.crewName}</h1>
                                             <div className={styles.avatar}>
                                                {/* <Avatar size="xl" name={exp.company} src={exp.companylogo} /> */}
-                                               <Image size="xl" name={crewMember.crewName} src={placeHolder} width={400} height={400}/>
+                                               <img name={crewMember.crewName} src={placeHolder.src} width={400} height={400}/>
                                             </div>
                                             <div style={{ position: 'relative', top: '20px' }}>
                                                 <h2>{crewMember.position}</h2>
