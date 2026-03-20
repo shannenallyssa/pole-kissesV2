@@ -5,7 +5,7 @@ import { faGithubAlt, faLinkedinIn, faMediumM, faFacebook, faTwitter, faInstagra
 export const userinfo = {
     logoText: "Pole Kisses | Short Film", //This text is visible on your navbar and footer like your logo.
     contact: {
-        email: 'polekissessshortfilm@gmail.com', //It is always a good idea to mention your email on your website. Good platform to communicate.
+        email: 'polekissesshortfilm@gmail.com', //It is always a good idea to mention your email on your website. Good platform to communicate.
         phone: '1234567890', //Phone number is optional, if you dont want it, consider leaving it blank .
         countrycode: '+91' //It is advisable to add the country code incase you mention your contact number.
     },

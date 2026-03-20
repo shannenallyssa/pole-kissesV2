@@ -62,9 +62,9 @@ const angelAbout = ({ currentTheme }) => {
             </div>
             </div>
             <div className={styles.aboutPersonText} >
-              <p>Angel E. Warren a dedicated Stage Manager turned Film Producer with experience in both regional theater, Professional theatre, and National touring productions. They were most recently part of the SM team for Awakening at Wynn Las Vegas and have worked with City Springs Theatre Company, Je'caryous Johnson's National tour of New Jack City Live. </p>
+              <p>Angel E. Warren is a proud alumni of Florida School of the Arts. Studying stage management and costume design, she graduated with two degrees and used both in the theatre space. After graduating, she began stage managing in regional theatre, professional theatre, and even national touring productions. Her most notable work was for the City Springs Theatre Company, following with Je’caryous Johnson’s National Tour of New Jack City, and finally landing her in Las Vegas, stage managing the Wynn’s Awakening. </p>
               <br/>
-                <p> She is a proud Alumni member of Florida School of the Arts.</p>
+              <p>A patron of the arts, she has always been a lover of music, dance, and film. After her time at Wynn, she became a production coordinator and then a producer, where she found a way to merge all three art forms in Pole Kisses. Using her knowledge in stage management and production coordination, she’s passionate in bringing this project to fruition.</p>
               <div  style={{ textAlign: 'center', padding: 20, paddingTop: 30, position: 'center', color: currentTheme.subtext }}>
                     <Link href="/#crew"><a className={contactStyles.aboutButton} style={{ background: 'transparent', border: `2px solid ${currentTheme.subtext}`,  alignItems: 'center' }}>{buttonTexts.returnToCrew}</a></Link>
                 </div>

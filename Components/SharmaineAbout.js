@@ -60,7 +60,13 @@ const sharmaineAbout = ({ currentTheme }) => {
                </div>
             </div>
             <div className={styles.aboutPersonText} >
-              <p>Sharmaine Velasco is a Las Vegas based composer and producer who specializes in various genres. She is self taught in many instruments, and with over 15+ years of personal writing experience, she experiments with different genres whenever she can. Known for her work on award winning documentary, <i>Home: A Mother of 3000</i>, web series, <i>Local Time</i>, and upcoming short film, <i>Gamu-Gamo</i>, she has adapted to musical styles as needed, throwing herself into the history and culture of the music to better understand it.</p>
+           <p>Sharmaine Velasco is a Filipina filmmaker who studied at University of Las Vegas (UNLV) graduating with a BA in film. Though her focus was in video editing, she found her home as a composer and a producer. A music lover from a young age, she’s a vocalist as well as a writer and is self taught in many instruments. With over 15+ years of personal writing experience, she experiments with different genres whenever she can. From pop to classical, she can do it all.</p> 
+         <br/>
+            <p>Known for her work on award winning documentary, <i>Home: A Mother of 3000</i>, web series, <i>Local Time</i>, and upcoming short film, <i>Gamu-Gamo</i>, she has adapted to musical styles as needed, throwing herself into the history and culture of the music to better understand it. Her aim with <i>Pole Kisses</i>  is to create a soundscape featuring vivid and sultry instrumentals, while still giving an ode to r&b stylings. She’s even using her skills as a lyricist to write an original song to be performed for the film to pair with the choreography. </p>
+            <br/>
+            <p>Currently, Sharmaine is a video editor for an ad agency, though takes on many composing jobs where she can, especially for stories she believes in, including <i>Pole Kisses</i>.</p>
+
+
               <div  style={{ textAlign: 'center', padding: 20, paddingTop: 30, position: 'center', color: currentTheme.subtext }}>
                     <Link href="/#crew"><a className={contactStyles.aboutButton} style={{ background: 'transparent', border: `2px solid ${currentTheme.subtext}`,  alignItems: 'center' }}>{buttonTexts.returnToCrew}</a></Link>
                 </div>

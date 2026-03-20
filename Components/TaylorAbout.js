@@ -12,6 +12,8 @@ import Link from "next/link";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import taylorJayneAbout from "../public/TaylorJayneAbout.jpeg";
+import Image from "next/image";
 import React from "react";
 import ReactPlayer from "react-player";
 
