@@ -48,9 +48,9 @@ const chaiAbout = ({ currentTheme }) => {
     return (
         <div>
           <div data-aos="fade-up">
-            {/* <div align="center" >
-         <Image size="xl" name="helen" src={logo} width={400} height={400}/>
-         </div> */}
+          <div align="center" className={styles.aboutHeadshot}>
+          <img src="/ChaiAbout.JPG" alt='glamour shot of Chai Simone' height='500' width='375'/>
+          </div>
             <div className={styles.aboutPersonHeading}>Chai Simone</div>
             <div className={styles.aboutPersonSubHeading}> Art Director & Production Designer</div>
             <div className={contactStyles.socialIconAbout} >

@@ -49,9 +49,9 @@ const shannenAbout = ({ currentTheme }) => {
     return (
         <div>
           <div data-aos="fade-up">
-            {/* <div align="center" >
-         <Image size="xl" name="helen" src={logo} width={400} height={400}/>
-         </div> */}
+          <div align="center" className={styles.aboutHeadshot}>
+          <img src="/ShannenAbout.JPG" alt='glamour shot of Shannen Velasco' height='375' width='350'/>
+          </div>
             <div className={styles.aboutPersonHeading}>Shannen Velasco</div>
             <div className={styles.aboutPersonSubHeading}> Executive Producer & Writer</div>
             <div className={contactStyles.socialIconAbout} >

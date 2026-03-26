@@ -83,7 +83,8 @@ export const userinfo = {
                 imdb:'',
                 linkedIn:'',
                 aboutLink:'/kristinaMcHale', 
-                avatar:'',
+                avatar:'/KristinaMcHaleIcon.JPG', 
+
             },
             {
                 crewName: 'Shannen Velasco',
@@ -95,7 +96,7 @@ export const userinfo = {
                 imdb:'https://www.imdb.com/name/nm13639366/',
                 linkedIn:'',
                 aboutLink:'/shannenVelasco', 
-                avatar:'',
+                avatar:'/ShannenVelascoIcon.JPG',
             },
             {
                 crewName: 'Angel E. Warren',
@@ -106,7 +107,7 @@ export const userinfo = {
                 linkedIn:'https://www.linkedin.com/in/angel-warren-53695b143',
                 imdb:'',
                 aboutLink:'/angelEWarren',
-                avatar:'', 
+                avatar:'/AngelEWarrenIcon.JPG', 
             },
             {
                 crewName: 'Isabel Peinado',
@@ -118,7 +119,8 @@ export const userinfo = {
                 imdb:'',
                 linkedIn:'',
                 aboutLink:'/isabelPeinado', 
-                avatar:'',
+                avatar:'/IsabelPeinadoIcon.JPG', 
+
             },
             {
                 crewName: 'Patricia Kristine Reyes',
@@ -130,7 +132,8 @@ export const userinfo = {
                 imdb:'',
                 linkedIn:'',
                 aboutLink:'/patriciaReyes', 
-                avatar:'',
+                avatar:'/PatriciaKReyesIcon.JPG', 
+
             },
             {
                 crewName: 'Chai Simone',
@@ -142,7 +145,8 @@ export const userinfo = {
                 imdb:'https://www.imdb.com/name/nm12009235/',
                 linkedIn:'',
                 aboutLink:'/chaiSimone', 
-                avatar:'',
+                avatar:'/ChaiSimoneIcon.JPG', 
+
             },
             {
                 crewName: 'Carissa Fennell',
@@ -154,7 +158,8 @@ export const userinfo = {
                 imdb:'',
                 linkedIn:'',
                 aboutLink:'/carissaFennell',
-                avatar:'', 
+                avatar:'/CarissaFennellIcon.JPG', 
+
             },
             {
                 crewName: 'Helen Oliviero',
@@ -165,7 +170,8 @@ export const userinfo = {
                 instagram:'https://www.instagram.com/helens.huemua/',
                 linkedIn:'',
                 aboutLink:'/helenOliviero', 
-                avatar:'',
+                avatar:'/HelenOlivieroIcon.JPG', 
+
             },
             {
                 crewName: 'Sharmaine Velasco',
@@ -176,7 +182,8 @@ export const userinfo = {
                 instagram:'https://www.instagram.com/artanna.exe/',
                 linkedIn:'',
                 aboutLink:'/sharmaineVelasco', 
-                avatar:'',
+                avatar:'/SharmaineVelascoIcon.JPG', 
+
             },
             {
                 crewName: 'Taylor Jayne',
@@ -187,7 +194,7 @@ export const userinfo = {
                 instagram:'https://www.instagram.com/taylorjaynedance/',
                 linkedIn:'',
                 aboutLink:'/taylorJayne', 
-                avatar:'',
+                avatar:'/TaylorJayneIcon.jpeg', 
             },
         ],
     },

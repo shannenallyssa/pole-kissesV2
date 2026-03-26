@@ -16,6 +16,7 @@ import { Stack, Input, Textarea, useToast } from "@chakra-ui/react"
 import { useRef, useState } from 'react'
 import contactStyles from '../styles/Contact.module.css'
 import emailjs from "@emailjs/browser";
+import taylorJayne from '../public/TaylorJayneIcon.jpeg';
 
 import placeHolder from '../styles/PoleKisses_LogoTransparent.png'
 import { faImdb, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
@@ -213,12 +214,15 @@ const HomePage = ({ currentTheme }) => {
                                             <h1>{crewMember.crewName}</h1>
                                             <div className={workStyles.avatar}>
                                               { crewMember.avatar &&
-                                               <Avatar size="xl" src={crewMember.avatar} />
+                                              // <img src="/TaylorJayneAbout.jpeg" alt='glamour shot of Taylor Jayne' height='100' width='200'/>
+                                              <div style={{padding:20}}> 
+                                               <Avatar sx={{width: 200, height: 200}} src={crewMember.avatar} />
+                                               </div>
                                               }
                                                {/* <Image size="xl" name={crewMember.crewName} src={placeHolder} width={400} height={400}/> */}
                                             </div>
                                             <div style={{ position: 'relative', top: '20px' }}>
-                                                <h2>{crewMember.position}</h2>
+                                                <h2><i>{crewMember.position}</i></h2>
                                                 <div  style={{ textAlign: 'center', padding: 20, paddingTop: 20, position: 'center', color: currentTheme.subtext }}>
                                                     <Link href={crewMember.aboutLink}><a className={contactStyles.aboutButton} style={{ background: 'transparent', border: `2px solid ${currentTheme.subtext}`,  alignItems: 'center' }}>ABOUT</a></Link>
                                                 </div>
