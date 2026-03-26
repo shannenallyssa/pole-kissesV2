@@ -220,8 +220,8 @@ const HomePage = ({ currentTheme }) => {
                                             <div style={{ position: 'relative', top: '20px' }}>
                                                 <h2>{crewMember.position}</h2>
                                                 <div  style={{ textAlign: 'center', padding: 20, paddingTop: 20, position: 'center', color: currentTheme.subtext }}>
-                    <Link href={crewMember.aboutLink}><a className={contactStyles.aboutButton} style={{ background: 'transparent', border: `2px solid ${currentTheme.subtext}`,  alignItems: 'center' }}>ABOUT</a></Link>
-                </div>
+                                                    <Link href={crewMember.aboutLink}><a className={contactStyles.aboutButton} style={{ background: 'transparent', border: `2px solid ${currentTheme.subtext}`,  alignItems: 'center' }}>ABOUT</a></Link>
+                                                </div>
                                                
                                                 {/* <div>
                                                 <div className={contactStyles.submit} style={{ backgroundColor: currentTheme.accent }}>
