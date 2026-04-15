@@ -10,7 +10,7 @@ import Education from './Education'
 import logo from '../styles/PoleKisses_LogoTransparent.png'
 import Contact from './Contact'
 import React from 'react'
-import { Box, Center } from "@chakra-ui/react"
+import { Box, Avatar, Center } from "@chakra-ui/react"
 import workStyles from '../styles/Work.module.css'
 import { Stack, Input, Textarea, useToast } from "@chakra-ui/react"
 import { useRef, useState } from 'react'
@@ -213,13 +213,7 @@ const HomePage = ({ currentTheme }) => {
                                         <div className={workStyles.experienceCardContent}>
                                             <h1>{crewMember.crewName}</h1>
                                             <div className={workStyles.avatar}>
-                                              {/* { crewMember.avatar &&
-                                              // <img src="/TaylorJayneAbout.jpeg" alt='glamour shot of Taylor Jayne' height='100' width='200'/>
-                                              <div style={{padding:20}}> 
-                                               <Avatar sx={{width: 200, height: 200}} src={crewMember.avatar} />
-                                               </div>
-                                              } */}
-                                               {/* <Image size="xl" name={crewMember.crewName} src={placeHolder} width={400} height={400}/> */}
+                                             
                                             </div>
                                             <div style={{ position: 'relative', top: '20px' }}>
                                                 <h2><i>{crewMember.position}</i></h2>
