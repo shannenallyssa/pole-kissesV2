@@ -10,7 +10,7 @@ import Education from './Education'
 import logo from '../styles/PoleKisses_LogoTransparent.png'
 import Contact from './Contact'
 import React from 'react'
-import { Box, Avatar, Center } from "@chakra-ui/react"
+import { Box, Center } from "@chakra-ui/react"
 import workStyles from '../styles/Work.module.css'
 import { Stack, Input, Textarea, useToast } from "@chakra-ui/react"
 import { useRef, useState } from 'react'
