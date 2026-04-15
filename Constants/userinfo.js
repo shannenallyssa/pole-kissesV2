@@ -125,7 +125,7 @@ export const userinfo = {
             {
                 crewName: 'Patricia Kristine Reyes',
                 companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*',
-                position: 'Cinematographer',
+                position: 'Director of Photography',
                 time: '',
                 instagram:'https://www.instagram.com/patriciakmreyes/',
                 website:'',

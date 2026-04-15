@@ -52,7 +52,7 @@ const patriciaAbout = ({ currentTheme }) => {
          <Image size="xl" name="helen" src={logo} width={400} height={400}/>
          </div> */}
             <div className={styles.aboutPersonHeading}>Patricia Reyes</div>
-            <div className={styles.aboutPersonSubHeading}> Cinematographer</div>
+            <div className={styles.aboutPersonSubHeading}> Director of Photography </div>
             <div className={contactStyles.socialIconAbout} >
             <div className={contactStyles.socialIcon} style={iconStyles} >
                  <Link href='https://www.instagram.com/patriciakmreyes/' ><a target="_blank"><FontAwesomeIcon icon={faInstagram} /></a></Link>            

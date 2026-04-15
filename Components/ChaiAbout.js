@@ -52,7 +52,7 @@ const chaiAbout = ({ currentTheme }) => {
           <img src="/ChaiAbout.JPG" alt='glamour shot of Chai Simone' height='500' width='375'/>
           </div>
             <div className={styles.aboutPersonHeading}>Chai Simone</div>
-            <div className={styles.aboutPersonSubHeading}> Art Director & Production Designer</div>
+            <div className={styles.aboutPersonSubHeading}> Production Designer</div>
             <div className={contactStyles.socialIconAbout} >
             <div className={contactStyles.socialIcon} style={iconStyles} >
                  <Link href='' ><a target="_blank"><FontAwesomeIcon icon={faInstagram} /></a></Link>            
