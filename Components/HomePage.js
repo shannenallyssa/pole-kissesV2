@@ -16,7 +16,6 @@ import { Stack, Input, Textarea, useToast } from "@chakra-ui/react"
 import { useRef, useState } from 'react'
 import contactStyles from '../styles/Contact.module.css'
 import emailjs from "@emailjs/browser";
-import taylorJayne from '../public/TaylorJayneIcon.jpeg';
 
 import placeHolder from '../styles/PoleKisses_LogoTransparent.png'
 import { faImdb, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
