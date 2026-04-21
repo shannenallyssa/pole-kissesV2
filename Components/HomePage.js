@@ -212,7 +212,12 @@ const HomePage = ({ currentTheme }) => {
                                         <div className={workStyles.experienceCardContent}>
                                             <h1>{crewMember.crewName}</h1>
                                             <div className={workStyles.avatar}>
-                                             
+                                            { crewMember.avatar &&
+                                              // <img src="/TaylorJayneAbout.jpeg" alt='glamour shot of Taylor Jayne' height='100' width='200'/>
+                                              <div style={{padding:20}}> 
+                                               <Avatar sx={{width: 200, height: 200}} src={crewMember.avatar} />
+                                               </div>
+                                              }
                                             </div>
                                             <div style={{ position: 'relative', top: '20px' }}>
                                                 <h2><i>{crewMember.position}</i></h2>
