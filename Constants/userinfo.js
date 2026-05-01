@@ -73,19 +73,19 @@ export const userinfo = {
     crew: {
         visible: true, //set this to false if you want to omit this section
         crewList: [
-            {
-                crewName: 'Kristina McHale', //company name eg.Microsoft
-                crewHeadshot: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*', //companylogo
-                position: 'Director', //post you held eg.Senior SDE
-                time: '', //timespan
-                instagram:'https://www.instagram.com/xt.na/',
-                website:'https://xtinamchale.com/',
-                imdb:'',
-                linkedIn:'',
-                aboutLink:'/kristinaMcHale', 
-                avatar:'/KristinaMcHaleIcon.JPG', 
+            // {
+            //     crewName: 'Kristina McHale', //company name eg.Microsoft
+            //     crewHeadshot: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*', //companylogo
+            //     position: 'Director', //post you held eg.Senior SDE
+            //     time: '', //timespan
+            //     instagram:'https://www.instagram.com/xt.na/',
+            //     website:'https://xtinamchale.com/',
+            //     imdb:'',
+            //     linkedIn:'',
+            //     aboutLink:'/kristinaMcHale', 
+            //     avatar:'/KristinaMcHaleIcon.JPG', 
 
-            },
+            // },
             {
                 crewName: 'Shannen Velasco',
                 companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*',
