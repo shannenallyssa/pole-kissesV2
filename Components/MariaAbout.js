@@ -11,12 +11,13 @@ import contactStyles from '../styles/Contact.module.css'
 import Link from 'next/link'
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faImdb, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faImdb} from '@fortawesome/free-brands-svg-icons';
+import React from "react";
+import ReactPlayer from "react-player";
 
 
 
-
-const shannenAbout = ({ currentTheme }) => {
+const mariaAbout = ({ currentTheme }) => {
   const iconStyles = {
     backgroundColor: currentTheme.accent,
     color: '#101010',
@@ -50,10 +51,10 @@ const shannenAbout = ({ currentTheme }) => {
         <div>
           <div data-aos="fade-up">
           <div align="center" className={styles.aboutHeadshot}>
-          <img src="/ShannenAbout.JPG" alt='glamour shot of Shannen Velasco' height='375' width='350'/>
+          <img src="/MariaAbout.png" alt='glamour shot of Maria Tran' height='375' width='350'/>
           </div>
-            <div className={styles.aboutPersonHeading}>Shannen Velasco</div>
-            <div className={styles.aboutPersonSubHeading}> Executive Producer & Writer</div>
+            <div className={styles.aboutPersonHeading}>Maria Trần</div>
+            <div className={styles.aboutPersonSubHeading}> Director</div>
             <div className={contactStyles.socialIconAbout} >
             <div className={contactStyles.socialIcon} style={iconStyles} >
                  <Link href='https://www.instagram.com/realshannenigans/' ><a target="_blank"><FontAwesomeIcon icon={faInstagram} /></a></Link>            
@@ -64,21 +65,52 @@ const shannenAbout = ({ currentTheme }) => {
             <div className={contactStyles.socialIcon} style={iconStyles} >
                     <Link href='https://www.imdb.com/name/nm13639366/'><a target="_blank"><FontAwesomeIcon icon={faImdb} /></a></Link>            
             </div>
+
             </div>
             <div className={styles.aboutPersonText} >
-              <p>Shannen Velasco is an actor and writer based in Las Vegas, Nevada. Since graduating from the University of Nevada, Las Vegas film program in 2021, they have been steadily learning more about the industry through acting in various independent short films, narrative podcasts, audio books, and video games. <i>Pole Kisses</i> is set to be their first venture on the other side of production as an executive producer.</p>
+              <p> Maria Trần is a multidisciplinary creative (film director, actor, producer) from Australia, now based in Las Vegas, and the founder of Phoenix Eye Films, a female-led production company. She holds a Bachelor of Psychology.
+              </p>
               <br/>
-                <p> Inspired by their experiences as a queer pole dancing student, they originally wrote <i>Pole Kisses </i> as a submission for the 2021 UNLV “Write Stuff Screenwriting Competition” and was pleased to receive honorable mention for the original draft. After years of workshopping the screenplay, they are ecstatic to see it come to life with a strong team of dedicated and highly skilled filmmakers. </p>
+              <p>
+                  She developed and directed the <i>Echo 8 Trilogy</i>, an independent action feature film series produced outside traditional industry systems and released on Amazon Prime. Rooted in microbudget filmmaking, her work emphasizes efficiency, physical storytelling, and practical execution, while centering female-led narratives within genre-driven stories.
+              </p>
               <br/>
-                <p> Outside of their acting and screenwriting pursuits, they enjoy creating comedic content online as well as supporting the local band scene in Las Vegas. </p>
+              <p>
+                  Her early career includes work on international productions with Jackie Chan and Roger Corman, contributing to her foundation in action filmmaking. In addition to her feature work, Maria has directed short films including <i>Operation Kung Flu</i>, <i>Obsidian</i>, and <i>Hit Girls</i>. She received Best Director for the horror film <i>Midnight Never Sleeps</i>, starring Ana Thu Nguyen (Mortal Kombat 2).
+              </p>
+              <br/>
+              <p>
+                  Maria has delivered over 100 workshops in acting and filmmaking across Australia and internationally, and has been featured as a speaker at TEDx. She is a Community Leader with the Sundance Institute Collab program (2025–2026) and teaches at the Las Vegas Actor’s Academy.
+              </p>
+              <br/>
+              <p>
+
+                  She also works as a game show host for Family Feud Live at the MGM Grand, provides business and creative consulting for the Las Vegas business community, and leads the Vegas Asian Network.
+
+              </p>
+              <br/>
+              {/* <div align="center" style={{padding:20}}>
+                <div  className={styles.video} >
+            <ReactPlayer
+              url="https://youtu.be/lWDgz7Za3EA"
+              controls={true}
+              volume={.5}
+              width='relative'
+              config={{
+                youtube: {
+                  playerVars: { color: "white" },
+                },
+              }}
+            />
+            </div>
+          </div> */}
               <div  style={{ textAlign: 'center', padding: 20, paddingTop: 30, position: 'center', color: currentTheme.subtext }}>
                     <Link href="/#crew"><a className={contactStyles.aboutButton} style={{ background: 'transparent', border: `2px solid ${currentTheme.subtext}`,  alignItems: 'center' }}>{buttonTexts.returnToCrew}</a></Link>
                 </div>
-
             </div> 
             </div>
         </div>
     )
 }
 
-export default shannenAbout
+export default mariaAbout

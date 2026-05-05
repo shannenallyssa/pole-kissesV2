@@ -87,6 +87,19 @@ export const userinfo = {
 
             // },
             {
+                crewName: 'Maria Trần', //company name eg.Microsoft
+                crewHeadshot: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*', //companylogo
+                position: 'Director', //post you held eg.Senior SDE
+                time: '', //timespan
+                instagram:'https://www.instagram.com/mariatran.co/',
+                website:'https://www.mariatran.com/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnn5K2XxZPowiPrK7PsExichg3LF1Q0Aqv0XheBQqZOpEPZi0ijpPDyTvyS1c_aem_YLAV0Szu6geWfZ5dV5A3xg',
+                imdb:'https://www.imdb.com/name/nm3489824/',
+                linkedIn:'',
+                aboutLink:'/mariaTran', 
+                avatar:'/MariaTranIcon.png', 
+
+            },
+            {
                 crewName: 'Shannen Velasco',
                 companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*',
                 position: 'Executive Producer, Writer',
