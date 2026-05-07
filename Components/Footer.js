@@ -4,7 +4,7 @@ import Link from 'next/link'
 import contactStyles from '../styles/Contact.module.css'
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = ({ currentTheme }) => {
     const iconStyles = {
@@ -35,6 +35,9 @@ const Footer = ({ currentTheme }) => {
                     <div className={contactStyles.socialIconAbout} >
             <div className={contactStyles.socialIcon} style={iconStyles} >
                  <Link href='https://www.instagram.com/polekisses.shortfilm/'><a target="_blank"><FontAwesomeIcon icon={faInstagram} /></a></Link>            
+               </div>
+            <div className={contactStyles.socialIcon} style={iconStyles} >
+                 <Link href='https://www.facebook.com/groups/1532638924964450'><a target="_blank"><FontAwesomeIcon icon={faFacebook} /></a></Link>            
                </div>
             </div>
                         {/* <div align='center'>

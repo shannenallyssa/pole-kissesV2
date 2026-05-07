@@ -68,7 +68,7 @@ const mariaAbout = ({ currentTheme }) => {
 
             </div>
             <div className={styles.aboutPersonText} >
-              <p> Maria Trần is a multidisciplinary creative (film director, actor, producer) from Australia, now based in Las Vegas, and the founder of Phoenix Eye Films, a female-led production company. She holds a Bachelor of Psychology.
+              <p> Maria Tran is a multidisciplinary creative (film director, actor, producer) from Australia, now based in Las Vegas, and the founder of Phoenix Eye Films, a female-led production company. She holds a Bachelor of Psychology.
               </p>
               <br/>
               <p>
