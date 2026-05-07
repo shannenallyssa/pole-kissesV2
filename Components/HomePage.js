@@ -16,9 +16,12 @@ import { Stack, Input, Textarea, useToast } from "@chakra-ui/react"
 import { useRef, useState } from 'react'
 import contactStyles from '../styles/Contact.module.css'
 import emailjs from "@emailjs/browser";
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
+import { Doughnut } from 'react-chartjs-2';
 
 import placeHolder from '../styles/PoleKisses_LogoTransparent.png'
 import { faImdb, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+
 
 
 
@@ -33,29 +36,34 @@ const HomePage = ({ currentTheme }) => {
   const form = useRef();
   const [loading, setLoading] = useState(false);
 
+  ChartJS.register(ArcElement, Tooltip, Legend);
+
   const data = {
-    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+    labels: ['Location(s)', 'Equipment Rentals', 'Production Design', 'Wardrobe', 'Catering', 'Choreographer', 'Cast'],
     datasets: [
       {
-        label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
+        label: ' ',
+        data: [27, 37, 5, 4, 4, 15, 8],
         backgroundColor: [
-          'rgba(255, 99, 132, 0.2)',
-          'rgba(54, 162, 235, 0.2)',
-          'rgba(255, 206, 86, 0.2)',
-          'rgba(75, 192, 192, 0.2)',
-          'rgba(153, 102, 255, 0.2)',
-          'rgba(255, 159, 64, 0.2)',
+        
+          'rgba(211, 110, 163, 1)',
+          'rgba(176, 85, 200, 1)',
+          'rgba(86, 25, 158, 1)',
+          'rgba(153, 102, 255, 1)',
+          'rgba(134, 72, 145, 1)',
+          'rgba(236, 111, 233, 1)',
+          'rgba(203, 59, 158, 1)',
         ],
         borderColor: [
-          'rgba(255, 99, 132, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)',
-          'rgba(75, 192, 192, 1)',
-          'rgba(153, 102, 255, 1)',
-          'rgba(255, 159, 64, 1)',
+          'rgba(255, 255, 255, 1)',
+          'rgba(255, 255, 255, 1)',
+          'rgba(255, 255, 255, 1)',
+          'rgba(255, 255, 255, 1)',
+          'rgba(255, 255, 255, 1)',
+          'rgba(255, 255, 255, 1)',
+          'rgba(255, 255, 255, 1)',
         ],
-        borderWidth: 1,
+        borderWidth: 3,
       },
     ],
   };
@@ -178,14 +186,28 @@ const HomePage = ({ currentTheme }) => {
                 <p className={styles.aboutText} style={{ color: currentTheme.subtext }} data-aos="fade-up"><i>Pole Kisses</i> is an upcoming short film based in Las Vegas, Nevada. With a blend of humor, drama, and specialized dance sequences, screenwriter SHANNEN VELASCO has created a female-driven narrative that celebrates femininity, queerness, and— <i>of course </i>— the art and athleticism behind pole dancing. Led by award-winning director MARIA TRẦN, this production has compiled a diverse and passionate team of filmmakers to bring this story of self-discovery to life.</p>
                 <br/>
                 <p className={styles.aboutText} style={{ color: currentTheme.subtext }} data-aos="fade-up"> Principal photography is set to begin in September 2026.</p>
+                {/* SEE MORE SECTION WHEN WE HAVE CREATIVE DECKS READY */}
                 {/* <div data-aos="fade-up" style={{ textAlign: 'center', padding: '1rem 0', margin: '1rem 0', position: 'relative', display: 'flex', color: currentTheme.subtext }}>
                     <Link href={userinfo.about.resume} target="_blank"><a className={styles.cta4} style={{ background: 'transparent', border: `2px solid ${currentTheme.subtext}`, display: 'flex', alignItems: 'center' }}>{ctaTexts.resumeCTA}&nbsp;&nbsp;&nbsp;&nbsp;<FontAwesomeIcon width="15px" height="15px" icon={faExternalLinkAlt} /></a></Link>
                 </div> */}
             </div>
 
             {/* FUNDING SECTION - UNCOMMENT WHEN FUNDING CAMPAIGN IS AVAILABLE */}
-            {/* <div className={styles.homeWorkSection} id="funding">
-                <h1 className={styles.workheading} data-aos="fade-up">{headings.workHomePage}</h1>
+            
+            <div className={styles.homeWorkSection} id="funding">
+                <h1 className={styles.workheading} data-aos="fade-up">FUNDRAISING</h1>
+                <div align="center" style={{paddingBottom:10}}>
+                <p>Our budget is an estimated $10,000 USD, with production costs allocated as follows: </p>
+                </div>
+              <div>   
+                <Doughnut 
+                    data= {data}
+                    width={500}
+                    height={500}
+                    options={{ maintainAspectRatio: false }}
+/>
+              </div>
+           
                 {
                     projects.slice(0, 3).map((project, key) => {
                         return (
@@ -195,7 +217,7 @@ const HomePage = ({ currentTheme }) => {
                         )
                     })
                 }
-                   </div> */}
+                   </div>
 
               <div id="cast" className={workStyles.castWrapper}>
             <h1 className={workStyles.workHeading} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Meet The Cast</h1>
@@ -213,7 +235,7 @@ const HomePage = ({ currentTheme }) => {
                                             { actress.avatar &&
                                               // <img src="/TaylorJayneAbout.jpeg" alt='glamour shot of Taylor Jayne' height='100' width='200'/>
                                               <div style={{padding:20}}> 
-                                               <Avatar sx={{width: 250, height: 250}} src={actress.avatar} />
+                                               <Avatar sx={{width: 225, height: 225}} src={actress.avatar} />
                                                </div>
                                               }
                                             </div>
