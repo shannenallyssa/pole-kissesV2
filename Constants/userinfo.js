@@ -70,6 +70,33 @@ export const userinfo = {
             },
         ],
     },
+    actresses: {
+        visible: true, //set this to false if you want to omit this section
+        actressList: [
+            {
+                actressName: 'Michi Kollette',
+                companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*',
+                character: '"VIOLET"',
+                time: '',
+                website:'',  
+                instagram:'',
+                linkedIn:'',
+                aboutLink:'/michiKollette', 
+                avatar:'/MichiIcon.jpeg', 
+            },
+            {
+                actressName: 'Jada Jones',
+                companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*',
+                character: '"ROXANNE"',
+                time: '',
+                website:'',  
+                instagram:'',
+                linkedIn:'',
+                aboutLink:'/jadaJones', 
+                avatar:'/JadaIcon.JPG', 
+            },
+        ],
+    },
     crew: {
         visible: true, //set this to false if you want to omit this section
         crewList: [

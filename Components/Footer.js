@@ -49,6 +49,8 @@ const Footer = ({ currentTheme }) => {
                     <b>|</b>
                     {/* <Link href='/#funding'><a> Funding </a></Link>
                     <b>|</b> */}
+                    <Link href='/#cast'><a> Cast </a></Link>
+                    <b>|</b>
                     <Link href='/#crew'><a> Crew </a></Link>
                     <b>|</b>
                     <Link href='/#contact'><a> Contact </a></Link>

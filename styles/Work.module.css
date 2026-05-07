@@ -180,6 +180,26 @@
     transition: 0.2s ease-in;
 
   }
+  .castWrapper{
+    max-width: 75vw;
+    margin: auto;
+    margin-bottom: 3rem;
+  }
+
+  .castCardWrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    grid-gap: 1rem;
+    align-items: start;
+  } 
+  
+  .castCard{
+    margin: 0 .5rem;
+    max-width: 400px;
+    top: -100px;
+    transition: 0.2s ease-in;
+
+  }
 
   .experienceCard:hover{
     transform: scale(0.98);
@@ -193,13 +213,29 @@
     
   }
 
+  .castCardContent{
+    padding: 0 1rem;
+    position: relative;
+    top: -60px;
+    text-align: center;
+    
+  }
+
   .experienceCardContent h1{
     text-transform: uppercase;
     font-size: 25px;
   }
 
+  .castCardContent h1{
+    text-transform: uppercase;
+    font-size: 40px;
+  }
+
   .experienceCardContent h2{
     font-size: 20px;
+  }
+  .castCardContent h2{
+    font-size: 30px;
   }
 
   .experienceCardContent h3{

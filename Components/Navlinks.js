@@ -23,6 +23,9 @@ const Navlinks = () => {
                 <Link href='/#funding'><a style={{ opacity: activeLink === '/#funding' ? '100%' : '80%' }}>Funding</a></Link>
             </div> */}
             <div className={styles.navlinks}>
+                <Link href='/#cast'><a style={{ opacity: activeLink === '/#cast' ? '100%' : '80%' }}>Cast</a></Link>
+            </div>
+            <div className={styles.navlinks}>
                 <Link href='/#crew'><a style={{ opacity: activeLink === '/#crew' ? '100%' : '80%' }}>Crew</a></Link>
             </div>
             <div className={styles.navlinks}>

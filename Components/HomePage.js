@@ -197,6 +197,75 @@ const HomePage = ({ currentTheme }) => {
                 }
                    </div> */}
 
+              <div id="cast" className={workStyles.castWrapper}>
+            <h1 className={workStyles.workHeading} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Meet The Cast</h1>
+            <div className={workStyles.castCardWrapper} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                {
+                    userinfo.actresses.actressList ?
+                    userinfo.actresses.actressList.map((actress, key) => {
+                            return (
+                                <div className={workStyles.castCard} key={key} data-aos="fade-up" id={actress.actressName}>
+                                    <Box borderWidth="1px" borderRadius="md" overflow="hidden">
+                                        <div style={{ background: currentTheme.secondary, height: '110px'}}></div>
+                                        <div className={workStyles.castCardContent}>
+                                            <h1>{actress.actressName}</h1>
+                                            <div className={workStyles.avatar}>
+                                            { actress.avatar &&
+                                              // <img src="/TaylorJayneAbout.jpeg" alt='glamour shot of Taylor Jayne' height='100' width='200'/>
+                                              <div style={{padding:20}}> 
+                                               <Avatar sx={{width: 250, height: 250}} src={actress.avatar} />
+                                               </div>
+                                              }
+                                            </div>
+                                            <div style={{ position: 'relative', top: '20px' }}>
+                                                <h2><i>{actress.character}</i></h2>
+                                                <div  style={{ textAlign: 'center', padding: 20, paddingTop: 20, position: 'center', color: currentTheme.subtext }}>
+                                                    <Link href={actress.aboutLink}><a className={contactStyles.aboutButton} style={{ background: 'transparent', border: `2px solid ${currentTheme.subtext}`,  alignItems: 'center' }}>ABOUT</a></Link>
+                                                </div>
+                                               
+                                                {/* <div>
+                                                <div className={contactStyles.submit} style={{ backgroundColor: currentTheme.accent }}>
+                                              <button type="submit">About</button>
+                                            </div></div> */}
+                                                {/* <h3>{crewMember.description}</h3> */}
+                                                <div className={contactStyles.socialIconDiv} >
+                                                  {actress.instagram &&
+                                                <div className={contactStyles.socialIcon} style={iconStyles} key={key}>
+                                                   <Link href={actress.instagram}><a><FontAwesomeIcon icon={faInstagram} /></a></Link>            
+                                               </div>
+                                               }
+                                                  {actress.website &&
+                                                <div className={contactStyles.socialIcon} style={iconStyles} key={key}>
+                                                   <Link href={actress.website}><a ><FontAwesomeIcon icon={faLink} /></a></Link>            
+                                               </div>
+                                               }
+                                                  {actress.imdb &&
+                                                <div className={contactStyles.socialIcon} style={iconStyles} key={key}>
+                                                   <Link href={actress.imdb}><a><FontAwesomeIcon icon={faImdb} /></a></Link>            
+                                               </div>
+                                               }
+                                                  {actress.linkedIn &&
+                                                <div className={contactStyles.socialIcon} style={iconStyles} key={key}>
+                                                   <Link href={actress.linkedIn}><a><FontAwesomeIcon icon={faLinkedin}/></a></Link>            
+                                               </div>
+                                               }
+                                             
+      
+                                        </div>
+      
+                                            </div>
+                                            {/* <h4 style={{ color: currentTheme.subtext }}>{crewMember.time}</h4> */}
+                                        </div>
+                                    </Box>
+                                </div>
+                            )
+                        }) : null
+                }
+            </div>
+                <div style={{ textAlign: 'center', paddingBottom: '2rem' }}>
+                    {/* <Link href="/work"><a className={styles.cta3} style={{ backgroundColor: currentTheme.accent, color: currentTheme.contrastText }}>{ctaTexts.workCTA} <span>&gt;</span></a></Link> */}
+                    </div>
+            </div>
 
                    <div className={workStyles.crewWrapper}>
               <div id="crew" className={workStyles.experienceWrapper}>
