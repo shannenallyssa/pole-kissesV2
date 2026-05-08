@@ -39,7 +39,7 @@ const HomePage = ({ currentTheme }) => {
   ChartJS.register(ArcElement, Tooltip, Legend);
 
   const data = {
-    labels: ['Location(s)', 'Equipment Rentals', 'Production Design', 'Wardrobe', 'Catering', 'Choreographer', 'Cast'],
+    labels: ['LOCATION(S)', 'EQUIPMENT RENTALS', 'PRODUCTION DESIGN', 'WARDROBE', 'CATERING', 'CHOREOGRAPHER', 'CAST'],
     datasets: [
       {
         label: ' ',
@@ -54,17 +54,11 @@ const HomePage = ({ currentTheme }) => {
           'rgba(236, 111, 233, 1)',
           'rgba(203, 59, 158, 1)',
         ],
-        borderColor: [
+        borderColor: 
           'rgba(255, 255, 255, 1)',
-          'rgba(255, 255, 255, 1)',
-          'rgba(255, 255, 255, 1)',
-          'rgba(255, 255, 255, 1)',
-          'rgba(255, 255, 255, 1)',
-          'rgba(255, 255, 255, 1)',
-          'rgba(255, 255, 255, 1)',
-        ],
         borderWidth: 3,
       },
+  
     ],
   };
 
@@ -187,26 +181,88 @@ const HomePage = ({ currentTheme }) => {
                 <br/>
                 <p className={styles.aboutText} style={{ color: currentTheme.subtext }} data-aos="fade-up"> Principal photography is set to begin in September 2026.</p>
                 {/* SEE MORE SECTION WHEN WE HAVE CREATIVE DECKS READY */}
-                {/* <div data-aos="fade-up" style={{ textAlign: 'center', padding: '1rem 0', margin: '1rem 0', position: 'relative', display: 'flex', color: currentTheme.subtext }}>
-                    <Link href={userinfo.about.resume} target="_blank"><a className={styles.cta4} style={{ background: 'transparent', border: `2px solid ${currentTheme.subtext}`, display: 'flex', alignItems: 'center' }}>{ctaTexts.resumeCTA}&nbsp;&nbsp;&nbsp;&nbsp;<FontAwesomeIcon width="15px" height="15px" icon={faExternalLinkAlt} /></a></Link>
-                </div> */}
+                <div data-aos="fade-up" style={{ textAlign: 'center', padding: '1rem 0', margin: '1rem 0', position: 'relative', display: 'flex', color: currentTheme.subtext }}>
+                    <Link href="/ourVision" target="_blank"><a className={styles.cta4} style={{ background: 'transparent', border: `2px solid ${currentTheme.subtext}`, display: 'flex', alignItems: 'center' }}>MORE ABOUT THE PROJECT<FontAwesomeIcon width="15px" height="15px"/></a></Link>
+                </div>
             </div>
 
             {/* FUNDING SECTION - UNCOMMENT WHEN FUNDING CAMPAIGN IS AVAILABLE */}
             
             <div className={styles.homeWorkSection} id="funding">
                 <h1 className={styles.workheading} data-aos="fade-up">FUNDRAISING</h1>
-                <div align="center" style={{paddingBottom:10}}>
-                <p>Our budget is an estimated $10,000 USD, with production costs allocated as follows: </p>
+                <div align="center" style={{paddingBottom:20}}>
+                <p>Our budget is an estimated <i><b> $10,000 USD</b></i>, with production costs allocated as follows: </p>
                 </div>
-              <div>   
+              <div style={{paddingBottom:20}}>   
                 <Doughnut 
                     data= {data}
                     width={500}
                     height={500}
-                    options={{ maintainAspectRatio: false }}
+                    options={{ maintainAspectRatio: false,  
+                      plugins: {
+                        datalabels: {
+                          formatter: (value, ctx) => {
+                            const datapoints = ctx.chart.data.datasets[0].data
+                            const total = datapoints.reduce((total, datapoint) => total + datapoint, 0)
+                            const percentage = value / total * 100
+                            return percentage.toFixed(2) + "%";
+                        }             
+                        },
+                        tooltip: {
+                          bodyAlign:"center",
+                          titleAlign:"center",
+                          displayColors: false,
+                          callbacks: {
+                            label: function(context) {
+                                let label = context.label;
+                                let value = context.formattedValue;
+                
+                                if (!label)
+                                    label = 'Unknown'
+                
+                                let sum = 0;
+                                let dataArr = context.chart.data.datasets[0].data;
+                                dataArr.map(data => {
+                                    sum += Number(data);
+                                });
+                
+                                let percentage = (value * 100 / sum).toFixed(0) + '%';
+                                // return label + ": " + percentage;
+                                return  " " + percentage;
+                            }
+                        },                
+                          titleFont: {
+                            size: 20
+                          },
+                          bodyFont: {
+                            size: 20
+                          },
+                          footerFont: {
+                            size: 20 // there is no footer by default
+                          }
+                          
+                        },                  
+                        legend: {
+                  
+                          display: true,
+                          responsive: true,
+                          labels: {
+                            color: 'rgba(255, 255, 255, 1)',
+                              padding: 25,
+                              font: {
+                                size: 15
+                              },
+                        },        
+                          position: 'bottom',
+                          align: 'center',
+                        }
+                      
+                    } }}
 />
               </div>
+              <div align="center" style={{paddingBottom:20, marginLeft:60, marginRight:60}}>
+                <p>We plan on reaching our financial goal through online crowdfunding campaigns, applying to film grants, and hosting local fundraising events that encourage a sense of community and passion for the arts. </p>
+                </div>
            
                 {
                     projects.slice(0, 3).map((project, key) => {

@@ -16,12 +16,16 @@ const HomeProject = ({ currentTheme, project, id }) => {
                     <FontAwesomeIcon icon={faMoneyCheck} />
                     <i class="fa fa-money-check-dollar" title="edit"></i>
                     </div>
-                {/* <h1 className={styles.projectTitle}>{project.name}</h1> */}
+                    {/* <div align="center" style={{paddingBottom:10}}>
+                    <h1 className={styles.projectTitle}>Want to join?</h1>
+                    </div> */}
+              
                 {/* <a href='https://www.gofundme.com/' target='_blank'><Image src={indieGogo} width={300} height={100}/> </a> */}
                <div align='center' >
                 <a href='https://www.indiegogo.com/en' target='_blank'><img src={indieGogo.src} width={400} height={75}/> </a>
                 </div>
-                <h2 className={styles.projectSubTitle} style={{color: currentTheme.subtext, paddingTop: 10}}>{project.description}</h2>
+                {/* <h2 className={styles.projectSubTitle} style={{color: currentTheme.subtext, paddingTop: 10}}> Indiegogo is our primary means of donation.</h2> */}
+                <br/>
                 <div className={contactStyles.submit} style={{ backgroundColor: currentTheme.accent }}>
               <Link href='https://www.indiegogo.com/en'>DONATE HERE</Link>
             </div>
