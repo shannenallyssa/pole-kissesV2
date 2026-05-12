@@ -50,9 +50,9 @@ const jadaAbout = ({ currentTheme }) => {
     return (
         <div>
           <div data-aos="fade-up">
-          <div align="center" className={styles.aboutHeadshot}>
+          {/* <div align="center" className={styles.aboutHeadshot}>
           <img src="/TaylorJayneAbout.jpeg" alt='glamour shot of Jada Jones' height='375' width='350'/>
-          </div>
+          </div> */}
             <div className={styles.aboutPersonHeading}>Jada Jones</div>
             <div className={styles.aboutPersonSubHeading}> Actress - ROXANNE</div>
             {/* <div className={contactStyles.socialIconAbout} >

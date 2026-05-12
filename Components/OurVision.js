@@ -49,15 +49,20 @@ const OurVision = ({ currentTheme }) => {
     return (
         <div>
           <div data-aos="fade-up">
-            <div className={styles.aboutPersonHeading}>Shannen Velasco</div>
-            {/* <div className={styles.aboutPersonSubHeading}> Executive Producer & Writer</div> */}
-           
+            <div className={styles.aboutPersonHeading}>Our Vision</div>
+            <div className={styles.aboutPersonSubHeading}> Creative Deck</div>
+           <div>
+
+           </div>
+           <br/>
+           <div className={styles.aboutPersonSubHeading}> Production Deck </div>
+           <div>
+
+           </div>
+           <br/>
+           <div className={styles.aboutPersonSubHeading}> Costume Lookbook </div>
             <div className={styles.aboutPersonText} >
-              <p>Shannen Velasco is an actor and writer based in Las Vegas, Nevada. Since graduating from the University of Nevada, Las Vegas film program in 2021, they have been steadily learning more about the industry through acting in various independent short films, narrative podcasts, audio books, and video games. <i>Pole Kisses</i> is set to be their first venture on the other side of production as an executive producer.</p>
-              <br/>
-                <p> Inspired by their experiences as a queer pole dancing student, they originally wrote <i>Pole Kisses </i> as a submission for the 2021 UNLV “Write Stuff Screenwriting Competition” and was pleased to receive honorable mention for the original draft. After years of workshopping the screenplay, they are ecstatic to see it come to life with a strong team of dedicated and highly skilled filmmakers. </p>
-              <br/>
-                <p> Outside of their acting and screenwriting pursuits, they enjoy creating comedic content online as well as supporting the local band scene in Las Vegas. </p>
+              
               <div  style={{ textAlign: 'center', padding: 20, paddingTop: 30, position: 'center', color: currentTheme.subtext }}>
                     <Link href="/#about"><a className={contactStyles.aboutButton} style={{ background: 'transparent', border: `2px solid ${currentTheme.subtext}`,  alignItems: 'center' }}>BACK</a></Link>
                 </div>

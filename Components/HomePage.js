@@ -18,7 +18,7 @@ import contactStyles from '../styles/Contact.module.css'
 import emailjs from "@emailjs/browser";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
-
+import ReactPlayer from "react-player";
 import placeHolder from '../styles/PoleKisses_LogoTransparent.png'
 import { faImdb, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
@@ -173,7 +173,7 @@ const HomePage = ({ currentTheme }) => {
                 {/* <h2 className={styles.subheading} style={{ color: currentTheme.subtext }}>{userinfo.greeting.subtitle}</h2> */}
                 {/* <Link href="#work"><a className={styles.cta1} style={{ backgroundColor: currentTheme.accent, color: currentTheme.contrastText, boxShadow: currentTheme.boxShadow }}>{ctaTexts.landingCTA}</a></Link> */}
             </div>
-            <div id="about" className={styles.homeAboutSection} style={{ backgroundColor: currentTheme.secondary }}>
+            <div id="about" className={styles.homeAboutSection} style={{ backgroundColor: currentTheme.secondary, paddingTop: "3rem"}}>
                 <h1 className={styles.workheading} data-aos="fade-up">{headings.about}</h1>
                 <i><p className={styles.aboutText} style={{ color: currentTheme.subtext }} data-aos="fade-up"> 'A timid pole dancing student must overcome her insecurities when she develops feelings for her more experienced classmate.' </p> </i>
                 <br/>
@@ -182,10 +182,25 @@ const HomePage = ({ currentTheme }) => {
                 <p className={styles.aboutText} style={{ color: currentTheme.subtext }} data-aos="fade-up"> Principal photography is set to begin in September 2026.</p>
                 {/* SEE MORE SECTION WHEN WE HAVE CREATIVE DECKS READY */}
                 <div data-aos="fade-up" style={{ textAlign: 'center', padding: '1rem 0', margin: '1rem 0', position: 'relative', display: 'flex', color: currentTheme.subtext }}>
+                  
                     <Link href="/ourVision" target="_blank"><a className={styles.cta4} style={{ background: 'transparent', border: `2px solid ${currentTheme.subtext}`, display: 'flex', alignItems: 'center' }}>MORE ABOUT THE PROJECT<FontAwesomeIcon width="15px" height="15px"/></a></Link>
                 </div>
             </div>
 
+            <div style={{paddingTop:'1rem'}}>
+            <ReactPlayer
+              url="https://vimeo.com/704984031"
+              controls={true}
+              volume={.5}
+              // className={styles.video}
+              width='relative'
+              config={{
+                vimeo: {
+                  playerVars: { color: "white" },
+                },
+              }}
+            />
+                  </div>
             {/* FUNDING SECTION - UNCOMMENT WHEN FUNDING CAMPAIGN IS AVAILABLE */}
             
             <div className={styles.homeWorkSection} id="funding">
@@ -276,7 +291,7 @@ const HomePage = ({ currentTheme }) => {
                    </div>
 
               <div id="cast" className={workStyles.castWrapper}>
-            <h1 className={workStyles.workHeading} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Meet The Cast</h1>
+            <h1 className={workStyles.workHeading} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">MEET THE CAST</h1>
             <div className={workStyles.castCardWrapper} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 {
                     userinfo.actresses.actressList ?
