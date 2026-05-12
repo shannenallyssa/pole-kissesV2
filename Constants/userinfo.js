@@ -201,18 +201,18 @@ export const userinfo = {
             //     avatar:'/CarissaFennellIcon.JPG', 
 
             // },
-            {
-                crewName: 'Helen Oliviero',
-                companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*',
-                position: 'Makeup Artist',
-                time: '',
-                website:'https://olivierohelen.myportfolio.com/',  
-                instagram:'https://www.instagram.com/helens.huemua/',
-                linkedIn:'',
-                aboutLink:'/helenOliviero', 
-                avatar:'/HelenOlivieroIcon.JPG', 
+            // {
+            //     crewName: 'Helen Oliviero',
+            //     companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*',
+            //     position: 'Makeup Artist',
+            //     time: '',
+            //     website:'https://olivierohelen.myportfolio.com/',  
+            //     instagram:'https://www.instagram.com/helens.huemua/',
+            //     linkedIn:'',
+            //     aboutLink:'/helenOliviero', 
+            //     avatar:'/HelenOlivieroIcon.JPG', 
 
-            },
+            // },
             {
                 crewName: 'Sharmaine Velasco',
                 companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*',

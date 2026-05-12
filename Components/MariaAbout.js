@@ -89,10 +89,10 @@ const mariaAbout = ({ currentTheme }) => {
 
               </p>
               <br/>
-              {/* <div align="center" style={{padding:20}}>
+              <div align="center" style={{padding:20}}>
                 <div  className={styles.video} >
             <ReactPlayer
-              url="https://youtu.be/lWDgz7Za3EA"
+              url="https://youtu.be/0yTsSrcVi5c?feature=shared"
               controls={true}
               volume={.5}
               width='relative'
@@ -103,7 +103,7 @@ const mariaAbout = ({ currentTheme }) => {
               }}
             />
             </div>
-          </div> */}
+          </div>
               <div  style={{ textAlign: 'center', padding: 20, paddingTop: 30, position: 'center', color: currentTheme.subtext }}>
                     <Link href="/#crew"><a className={contactStyles.aboutButton} style={{ background: 'transparent', border: `2px solid ${currentTheme.subtext}`,  alignItems: 'center' }}>{buttonTexts.returnToCrew}</a></Link>
                 </div>
