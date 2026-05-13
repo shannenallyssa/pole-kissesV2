@@ -183,8 +183,7 @@ const HomePage = ({ currentTheme }) => {
                 <p className={styles.aboutText} style={{ color: currentTheme.subtext }} data-aos="fade-up"> Principal photography is set to begin in September 2026.</p>
                 {/* SEE MORE SECTION WHEN WE HAVE CREATIVE DECKS READY */}
                 <div data-aos="fade-up" style={{ textAlign: 'center', padding: '1rem 0', margin: '1rem 0', position: 'relative', display: 'flex', color: currentTheme.subtext }}>
-                  
-                    <Link href="/ourVision" target="_blank"><a className={styles.cta4} style={{ background: 'transparent', border: `2px solid ${currentTheme.subtext}`, display: 'flex', alignItems: 'center' }}>MORE ABOUT THE PROJECT<FontAwesomeIcon width="15px" height="15px"/></a></Link>
+                    <Link  href="/ourVision" target="_blank"><a className={styles.cta4} style={{ background: 'transparent', border: `2px solid ${currentTheme.subtext}`, display: 'flex', alignItems: 'center' }}>MORE ABOUT THE PROJECT<FontAwesomeIcon width="15px" height="15px"/></a></Link>
                 </div>
             </div>
 
@@ -193,7 +192,7 @@ const HomePage = ({ currentTheme }) => {
               data-aos="fade-up"
               url="https://vimeo.com/1191819854?share=copy&fl=sv&fe=ci"
               controls={true}
-              volume={1}
+              volume={.75}
               // className={styles.video}
               width='relative'
               config={{
@@ -206,7 +205,7 @@ const HomePage = ({ currentTheme }) => {
             {/* FUNDING SECTION - UNCOMMENT WHEN FUNDING CAMPAIGN IS AVAILABLE */}
             
             <div className={styles.homeWorkSection} id="funding">
-                <h1 className={styles.workheading} data-aos="fade-up">FUNDRAISING</h1>
+                <h1 className={styles.workheading} data-aos="fade-up">FUNDING</h1>
                 <div align="center" style={{paddingBottom:20}}>
                 <p>Our budget is an estimated <i><b> $10,000 USD</b></i>, with production costs allocated as follows: </p>
                 </div>
