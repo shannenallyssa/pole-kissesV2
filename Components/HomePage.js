@@ -25,6 +25,7 @@ import { faImdb, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-ic
 
 
 
+
 const HomePage = ({ currentTheme }) => {
 
   const toast = useToast()
@@ -189,6 +190,7 @@ const HomePage = ({ currentTheme }) => {
 
             <div style={{paddingTop:'1rem'}} data-aos="fade-up">
             <ReactPlayer
+              data-aos="fade-up"
               url="https://vimeo.com/1191819854?share=copy&fl=sv&fe=ci"
               controls={true}
               volume={1}
