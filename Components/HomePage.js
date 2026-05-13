@@ -187,11 +187,11 @@ const HomePage = ({ currentTheme }) => {
                 </div>
             </div>
 
-            <div style={{paddingTop:'1rem'}}>
+            <div style={{paddingTop:'1rem'}} data-aos="fade-up">
             <ReactPlayer
-              url="https://vimeo.com/704984031"
+              url="https://vimeo.com/1191819854?share=copy&fl=sv&fe=ci"
               controls={true}
-              volume={.5}
+              volume={1}
               // className={styles.video}
               width='relative'
               config={{
@@ -278,7 +278,7 @@ const HomePage = ({ currentTheme }) => {
               <div align="center" style={{paddingBottom:20, marginLeft:60, marginRight:60}}>
                 <p>We plan on reaching our financial goal through online crowdfunding campaigns, applying to film grants, and hosting local fundraising events that encourage a sense of community and passion for the arts. </p>
                 </div>
-           
+{/*            
                 {
                     projects.slice(0, 3).map((project, key) => {
                         return (
@@ -287,7 +287,7 @@ const HomePage = ({ currentTheme }) => {
                             </div>
                         )
                     })
-                }
+                } */}
                    </div>
 
               <div id="cast" className={workStyles.castWrapper}>
@@ -313,7 +313,7 @@ const HomePage = ({ currentTheme }) => {
                                             <div style={{ position: 'relative', top: '20px' }}>
                                                 <h2><i>{actress.character}</i></h2>
                                                 <div  style={{ textAlign: 'center', padding: 20, paddingTop: 20, position: 'center', color: currentTheme.subtext }}>
-                                                    <Link href={actress.aboutLink}><a className={contactStyles.aboutButton} style={{ background: 'transparent', border: `2px solid ${currentTheme.subtext}`,  alignItems: 'center' }}>ABOUT</a></Link>
+                                                    {/* <Link href={actress.aboutLink}><a className={contactStyles.aboutButton} style={{ background: 'transparent', border: `2px solid ${currentTheme.subtext}`,  alignItems: 'center' }}>ABOUT</a></Link> */}
                                                 </div>
                                                
                                                 {/* <div>

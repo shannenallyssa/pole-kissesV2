@@ -3,7 +3,7 @@ import WorkProject from './WorkProject'
 import BlogCard from './BlogCard';
 import { projects } from '../Constants/projects'
 import { custom_blogs, medium_blogs, dev_to } from '../Constants/blogs'
-import { useState, useEffect } from 'react';
+import { React, useState, useEffect } from 'react';
 import { headings, userinfo, buttonTexts } from '../Constants/userinfo'
 import Carousel, { CarouselItem } from "./Carousel";
 import Experiences from './Experiences';
@@ -16,6 +16,12 @@ import { faImdb, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 
 
+// import ArtDeck from '/POLE KISSES Art Direction and Production Design Deck.pdf'
+
+
+
+
+
 const OurVision = ({ currentTheme }) => {
   const iconStyles = {
     backgroundColor: currentTheme.accent,
@@ -24,6 +30,7 @@ const OurVision = ({ currentTheme }) => {
   }
 
     const [blogList, setBlogList] = useState([])
+
 
     // CUSTOM BLOGS SUPPORT: UNCOMMENT THE FOLLOWING CODE FOR CUSTOM BLOGS
     useEffect(() => {
@@ -52,7 +59,10 @@ const OurVision = ({ currentTheme }) => {
             <div className={styles.aboutPersonHeading}>Our Vision</div>
             <div className={styles.aboutPersonSubHeading}> Creative Deck</div>
            <div>
-
+           <div className='control-section'>
+    {/* Render the PDF Viewer */}
+   
+    </div>
            </div>
            <br/>
            <div className={styles.aboutPersonSubHeading}> Production Deck </div>
