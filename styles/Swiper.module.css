@@ -1,6 +1,8 @@
 .swiper {
   width: 100%;
   height: 100%;
+  padding-Left:30%; 
+  padding-Right:30%;
 }
 
 .slide {
@@ -19,4 +21,20 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+
+@media only screen and (max-width: 1200px){
+  .swiper {
+    padding-Left:10%; 
+    padding-Right:10%;
+  }
+  }
+
+
+@media only screen and (max-width: 535px){
+  .swiper {
+    padding-Left:10%; 
+    padding-Right:10%;
+  }
 }

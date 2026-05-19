@@ -50,23 +50,23 @@ const jadaAbout = ({ currentTheme }) => {
     return (
         <div>
           <div data-aos="fade-up">
-          {/* <div align="center" className={styles.aboutHeadshot}>
-          <img src="/TaylorJayneAbout.jpeg" alt='glamour shot of Jada Jones' height='375' width='350'/>
-          </div> */}
+          <div align="center" className={styles.aboutHeadshot}>
+          <img src="/JadaAbout.JPG" alt='glamour shot of Jada Jones' height='325' width='300'/>
+          </div>
             <div className={styles.aboutPersonHeading}>Jada Jones</div>
             <div className={styles.aboutPersonSubHeading}> Actress - ROXANNE</div>
-            {/* <div className={contactStyles.socialIconAbout} >
+            <div className={contactStyles.socialIconAbout} >
             <div className={contactStyles.socialIcon} style={iconStyles} >
-                 <Link href='https://www.instagram.com/mariatran.co/' ><a target="_blank"><FontAwesomeIcon icon={faInstagram} /></a></Link>            
+                 <Link href='https://www.instagram.com/jadaajonesss/' ><a target="_blank"><FontAwesomeIcon icon={faInstagram} /></a></Link>            
                </div>
-            <div className={contactStyles.socialIcon} style={iconStyles} >
+            {/* <div className={contactStyles.socialIcon} style={iconStyles} >
                     <Link href='https://www.mariatran.com/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnn5K2XxZPowiPrK7PsExichg3LF1Q0Aqv0XheBQqZOpEPZi0ijpPDyTvyS1c_aem_YLAV0Szu6geWfZ5dV5A3xg'><a target="_blank"><FontAwesomeIcon icon={faLink} /></a></Link>            
             </div>
             <div className={contactStyles.socialIcon} style={iconStyles} >
                     <Link href='https://www.imdb.com/name/nm3489824/'><a target="_blank"><FontAwesomeIcon icon={faImdb} /></a></Link>            
-            </div>
-
             </div> */}
+
+            </div>
             <div className={styles.aboutPersonText} >
               <p> 
               </p>

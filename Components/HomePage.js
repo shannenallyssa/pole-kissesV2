@@ -204,82 +204,11 @@ const HomePage = ({ currentTheme }) => {
                   </div>
             {/* FUNDING SECTION - UNCOMMENT WHEN FUNDING CAMPAIGN IS AVAILABLE */}
             
-            <div className={styles.homeWorkSection} id="funding">
-                <h1 className={styles.workheading} data-aos="fade-up">FUNDING</h1>
+            {/* <div className={styles.homeWorkSection} id="funding" data-aos="fade-up">
+                <h1 className={styles.workheading} >FUNDING</h1>
                 <div align="center" style={{paddingBottom:20}}>
-                <p>Our budget is an estimated <i><b> $10,000 USD</b></i>, with production costs allocated as follows: </p>
                 </div>
-              <div style={{paddingBottom:20}}>   
-                <Doughnut 
-                    data= {data}
-                    width={500}
-                    height={500}
-                    options={{ maintainAspectRatio: false,  
-                      plugins: {
-                        datalabels: {
-                          formatter: (value, ctx) => {
-                            const datapoints = ctx.chart.data.datasets[0].data
-                            const total = datapoints.reduce((total, datapoint) => total + datapoint, 0)
-                            const percentage = value / total * 100
-                            return percentage.toFixed(2) + "%";
-                        }             
-                        },
-                        tooltip: {
-                          bodyAlign:"center",
-                          titleAlign:"center",
-                          displayColors: false,
-                          callbacks: {
-                            label: function(context) {
-                                let label = context.label;
-                                let value = context.formattedValue;
-                
-                                if (!label)
-                                    label = 'Unknown'
-                
-                                let sum = 0;
-                                let dataArr = context.chart.data.datasets[0].data;
-                                dataArr.map(data => {
-                                    sum += Number(data);
-                                });
-                
-                                let percentage = (value * 100 / sum).toFixed(0) + '%';
-                                // return label + ": " + percentage;
-                                return  " " + percentage;
-                            }
-                        },                
-                          titleFont: {
-                            size: 20
-                          },
-                          bodyFont: {
-                            size: 20
-                          },
-                          footerFont: {
-                            size: 20 // there is no footer by default
-                          }
-                          
-                        },                  
-                        legend: {
-                  
-                          display: true,
-                          responsive: true,
-                          labels: {
-                            color: 'rgba(255, 255, 255, 1)',
-                              padding: 25,
-                              font: {
-                                size: 15
-                              },
-                        },        
-                          position: 'bottom',
-                          align: 'center',
-                        }
-                      
-                    } }}
-/>
-              </div>
-              <div align="center" style={{paddingBottom:20, marginLeft:60, marginRight:60}}>
-                <p>We plan on reaching our financial goal through online crowdfunding campaigns, applying to film grants, and hosting local fundraising events that encourage a sense of community and passion for the arts. </p>
-                </div>
-{/*            
+           
                 {
                     projects.slice(0, 3).map((project, key) => {
                         return (
@@ -288,8 +217,8 @@ const HomePage = ({ currentTheme }) => {
                             </div>
                         )
                     })
-                } */}
-                   </div>
+                }
+                   </div> */}
 
               <div id="cast" className={workStyles.castWrapper}>
             <h1 className={workStyles.workHeading} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">MEET THE CAST</h1>
@@ -313,10 +242,14 @@ const HomePage = ({ currentTheme }) => {
                                             </div>
                                             <div style={{ position: 'relative', top: '20px' }}>
                                                 <h2><i>{actress.character}</i></h2>
-                                                <div  style={{ textAlign: 'center', padding: 20, paddingTop: 20, position: 'center', color: currentTheme.subtext }}>
-                                                    {/* <Link href={actress.aboutLink}><a className={contactStyles.aboutButton} style={{ background: 'transparent', border: `2px solid ${currentTheme.subtext}`,  alignItems: 'center' }}>ABOUT</a></Link> */}
-                                                </div>
+                                                
+                                                 {/* ABOUT BUTTON FOR ACTRESSES - uncomment when michi turns in bio */}
+
+                                                {/* <div  style={{ textAlign: 'center', padding: 20, paddingTop: 20, position: 'center', color: currentTheme.subtext }}>
+                                                    <Link href={actress.aboutLink}><a className={contactStyles.aboutButton} style={{ background: 'transparent', border: `2px solid ${currentTheme.subtext}`,  alignItems: 'center' }}>ABOUT</a></Link>
+                                                </div> */}
                                                
+
                                                 {/* <div>
                                                 <div className={contactStyles.submit} style={{ backgroundColor: currentTheme.accent }}>
                                               <button type="submit">About</button>

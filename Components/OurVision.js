@@ -77,7 +77,7 @@ const OurVision = ({ currentTheme }) => {
            <div className='control-section'>
     {/* Render the PDF Viewer */}
     <div>
-<div className={swiperStyles.swiper} style={{paddingLeft:"30%", paddingRight:"30%"}}>
+<div className={swiperStyles.swiper}>
    <Swiper
         pagination={{
           type: 'progressbar',
@@ -113,7 +113,7 @@ const OurVision = ({ currentTheme }) => {
            <br/>
            <div className={styles.aboutPersonSubHeading}> Art Deck </div>
            <div>
-<div className={swiperStyles.swiper} style={{paddingLeft:"30%", paddingRight:"30%"}}>
+<div className={swiperStyles.swiper}>
    <Swiper
         pagination={{
           type: 'progressbar',
@@ -146,7 +146,7 @@ const OurVision = ({ currentTheme }) => {
            <br/>
            <div className={styles.aboutPersonSubHeading}> Costume Lookbook </div>
            <div>
-<div className={swiperStyles.swiper} style={{paddingLeft:"30%", paddingRight:"30%"}}>
+<div className={swiperStyles.swiper}>
    <Swiper
         pagination={{
           type: 'progressbar',
