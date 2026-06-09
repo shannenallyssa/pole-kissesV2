@@ -59,27 +59,24 @@ const michiAbout = ({ currentTheme }) => {
             <div className={contactStyles.socialIcon} style={iconStyles} >
                  <Link href='https://www.instagram.com/michigo.xo/' ><a target="_blank"><FontAwesomeIcon icon={faInstagram} /></a></Link>            
                </div>
-            {/* <div className={contactStyles.socialIcon} style={iconStyles} >
-                    <Link href='https://www.mariatran.com/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnn5K2XxZPowiPrK7PsExichg3LF1Q0Aqv0XheBQqZOpEPZi0ijpPDyTvyS1c_aem_YLAV0Szu6geWfZ5dV5A3xg'><a target="_blank"><FontAwesomeIcon icon={faLink} /></a></Link>            
-            </div>
-            <div className={contactStyles.socialIcon} style={iconStyles} >
-                    <Link href='https://www.imdb.com/name/nm3489824/'><a target="_blank"><FontAwesomeIcon icon={faImdb} /></a></Link>            
-            </div> */}
-
+    
             </div>
             <div className={styles.aboutPersonText} >
               <p> 
+              Michi Kollette is a queer Filipino-Japanese Actor, Dancer, and Musician from the Bay Area, California. Now a Vegas local, they are a member of the local urban dance team Exodus and bassist of fem-fronted metal band Lunacy. In their spare time they participate in their local ballroom scene - training hand performance vogue; and have studied pole dance at home for roughly 3 years. Their love for acting began in their hometown theatre productions, then made its way online with narration, impression work, and vocals. Only briefly stepping into student film and industry work before lockdown, they are ecstatic to return to acting with their first lead film role.
               </p>
               <br/>
               <p>
-                 Lorem Ipsum
+              As a sapphic & non-binary individual - participating in beauty pageants from age 2-12 years old - Michi formed a complicated relationship with gender, confidence, and femininity. In many ways, Michi has used performance to navigate this journey, pulling from each new pursuit new tools of expression. Taking one pole class led by a male instructor in 2023 - Michi found pole dance as a way to reconnect with their femininity on their own terms. Within this space: strength, sensuality, softness, and emotion combined into the most physically challenging yet cathartic form of performance they’ve ever encountered. This intersection of queer identity, feminine confidence, and pole dance drew Michi instantly to this project - where they aim to bring upmost care to the role of Violet.
               </p>
               <br/>
               <p>
-                 Lorem Ipsum
+              Outside of performance, Michi is passionate about activism and community - wishing to dedicate their life to advocating for queer rights. A dual graduate of Criminology and Psychology, they aim to acquire a PhD. in Counseling Psychology with focus on Asian-American and LGBTQIA+ mental health. 
               </p>
-             
-
+             <br/>
+             <p>
+             Growing up with minimal representation and countless “queer stories” written by straight-cis men, Michi is honored to be supported by the fully fem team behind Pole Kisses.
+             </p>
               <br/>
               <div  style={{ textAlign: 'center', padding: 20, paddingTop: 30, position: 'center', color: currentTheme.subtext }}>
                     <Link href="/#cast"><a className={contactStyles.aboutButton} style={{ background: 'transparent', border: `2px solid ${currentTheme.subtext}`,  alignItems: 'center' }}>{buttonTexts.returnToCrew}</a></Link>

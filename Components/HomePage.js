@@ -245,9 +245,9 @@ const HomePage = ({ currentTheme }) => {
                                                 
                                                  {/* ABOUT BUTTON FOR ACTRESSES - uncomment when michi turns in bio */}
 
-                                                {/* <div  style={{ textAlign: 'center', padding: 20, paddingTop: 20, position: 'center', color: currentTheme.subtext }}>
+                                                <div  style={{ textAlign: 'center', padding: 20, paddingTop: 20, position: 'center', color: currentTheme.subtext }}>
                                                     <Link href={actress.aboutLink}><a className={contactStyles.aboutButton} style={{ background: 'transparent', border: `2px solid ${currentTheme.subtext}`,  alignItems: 'center' }}>ABOUT</a></Link>
-                                                </div> */}
+                                                </div>
                                                
 
                                                 {/* <div>
