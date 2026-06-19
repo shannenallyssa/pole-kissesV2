@@ -176,7 +176,7 @@ const HomePage = ({ currentTheme }) => {
             </div>
             <div id="about" className={styles.homeAboutSection} style={{ backgroundColor: currentTheme.secondary, paddingTop: "3rem"}}>
                 <h1 className={styles.workheading} data-aos="fade-up">{headings.about}</h1>
-                <i><p className={styles.aboutText} style={{ color: currentTheme.subtext }} data-aos="fade-up"> 'A timid pole dancing student must overcome her insecurities when she develops feelings for her more experienced classmate.' </p> </i>
+                <i><p className={styles.aboutText} style={{ color: currentTheme.subtext }} data-aos="fade-up"> 'A beginner pole dancing student struggling with insecurity must reconcile her fractured sense of self when she finds herself drawn to her more advanced classmate.' </p> </i>
                 <br/>
                 <p className={styles.aboutText} style={{ color: currentTheme.subtext }} data-aos="fade-up"><i>Pole Kisses</i> is an upcoming short film based in Las Vegas, Nevada. With a blend of humor, drama, and specialized dance sequences, screenwriter SHANNEN VELASCO has created a female-driven narrative that celebrates femininity, queerness, and— <i>of course </i>— the art and athleticism behind pole dancing. Led by award-winning director MARIA TRẦN, this production has compiled a diverse and passionate team of filmmakers to bring this story of self-discovery to life.</p>
                 <br/>
@@ -204,11 +204,13 @@ const HomePage = ({ currentTheme }) => {
                   </div>
             {/* FUNDING SECTION - UNCOMMENT WHEN FUNDING CAMPAIGN IS AVAILABLE */}
             
-            {/* <div className={styles.homeWorkSection} id="funding" data-aos="fade-up">
+            <div className={styles.homeWorkSection} id="funding" data-aos="fade-up">
                 <h1 className={styles.workheading} >FUNDING</h1>
-                <div align="center" style={{paddingBottom:20}}>
-                </div>
-           
+                <div align="center" style={{paddingBottom:20}} className={styles.aboutText}>
+                  <div style={{padding:" 0 10vw"}}>
+                    <p>In order to meet the cost of production, our team is aiming to raise <i><b> $8,000 USD</b></i>, with the combined efforts of an online crowdfunding campaign, film grants, and hosting local fundraising events that encourage a sense of community and passion for the arts. </p> 
+                    </div>
+                
                 {
                     projects.slice(0, 3).map((project, key) => {
                         return (
@@ -218,7 +220,17 @@ const HomePage = ({ currentTheme }) => {
                         )
                     })
                 }
-                   </div> */}
+            <h2 className={styles.workheading} style={{paddingBottom:10}}>UPCOMING EVENT: HUES AND HARMONIES</h2>
+                 <img src="/huesandharmonies.JPG" alt='poster of hues and harmonies crowdfunding event' height='400' width='475' style={{ paddingBottom:20}}/>
+                 <div style={{padding:" 0 10vw", paddingBottom:10}}>
+                 <p> Come join us as we paint a scene together! With step-by-step instructions by our instructor, the event can be enjoyed by anyone of any painting experience. Allow yourself to enjoy a relaxing class complete with smooth live music and refreshments. Bring your friends for a fun evening of entertainment and creativity while supporting our short film with our first community event! (+21)</p>
+                 </div>
+        
+                 <div className={contactStyles.submit} style={{ backgroundColor: currentTheme.accent }}>
+              <Link href='https://luma.com/mt2hg5ys'>DETAILS + RSVP </Link>
+            </div>
+                </div>
+                   </div>
 
               <div id="cast" className={workStyles.castWrapper}>
             <h1 className={workStyles.workHeading} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">MEET THE CAST</h1>
@@ -292,6 +304,21 @@ const HomePage = ({ currentTheme }) => {
                 <div style={{ textAlign: 'center', paddingBottom: '2rem' }}>
                     {/* <Link href="/work"><a className={styles.cta3} style={{ backgroundColor: currentTheme.accent, color: currentTheme.contrastText }}>{ctaTexts.workCTA} <span>&gt;</span></a></Link> */}
                     </div>
+                    <div align="center" style={{padding:20}}>
+                <div  className={workStyles.video} >
+            <ReactPlayer
+              url="https://youtu.be/6Wn1O5u62Z4"
+              controls={true}
+              volume={.5}
+              width='relative'
+              config={{
+                youtube: {
+                  playerVars: { color: "white" },
+                },
+              }}
+            />
+            </div>
+          </div>
             </div>
 
                    <div className={workStyles.crewWrapper}>
