@@ -227,6 +227,7 @@ const HomePage = ({ currentTheme }) => {
                         )
                     })
                 }
+            
             <h2 className={styles.workheading} style={{paddingBottom:10}}>PAST FUNDRAISING EVENT</h2>
             <h2 className={styles.workheading} style={{paddingBottom:10}}>Hues and Harmonies</h2>
             <div>
