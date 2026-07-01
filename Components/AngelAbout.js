@@ -48,9 +48,7 @@ const angelAbout = ({ currentTheme }) => {
     return (
         <div>
           <div data-aos="fade-up">
-            {/* <div align="center" >
-         <Image size="xl" name="helen" src={logo} width={400} height={400}/>
-         </div> */}
+           
             <div className={styles.aboutPersonHeading}>Angel E. Warren</div>
             <div className={styles.aboutPersonSubHeading}> Producer</div>
             <div className={contactStyles.socialIconAbout} >

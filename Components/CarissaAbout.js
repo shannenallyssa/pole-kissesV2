@@ -48,9 +48,7 @@ const carissaAbout = ({ currentTheme }) => {
     return (
         <div>
           <div data-aos="fade-up">
-            {/* <div align="center" >
-         <Image size="xl" name="helen" src={logo} width={400} height={400}/>
-         </div> */}
+         
             <div className={styles.aboutPersonHeading}>Carissa Fennell</div>
             <div className={styles.aboutPersonSubHeading}> Costume Designer</div>
             <div className={contactStyles.socialIconAbout} >

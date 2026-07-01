@@ -20,7 +20,6 @@ const HomeProject = ({ currentTheme, project, id }) => {
                     <h1 className={styles.projectTitle}>Want to join?</h1>
                     </div> */}
               
-                {/* <a href='https://www.gofundme.com/' target='_blank'><Image src={indieGogo} width={300} height={100}/> </a> */}
                <div align='center' >
                 <a href='https://www.indiegogo.com/en/projects/shanav/pole-kisses-short-film' target='_blank'><img src={indieGogo.src} width={400} height={75}/> </a>
                 </div>

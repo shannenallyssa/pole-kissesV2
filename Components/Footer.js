@@ -40,9 +40,7 @@ const Footer = ({ currentTheme }) => {
                  <Link href='https://www.facebook.com/groups/1532638924964450'><a target="_blank"><FontAwesomeIcon icon={faFacebook} /></a></Link>            
                </div>
             </div>
-                        {/* <div align='center'>
-                    <Image src={logo} alt='thumbnail image' height='100' width='100'/>
-                    </div> */}
+                        
                     <Link href='/#home'><a> Home </a></Link>
                     <b>|</b>
                     <Link href='/#about'><a> About </a></Link>

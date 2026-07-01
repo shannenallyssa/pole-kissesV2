@@ -48,9 +48,7 @@ const patriciaAbout = ({ currentTheme }) => {
     return (
         <div>
           <div data-aos="fade-up">
-            {/* <div align="center" >
-         <Image size="xl" name="helen" src={logo} width={400} height={400}/>
-         </div> */}
+           
             <div className={styles.aboutPersonHeading}>Patricia Reyes</div>
             <div className={styles.aboutPersonSubHeading}> Director of Photography </div>
             <div className={contactStyles.socialIconAbout} >
