@@ -210,6 +210,58 @@ const HomePage = ({ currentTheme }) => {
             />
                   </div>
             {/* FUNDING SECTION - UNCOMMENT WHEN FUNDING CAMPAIGN IS AVAILABLE */}
+            
+            <div className={styles.homeWorkSection} id="funding" data-aos="fade-up">
+                <h1 className={styles.workheading} >FUNDING</h1>
+                <div align="center" style={{paddingBottom:20}} className={styles.aboutText}>
+                  <div style={{padding:" 0 10vw"}}>
+                    <p>In order to meet the cost of production, our team is aiming to raise <i><b> $8,000 USD</b></i>, with the combined efforts of an online crowdfunding campaign, film grants, and hosting local fundraising events that encourage a sense of community and passion for the arts. </p> 
+                    </div>
+                
+                {
+                    projects.slice(0, 3).map((project, key) => {
+                        return (
+                            <div key={key} data-aos="fade-up">
+                                <HomeProject currentTheme={currentTheme} project={project} id={key} />
+                            </div>
+                        )
+                    })
+                }
+            
+            <h2 className={styles.workheading} style={{paddingBottom:10}}>PAST FUNDRAISING EVENT</h2>
+            <h2 className={styles.workheading} style={{paddingBottom:10}}>Hues and Harmonies</h2>
+            <div>
+<div className={swiperStyles.swiperHah}>
+   <Swiper
+        pagination={{
+          type: 'progressbar',
+        }}
+        // keyboard={{
+        //   enabled: true,
+        // }}
+        loop={true}
+        navigation={true}
+        modules={[Pagination, Navigation, Keyboard]}
+        className="mySwiper"
+      >
+        <div className={swiperStyles.slide}>
+        <SwiperSlide><img src="/Hah1.JPG"/></SwiperSlide>
+        <SwiperSlide><img src="/Hah2.JPG"/></SwiperSlide>
+        <SwiperSlide><img src="/Hah3.JPG"/></SwiperSlide>
+        <SwiperSlide><img src="/Hah5.JPG"/></SwiperSlide>
+        <SwiperSlide><img src="/Hah6.JPG"/></SwiperSlide>
+        <SwiperSlide><img src="/Hah7.JPG"/></SwiperSlide>
+        <SwiperSlide><img src="/Hah8.JPG"/></SwiperSlide>
+        <SwiperSlide><img src="/Hah9.JPG"/></SwiperSlide>
+        <SwiperSlide><img src="/Hah10.JPG"/></SwiperSlide>
+        <SwiperSlide><img src="/Hah11.JPG"/></SwiperSlide>
+        <SwiperSlide><img src="/Hah12.JPG"/></SwiperSlide>
+        </div>
+      </Swiper>
+</div>
+    </div>
+                </div>
+                   </div>
 
               <div id="cast" className={workStyles.castWrapper}>
             <h1 className={workStyles.workHeading} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">MEET THE CAST</h1>
