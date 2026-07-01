@@ -21,7 +21,14 @@ import { Doughnut } from 'react-chartjs-2';
 import ReactPlayer from "react-player";
 import placeHolder from '../styles/PoleKisses_LogoTransparent.png'
 import { faImdb, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { Pagination, Navigation, Keyboard } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+import swiperStyles from '../styles/Swiper.module.css'
 
 
 
@@ -220,15 +227,38 @@ const HomePage = ({ currentTheme }) => {
                         )
                     })
                 }
-            <h2 className={styles.workheading} style={{paddingBottom:10}}>UPCOMING EVENT: HUES AND HARMONIES</h2>
-                 <img src="/huesandharmonies.JPG" alt='poster of hues and harmonies crowdfunding event' height='400' width='475' style={{ paddingBottom:20}}/>
-                 <div style={{padding:" 0 10vw", paddingBottom:10}}>
-                 <p> Come join us as we paint a scene together! With step-by-step instructions by our instructor, the event can be enjoyed by anyone of any painting experience. Allow yourself to enjoy a relaxing class complete with smooth live music and refreshments. Bring your friends for a fun evening of entertainment and creativity while supporting our short film with our first community event! (+21)</p>
-                 </div>
-        
-                 <div className={contactStyles.submit} style={{ backgroundColor: currentTheme.accent }}>
-              <Link href='https://luma.com/mt2hg5ys'>DETAILS + RSVP </Link>
-            </div>
+            <h2 className={styles.workheading} style={{paddingBottom:10}}>PAST FUNDRAISING EVENT</h2>
+            <h2 className={styles.workheading} style={{paddingBottom:10}}>Hues and Harmonies</h2>
+            <div>
+<div className={swiperStyles.swiperHah}>
+   <Swiper
+        pagination={{
+          type: 'progressbar',
+        }}
+        // keyboard={{
+        //   enabled: true,
+        // }}
+        loop={true}
+        navigation={true}
+        modules={[Pagination, Navigation, Keyboard]}
+        className="mySwiper"
+      >
+        <div className={swiperStyles.slide}>
+        <SwiperSlide><img src="/Hah1.JPG"/></SwiperSlide>
+        <SwiperSlide><img src="/Hah2.JPG"/></SwiperSlide>
+        <SwiperSlide><img src="/Hah3.JPG"/></SwiperSlide>
+        <SwiperSlide><img src="/Hah5.JPG"/></SwiperSlide>
+        <SwiperSlide><img src="/Hah6.JPG"/></SwiperSlide>
+        <SwiperSlide><img src="/Hah7.JPG"/></SwiperSlide>
+        <SwiperSlide><img src="/Hah8.JPG"/></SwiperSlide>
+        <SwiperSlide><img src="/Hah9.JPG"/></SwiperSlide>
+        <SwiperSlide><img src="/Hah10.JPG"/></SwiperSlide>
+        <SwiperSlide><img src="/Hah11.JPG"/></SwiperSlide>
+        <SwiperSlide><img src="/Hah12.JPG"/></SwiperSlide>
+        </div>
+      </Swiper>
+</div>
+    </div>
                 </div>
                    </div>
 
