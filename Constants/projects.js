@@ -20,7 +20,8 @@ export const projects = [
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum', //project description
         githubLink: '', //github repo link
         projectLink: '', //deployed project link
-        imageSource:'/styles/GoFundMe_logo.png',
+        tech: [], //add tech array
+        photo: [goFundMe], //use the imported image
     },
     // {
     //     name: 'Project 2',
