@@ -23,10 +23,10 @@ const HomeProject = ({ currentTheme, project, id }) => {
                <div align='center' >
                 <a href='https://www.indiegogo.com/en/projects/shanav/pole-kisses-short-film' target='_blank'><img src={indieGogo.src} width={400} height={75}/> </a>
                 </div>
-                <h2 className={styles.projectSubTitle} style={{color: currentTheme.subtext, paddingTop: 20}}> Become a valuable part of our filmmaking journey by following our project on Indiegogo. 
-                <br/>NOW LIVE - CLOSES AUGUST 14</h2>
+                <h2 className={styles.projectSubTitle} style={{color: currentTheme.subtext, paddingTop: 20}}>  Thank you for following and contributing to our crowfunding campaign! We surpassed our goal and raised $6,476 for our production!
+               </h2>
                 <div className={contactStyles.submit} style={{ backgroundColor: currentTheme.accent }}>
-              <Link href='https://www.indiegogo.com/en/projects/shanav/pole-kisses-short-film'> MAKE A PLEDGE HERE</Link>
+              <Link href='https://www.indiegogo.com/en/projects/shanav/pole-kisses-short-film'> VISIT CAMPAIGN PAGE</Link>
               {/* <Link href='https://www.indiegogo.com/en'>DONATE HERE</Link> */}
             </div>
                 {/* <Link href='/work'><a className={styles.cta2} style={{ color: currentTheme.tertiary }}>View More</a></Link> */}

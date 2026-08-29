@@ -215,7 +215,7 @@ const HomePage = ({ currentTheme }) => {
                 <h1 className={styles.workheading} >FUNDING</h1>
                 <div align="center" style={{paddingBottom:20}} className={styles.aboutText}>
                   <div style={{padding:" 0 10vw"}}>
-                    <p>In order to meet the cost of production, our team is aiming to raise <i><b> $8,000 USD</b></i>, with the combined efforts of an online crowdfunding campaign, film grants, and hosting local fundraising events that encourage a sense of community and passion for the arts. </p> 
+                    <p>In order to meet the cost of production, our team is aiming to raise <i><b> $5,500 USD</b></i>, with the combined efforts of an online crowdfunding campaign, film grants, and hosting local fundraising events that encourage a sense of community and passion for the arts. </p> 
                     </div>
                 
                 {
